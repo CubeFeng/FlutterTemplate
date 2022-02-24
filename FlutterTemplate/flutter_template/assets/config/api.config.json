@@ -1,0 +1,22 @@
+{
+  "dev": {
+    "apiHost": "http://ucore-app-dev.aitdcoin.com",
+    "wsHost": "ws://sms-dev.ucore.cc/rox/message"
+  },
+  "test": {
+    "apiHost": "http://ucore-app-test.aitdcoin.com",
+    "wsHost": "ws://sms-test.ucore.cc/rox/message"
+  },
+  "pre": {
+    "apiHost": "http://ucore-app-pre.aitdcoin.com",
+    "wsHost": "ws://sms-pre.ucore.cc/rox/message"
+  },
+  "prod": {
+    "apiHost": "https://app.ucore.cc",
+    "wsHost": "wss://sms.ucore.cc/rox/message"
+  },
+  "custom": {
+    "apiHost": "",
+    "wsHost": ""
+  }
+}

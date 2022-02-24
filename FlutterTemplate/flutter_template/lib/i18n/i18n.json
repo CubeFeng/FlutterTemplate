@@ -1,0 +1,24 @@
+[
+  {
+    "id": 200000,
+    "key": "home",
+    "zhCN": "首页",
+    "zhTW": "首頁",
+    "en": "home page",
+    "ko": "첫 페이지",
+    "ja": "最初のページ",
+    "fr": "Page d'accueil",
+    "es": "Página principal"
+  },
+  {
+    "id": 200001,
+    "key": "desc",
+    "zhCN": "我是描述",
+    "zhTW": "我是描述",
+    "en": "I'm describing",
+    "ko": "묘사",
+    "ja": "説明します",
+    "fr": "Je suis la description.",
+    "es": "Estoy describiendo"
+  }
+]

@@ -1,0 +1,30 @@
+name: flutter_wallet_dapp_browser
+description: A new Flutter package project.
+version: 0.0.1
+homepage:
+
+environment:
+  sdk: ">=2.12.0 <3.0.0"
+  flutter: ">=1.17.0"
+
+dependencies:
+  flutter:
+    sdk: flutter
+  share_plus: ^2.1.4
+  flutter_inappwebview: ^5.3.2
+  flutter_base_kit:
+    hosted:
+      name: flutter_base_kit
+      url: https://pub.youzi.dev
+    version: any
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+  flutter_lints: ^1.0.0
+
+flutter:
+  uses-material-design: true
+  assets:
+    - assets/js/
+    - assets/images/

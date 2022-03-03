@@ -1,0 +1,36 @@
+
+stages:
+   - repo
+
+variables:
+    GIT_STRATEGY: "fetch"
+
+repo:ios:
+    stage: repo
+    script:
+        - cd embed_app && fastlane build_ios_framework platform:iOS apiEnv:$API_ENV
+    rules:
+        - if: '$PLATFORM != "Android" && $FLAG == "embed_bridge"'
+          when: always
+    tags:
+        - macOS
+
+repo:android:
+    stage: repo
+    script:
+        - cd embed_app && fastlane build_android_aar platform:Android apiEnv:$API_ENV
+    rules:
+        - if: '$PLATFORM != "iOS" && $FLAG == "embed_bridge"'
+          when: always
+    tags:
+        - MacOS4
+
+# build:commit:
+#     stage: build
+#     script:
+#         - cd app && fastlane commit_change
+#     tags:
+#         - Ubuntu
+#     image: ssh_fastlane:latest
+#     only:
+#         - triggers

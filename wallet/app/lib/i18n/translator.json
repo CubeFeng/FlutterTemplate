@@ -1,0 +1,18 @@
+[
+  {
+    "zhCN": "助记词（备选)",
+    "ko": "보조어",
+    "ja": "バックアップ助詞（代替品）",
+    "zhTW": "助記詞（備選)",
+    "en": "Mnemonic（Alternatives)",
+    "key": "importFixTitle"
+  },
+  {
+    "zhCN": "仅针对旧版本单链助记词的导入",
+    "ko": "이전 버전 단일 체인 연상어만 가져오기",
+    "ja": "旧バージョン1本鎖助数詞のみの導入",
+    "zhTW": "僅針對舊版本單鏈助記詞的導入",
+    "en": "Only Target For Previous Version Single Chain Mnemonic Word Import",
+    "key": "importFixDesc"
+  }
+]

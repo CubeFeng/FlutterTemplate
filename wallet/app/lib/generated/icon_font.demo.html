@@ -1,0 +1,413 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <title>Flutter IconFont Builder Demo</title>
+  <link rel="shortcut icon" href="https://img.alicdn.com/imgextra/i2/O1CN01ZyAlrn1MwaMhqz36G_!!6000000001499-73-tps-64-64.ico" type="image/x-icon"/>
+  <link rel="icon" type="image/svg+xml" href="//img.alicdn.com/imgextra/i4/O1CN01EYTRnJ297D6vehehJ_!!6000000008020-55-tps-64-64.svg"/>
+  <link rel="stylesheet" href="https://g.alicdn.com/thx/cube/1.3.2/cube.min.css">
+  <link rel="stylesheet" href="https://a1.alicdn.com/oss/uploads/2018/12/26/189e7cb0-090f-11e9-80dc-73be9f55f73a.css">
+  <script src="https://at.alicdn.com/t/font_2905355_yvexpl70dab.js?spm=a313x.7781069.1998910419.73&file=font_2905355_yvexpl70dab.js"></script>
+  <!-- jQuery -->
+  <script src="https://a1.alicdn.com/oss/uploads/2018/12/26/7bfddb60-08e8-11e9-9b04-53e73bb6408b.js"></script>
+  <script src="https://a1.alicdn.com/oss/uploads/2018/12/26/a3f714d0-08e6-11e9-8a15-ebf944d7534c.js"></script>
+  <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/toastify-js/src/toastify.min.css">
+  <style>
+    .main .logo {
+      margin-top: 0;
+      height: auto;
+    }
+
+    .main .logo a {
+      display: flex;
+      align-items: center;
+    }
+
+    .main .logo .sub-title {
+      margin-left: 0.5em;
+      font-size: 22px;
+      color: #fff;
+      background: linear-gradient(-45deg, #3967FF, #B500FE);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+    }
+
+    .tab-container {
+      background-color: #eeeefb;
+    }
+
+    .icon_lists li .name, .icon_lists li .code-name {
+      color: #3a3a3a;
+      font-weight: 500;
+    }
+  </style>
+</head>
+<body>
+  <div class="main">
+    <h1 class="logo"><a href="/" title="首页" target="_blank">
+        <span class="sub-title">Flutter IconFont Builder Demo</span>
+    </a></h1>
+    <div class="article markdown">
+        <h2 id="font-class-">如何使用？</h2>
+        <p>点击对应图标, 会自动生成 Flutter Icon 代码;</p>
+        <pre><code class="language-dart">import 'package:flutter_wallet/generated/icon_font.g.dart';</code></pre>
+        <p>因svg渲染耗时, 可以使用如下代码进行预缓存;</p>
+        <pre><code class="language-js">IconFont.precacheSvg([IconFont.icon]);</code></pre>
+    </div>
+    <div class="nav-tabs">
+      <ul id="tabs" class="dib-box">
+        <li class="dib active"><span>Flutter</span></li>
+      </ul>
+        <a href="https://pub.youzi.dev/#/packages/detail?name=flutter_iconpark_builder" target="_blank" class="nav-more">查看文档</a>
+    </div>
+    <div class="tab-container">
+      <div class="content unicode" style="display: block;">
+          <ul class="icon_lists dib-box">
+                <li class="dib">
+        <svg class="iconpark-icon icon svg-icon" aria-hidden="true">
+          <use href="#icon-beifen"></use>
+        </svg>
+        <div class="name">iconBeifen</div>
+    </li>
+        <li class="dib">
+        <svg class="iconpark-icon icon svg-icon" aria-hidden="true">
+          <use href="#icon-aitd_hui"></use>
+        </svg>
+        <div class="name">iconAitdHui</div>
+    </li>
+        <li class="dib">
+        <svg class="iconpark-icon icon svg-icon" aria-hidden="true">
+          <use href="#icon-aitd"></use>
+        </svg>
+        <div class="name">iconAitd</div>
+    </li>
+        <li class="dib">
+        <svg class="iconpark-icon icon svg-icon" aria-hidden="true">
+          <use href="#icon-btc"></use>
+        </svg>
+        <div class="name">iconBtc</div>
+    </li>
+        <li class="dib">
+        <svg class="iconpark-icon icon svg-icon" aria-hidden="true">
+          <use href="#icon-btc_hui"></use>
+        </svg>
+        <div class="name">iconBtcHui</div>
+    </li>
+        <li class="dib">
+        <svg class="iconpark-icon icon svg-icon" aria-hidden="true">
+          <use href="#icon-DCkeystore"></use>
+        </svg>
+        <div class="name">iconDCkeystore</div>
+    </li>
+        <li class="dib">
+        <svg class="iconpark-icon icon svg-icon" aria-hidden="true">
+          <use href="#icon-drHD"></use>
+        </svg>
+        <div class="name">iconDrHD</div>
+    </li>
+        <li class="dib">
+        <svg class="iconpark-icon icon svg-icon" aria-hidden="true">
+          <use href="#icon-dizhibu"></use>
+        </svg>
+        <div class="name">iconDizhibu</div>
+    </li>
+        <li class="dib">
+        <svg class="iconpark-icon icon svg-icon" aria-hidden="true">
+          <use href="#icon-eth"></use>
+        </svg>
+        <div class="name">iconEth</div>
+    </li>
+        <li class="dib">
+        <svg class="iconpark-icon icon svg-icon" aria-hidden="true">
+          <use href="#icon-genggai"></use>
+        </svg>
+        <div class="name">iconGenggai</div>
+    </li>
+        <li class="dib">
+        <svg class="iconpark-icon icon svg-icon" aria-hidden="true">
+          <use href="#icon-gouxuan"></use>
+        </svg>
+        <div class="name">iconGouxuan</div>
+    </li>
+        <li class="dib">
+        <svg class="iconpark-icon icon svg-icon" aria-hidden="true">
+          <use href="#icon-eth_hui"></use>
+        </svg>
+        <div class="name">iconEthHui</div>
+    </li>
+        <li class="dib">
+        <svg class="iconpark-icon icon svg-icon" aria-hidden="true">
+          <use href="#icon-huichu"></use>
+        </svg>
+        <div class="name">iconHuichu</div>
+    </li>
+        <li class="dib">
+        <svg class="iconpark-icon icon svg-icon" aria-hidden="true">
+          <use href="#icon-jinzhang"></use>
+        </svg>
+        <div class="name">iconJinzhang</div>
+    </li>
+        <li class="dib">
+        <svg class="iconpark-icon icon svg-icon" aria-hidden="true">
+          <use href="#icon-qianbao"></use>
+        </svg>
+        <div class="name">iconQianbao</div>
+    </li>
+        <li class="dib">
+        <svg class="iconpark-icon icon svg-icon" aria-hidden="true">
+          <use href="#icon-shanchu"></use>
+        </svg>
+        <div class="name">iconShanchu</div>
+    </li>
+        <li class="dib">
+        <svg class="iconpark-icon icon svg-icon" aria-hidden="true">
+          <use href="#icon-Keystore"></use>
+        </svg>
+        <div class="name">iconKeystore</div>
+    </li>
+        <li class="dib">
+        <svg class="iconpark-icon icon svg-icon" aria-hidden="true">
+          <use href="#icon-siyao"></use>
+        </svg>
+        <div class="name">iconSiyao</div>
+    </li>
+        <li class="dib">
+        <svg class="iconpark-icon icon svg-icon" aria-hidden="true">
+          <use href="#icon-siyao_1"></use>
+        </svg>
+        <div class="name">iconSiyao1</div>
+    </li>
+        <li class="dib">
+        <svg class="iconpark-icon icon svg-icon" aria-hidden="true">
+          <use href="#icon-t"></use>
+        </svg>
+        <div class="name">iconT</div>
+    </li>
+        <li class="dib">
+        <svg class="iconpark-icon icon svg-icon" aria-hidden="true">
+          <use href="#icon-tianjia"></use>
+        </svg>
+        <div class="name">iconTianjia</div>
+    </li>
+        <li class="dib">
+        <svg class="iconpark-icon icon svg-icon" aria-hidden="true">
+          <use href="#icon-t-hui"></use>
+        </svg>
+        <div class="name">iconTHui</div>
+    </li>
+        <li class="dib">
+        <svg class="iconpark-icon icon svg-icon" aria-hidden="true">
+          <use href="#icon-xzHD"></use>
+        </svg>
+        <div class="name">iconXzHD</div>
+    </li>
+        <li class="dib">
+        <svg class="iconpark-icon icon svg-icon" aria-hidden="true">
+          <use href="#icon-zhujici"></use>
+        </svg>
+        <div class="name">iconZhujici</div>
+    </li>
+        <li class="dib">
+        <svg class="iconpark-icon icon svg-icon" aria-hidden="true">
+          <use href="#icon-liulanqi_xz"></use>
+        </svg>
+        <div class="name">iconLiulanqiXz</div>
+    </li>
+        <li class="dib">
+        <svg class="iconpark-icon icon svg-icon" aria-hidden="true">
+          <use href="#icon-qianbao_xz"></use>
+        </svg>
+        <div class="name">iconQianbaoXz</div>
+    </li>
+        <li class="dib">
+        <svg class="iconpark-icon icon svg-icon" aria-hidden="true">
+          <use href="#icon-wode_xz"></use>
+        </svg>
+        <div class="name">iconWodeXz</div>
+    </li>
+        <li class="dib">
+        <svg class="iconpark-icon icon svg-icon" aria-hidden="true">
+          <use href="#icon-anquan"></use>
+        </svg>
+        <div class="name">iconAnquan</div>
+    </li>
+        <li class="dib">
+        <svg class="iconpark-icon icon svg-icon" aria-hidden="true">
+          <use href="#icon-biyan"></use>
+        </svg>
+        <div class="name">iconBiyan</div>
+    </li>
+        <li class="dib">
+        <svg class="iconpark-icon icon svg-icon" aria-hidden="true">
+          <use href="#icon-biao"></use>
+        </svg>
+        <div class="name">iconBiao</div>
+    </li>
+        <li class="dib">
+        <svg class="iconpark-icon icon svg-icon" aria-hidden="true">
+          <use href="#icon-depp"></use>
+        </svg>
+        <div class="name">iconDepp</div>
+    </li>
+        <li class="dib">
+        <svg class="iconpark-icon icon svg-icon" aria-hidden="true">
+          <use href="#icon-drqianbao"></use>
+        </svg>
+        <div class="name">iconDrqianbao</div>
+    </li>
+        <li class="dib">
+        <svg class="iconpark-icon icon svg-icon" aria-hidden="true">
+          <use href="#icon-fanhui"></use>
+        </svg>
+        <div class="name">iconFanhui</div>
+    </li>
+        <li class="dib">
+        <svg class="iconpark-icon icon svg-icon" aria-hidden="true">
+          <use href="#icon-guanbi"></use>
+        </svg>
+        <div class="name">iconGuanbi</div>
+    </li>
+        <li class="dib">
+        <svg class="iconpark-icon icon svg-icon" aria-hidden="true">
+          <use href="#icon-fuzhi"></use>
+        </svg>
+        <div class="name">iconFuzhi</div>
+    </li>
+        <li class="dib">
+        <svg class="iconpark-icon icon svg-icon" aria-hidden="true">
+          <use href="#icon-kaiyan"></use>
+        </svg>
+        <div class="name">iconKaiyan</div>
+    </li>
+        <li class="dib">
+        <svg class="iconpark-icon icon svg-icon" aria-hidden="true">
+          <use href="#icon-shaomiao"></use>
+        </svg>
+        <div class="name">iconShaomiao</div>
+    </li>
+        <li class="dib">
+        <svg class="iconpark-icon icon svg-icon" aria-hidden="true">
+          <use href="#icon-shouqian"></use>
+        </svg>
+        <div class="name">iconShouqian</div>
+    </li>
+        <li class="dib">
+        <svg class="iconpark-icon icon svg-icon" aria-hidden="true">
+          <use href="#icon-shezhi"></use>
+        </svg>
+        <div class="name">iconShezhi</div>
+    </li>
+        <li class="dib">
+        <svg class="iconpark-icon icon svg-icon" aria-hidden="true">
+          <use href="#icon-SRshanchu"></use>
+        </svg>
+        <div class="name">iconSRshanchu</div>
+    </li>
+        <li class="dib">
+        <svg class="iconpark-icon icon svg-icon" aria-hidden="true">
+          <use href="#icon-tishi"></use>
+        </svg>
+        <div class="name">iconTishi</div>
+    </li>
+        <li class="dib">
+        <svg class="iconpark-icon icon svg-icon" aria-hidden="true">
+          <use href="#icon-tixing"></use>
+        </svg>
+        <div class="name">iconTixing</div>
+    </li>
+        <li class="dib">
+        <svg class="iconpark-icon icon svg-icon" aria-hidden="true">
+          <use href="#icon-xiala"></use>
+        </svg>
+        <div class="name">iconXiala</div>
+    </li>
+        <li class="dib">
+        <svg class="iconpark-icon icon svg-icon" aria-hidden="true">
+          <use href="#icon-xzqianbao"></use>
+        </svg>
+        <div class="name">iconXzqianbao</div>
+    </li>
+        <li class="dib">
+        <svg class="iconpark-icon icon svg-icon" aria-hidden="true">
+          <use href="#icon-yaoqing"></use>
+        </svg>
+        <div class="name">iconYaoqing</div>
+    </li>
+        <li class="dib">
+        <svg class="iconpark-icon icon svg-icon" aria-hidden="true">
+          <use href="#icon-yiwen"></use>
+        </svg>
+        <div class="name">iconYiwen</div>
+    </li>
+        <li class="dib">
+        <svg class="iconpark-icon icon svg-icon" aria-hidden="true">
+          <use href="#icon-zengjia"></use>
+        </svg>
+        <div class="name">iconZengjia</div>
+    </li>
+        <li class="dib">
+        <svg class="iconpark-icon icon svg-icon" aria-hidden="true">
+          <use href="#icon-zengsong"></use>
+        </svg>
+        <div class="name">iconZengsong</div>
+    </li>
+        <li class="dib">
+        <svg class="iconpark-icon icon svg-icon" aria-hidden="true">
+          <use href="#icon-zhuanzhang"></use>
+        </svg>
+        <div class="name">iconZhuanzhang</div>
+    </li>
+        <li class="dib">
+        <svg class="iconpark-icon icon svg-icon" aria-hidden="true">
+          <use href="#icon-liulanqi_hui"></use>
+        </svg>
+        <div class="name">iconLiulanqiHui</div>
+    </li>
+        <li class="dib">
+        <svg class="iconpark-icon icon svg-icon" aria-hidden="true">
+          <use href="#icon-qianbao_hui"></use>
+        </svg>
+        <div class="name">iconQianbaoHui</div>
+    </li>
+        <li class="dib">
+        <svg class="iconpark-icon icon svg-icon" aria-hidden="true">
+          <use href="#icon-wode_hui"></use>
+        </svg>
+        <div class="name">iconWodeHui</div>
+    </li>
+    
+          </ul>
+      </div>
+    </div>
+  </div>
+  <script type="text/javascript" src="https://unpkg.com/clipboard@2/dist/clipboard.min.js"></script>
+  <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/toastify-js"></script>
+  <script>
+  $(document).ready(function () {
+      $('.tab-container .content:first').show()
+        new ClipboardJS('.dib', {
+          text: function (trigger) {
+            Toastify({
+              text: `代码已复制到剪切板📋`,
+            }).showToast();
+            return `IconFont(IconFont.${trigger.children[1].textContent})`;
+          },
+        });
+      $('#tabs li').click(function (e) {
+        var tabContent = $('.tab-container .content')
+        var index = $(this).index()
+
+        if ($(this).hasClass('active')) {
+          return
+        } else {
+          $('#tabs li').removeClass('active')
+          $(this).addClass('active')
+
+          tabContent.hide().eq(index).fadeIn()
+        }
+      })
+    })
+  </script>
+</body>
+</html>

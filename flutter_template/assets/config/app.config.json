@@ -1,0 +1,18 @@
+{
+  "iOS": {
+    "channelType": "QY",
+    "channelName": "QY-01",
+    "channelVersion": "5.0.0",
+    "buildTime": "",
+    "commitId": "",
+    "branch": ""
+  },
+  "Android": {
+    "channelType": "GF",
+    "channelName": "GF",
+    "channelVersion": "5.0.0",
+    "buildTime": "",
+    "commitId": "",
+    "branch": ""
+  }
+}

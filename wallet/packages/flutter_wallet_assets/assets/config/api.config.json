@@ -1,0 +1,19 @@
+{
+  "dev": {
+    "apiHost": "http://192.168.2.3:8185"
+  },
+  "test": {
+    "apiHost": "http://double-wallet-dev.aitdcoin.com"
+  },
+  "pre": {
+    "apiHost": "https://double-wallet-pre.aitd.io"
+  },
+  "prod": {
+    "apiHost": "https://double-wallet.aitd.io"
+  },
+  "custom": {
+    "apiHost": "",
+    "wsHost": "",
+    "helpHost": ""
+  }
+}

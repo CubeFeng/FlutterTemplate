@@ -1,0 +1,6 @@
+[submodule "bridge/bridge_android"]
+	path = bridge/bridge_android
+	url = git@gitlab.tqxd.com:flutter/project/FlutterWalletBridge.git
+[submodule "bridge/bridge_ios"]
+	path = bridge/bridge_ios
+	url = git@gitlab.tqxd.com:flutter/native/fwbridge-ios.git

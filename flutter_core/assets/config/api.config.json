@@ -1,0 +1,27 @@
+{
+  "dev": {
+    "apiHost": "http://ucore-app-dev.aitdcoin.com",
+    "wsHost": "ws://sms-dev.ucore.cc/rox/message",
+    "helpHost": "https://customer-pre.httxhelp.com"
+  },
+  "test": {
+    "apiHost": "http://ucore-app-test.aitdcoin.com",
+    "wsHost": "ws://sms-test.ucore.cc/rox/message",
+    "helpHost": "https://customer-pre.httxhelp.com"
+  },
+  "pre": {
+    "apiHost": "http://ucore-app-pre.aitdcoin.com",
+    "wsHost": "ws://sms-pre.ucore.cc/rox/message",
+    "helpHost": "https://customer-pre.httxhelp.com"
+  },
+  "prod": {
+    "apiHost": "https://app.ucore.cc",
+    "wsHost": "wss://sms.ucore.cc/rox/message",
+    "helpHost": "https://customer.hznixiya.com"
+  },
+  "custom": {
+    "apiHost": "",
+    "wsHost": "",
+    "helpHost": ""
+  }
+}

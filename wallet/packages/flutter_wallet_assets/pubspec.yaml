@@ -1,0 +1,49 @@
+name: flutter_wallet_assets
+description: A new Flutter package project.
+version: 0.0.1
+homepage:
+
+environment:
+  sdk: ">=2.12.0 <3.0.0"
+  flutter: ">=1.17.0"
+
+dependencies:
+  flutter:
+    sdk: flutter
+  flutter_base_kit:
+    hosted:
+      name: flutter_base_kit
+      url: https://pub.youzi.dev
+    version: any
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+  flutter_lints: ^1.0.0
+
+# For information on the generic Dart part of this file, see the
+# following page: https://dart.dev/tools/pub/pubspec
+
+# The following section is specific to Flutter.
+flutter:
+  assets:
+    - assets/config/
+    - assets/data/
+    - assets/images/
+    - assets/images/common/
+    - assets/images/developing/
+    - assets/images/drawer/
+    - assets/images/home/
+    - assets/images/load/
+    - assets/images/login/
+    - assets/images/my/
+    - assets/images/property/
+    - assets/images/realname/
+    - assets/images/settings/
+    - assets/images/share/
+    - assets/images/splash/
+    - assets/images/tab/
+    - assets/images/user/
+    - assets/images/wallet/
+    - assets/images/dapp/
+    - assets/ucoredata/

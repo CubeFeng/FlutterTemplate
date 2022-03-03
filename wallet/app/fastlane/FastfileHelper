@@ -1,0 +1,246 @@
+# coding: utf-8
+# encodng: utf-8
+# -*- coding: utf-8 -*-
+# vim:set fileencoding=utf-8:
+fastlane_require 'sem_version'
+
+default_platform(:ios)
+
+def get_flutter_app_version
+  pubspec = YAML.load(json = File.read("../pubspec.yaml"))
+  pubspec["version"]
+end
+
+def update_flutter_app_config(_apiEnv, platform, bundle_identifier)
+  pubspec = YAML.load(json = File.read("../pubspec.yaml"))
+
+  flutter_rename_app = pubspec['flutter_rename_app_plus']
+
+  if platform == 'iOS'
+    flutter_rename_app['application_id'] = bundle_identifier
+    flutter_rename_app['bundle_id'] = bundle_identifier
+  else
+    flutter_rename_app['application_id'] = bundle_identifier
+    flutter_rename_app['android_package_name'] = bundle_identifier
+  end
+
+  if _apiEnv == 'pre'
+    flutter_rename_app['application_name'] = flutter_rename_app['application_name_pre']
+  end
+
+  # 根据环境配置不同的Logo
+  flutter_icons = pubspec['flutter_icons']
+  # flutter_icons['image_path_ios'] = '11'
+  # flutter_icons['image_path_android'] = '11'
+
+  # 回写 pubspec.to_yaml
+  # puts pubspec.to_yaml
+  File.open("../pubspec.yaml", "w") {|file| file.puts pubspec.to_yaml }
+  # 执行 更改包名、Logo 命令
+  sh("fvm", "flutter", "pub", "run", "flutter_rename_app_plus")
+  # sh("fvm", "flutter", "pub" ,"run", "flutter_launcher_icons:main")
+end
+
+def update_flutter_app_version(commit_change)
+  pubspec = YAML.load(json = File.read("../pubspec.yaml"))
+  v = SemVersion.new(pubspec["version"])
+
+  build = v.metadata
+  if build.nil?
+    build = ''
+  end
+  currentTime = "21#{Time.new.strftime("%y%m%d")}"
+  if build.length <= 8
+    build = "#{currentTime}01"
+  else
+    if build.include?"#{currentTime}"
+      build = build.to_i + 1
+    else
+      build = "#{currentTime}01"
+    end
+  end
+
+  v.metadata = build.to_s
+
+  pubspecText = File.read("../pubspec.yaml")
+  _orginVersionEle = "version: #{pubspec["version"]}"
+  _newVersionEle = "version: #{v.to_s}"
+
+  new_contents = pubspecText.gsub(_orginVersionEle, _newVersionEle)
+  File.open("../pubspec.yaml", "w") {|file| file.puts new_contents }
+
+  if commit_change
+    Dir.chdir "../" do
+      _updateFile = "#{Dir.pwd}/pubspec.yaml"
+      sh("git add #{_updateFile}")
+      sh("git commit -m \"[GitLab CI] Update App Version #{v.to_s}\"")
+
+      _git_repo = sh("git config --get remote.origin.url")
+      _git_repo = _git_repo.gsub!(/[\n]+/, "")
+      if _git_repo.start_with?("git@")
+        sh("git push origin #{git_branch()}")
+      else
+        url = URI.parse(_git_repo)
+        _git_repo = "#{url.scheme}://#{ENV["GITLAB_BOT_USERNAME"]}:#{ENV["GITLAB_BOT_USERTOKEN"]}@#{url.host}#{url.path}"
+        sh("git push #{_git_repo} HEAD:#{git_branch()}")
+      end
+    end
+  end
+
+  v.to_s
+end
+
+def update_app_config_json(platform, commitId)
+  _jsonFile = '../../packages/flutter_wallet_assets/assets/config/app.config.json'
+  json = File.read(_jsonFile)
+  obj = JSON.parse(json)
+  obj[platform]["buildTime"] = Time.new.strftime("%y%m%d%H%M")
+  obj[platform]["commitId"] = commitId
+  obj[platform]["branch"] = git_branch
+
+  _version= get_flutter_app_version()
+  v = SemVersion.new(_version)
+  _version = "#{v.major}.#{v.minor}.#{v.patch}"
+
+  obj[platform]["channelVersion"] = _version
+
+  File.write(_jsonFile, JSON.generate(obj))
+end
+
+def update_app_api_env(_apiEnv)
+  mainPath = '../lib/main.dart'
+  File.open(mainPath) do | lines |
+    buffer = lines.read.gsub(/AppEnv.defaultEnv = AppEnvironments.\w+/, "AppEnv.defaultEnv = AppEnvironments.#{_apiEnv}")
+    File.open(mainPath, "w") {|l|
+      l.write(buffer)
+    }
+  end
+end
+
+def inject_umeng_plugin(_apiEnv)
+  # to flutter dir
+  Dir.chdir "../" do
+    puts Dir.pwd
+    sh("fvm flutter pub add umeng_common_sdk --offline")
+
+    # 启用友盟应用性能监控 U-APM
+    File.open("./android/gradle.properties") do | lines |
+      buffer = lines.read
+        .gsub(/ENABLE_UM=.*/, "ENABLE_UM=true")
+      File.open("./android/gradle.properties", "w") {|l|
+        l.write(buffer)
+      }
+    end
+
+    mainPath = './lib/main.dart'
+    File.open(mainPath) do | lines |
+      _iosKey = "619cb4b6e0f9bb492b6b372a"
+      _androidKey = "619cb493e0f9bb492b6b36df"
+
+      if _apiEnv == 'prod'
+        _iosKey = "61b6b0c5e014255fcbae1616"
+        _androidKey = "61b6aeb6e014255fcbae0d4c"
+      end
+
+      buffer = lines.read
+        .gsub(/\/\/ autoimport umeng:.*/, "import 'package:umeng_common_sdk/umeng_common_sdk.dart';")
+        .gsub(/\/\/ autoconfig umeng:.*/, "UmengCommonSdk.initCommon('#{_androidKey}', '#{_iosKey}', 'common');\n      UmengCommonSdk.setPageCollectionModeManual();")
+      File.open(mainPath, "w") {|l|
+        l.write(buffer)
+      }
+    end
+  end
+end
+
+def update_app_icon(_apiEnv, platform)
+  # 根据环境配置不同的Logo
+  if _apiEnv == 'pre'
+    pubspec = YAML.load(json = File.read("../pubspec.yaml"))
+    flutter_icons = pubspec['flutter_icons']
+    flutter_icons['image_path_ios'] = flutter_icons['image_path_ios_pre']
+    flutter_icons['image_path_android'] = flutter_icons['image_path_android_pre']
+    # 回写 pubspec.to_yaml
+    # puts pubspec.to_yaml
+    File.open("../pubspec.yaml", "w") {|file| file.puts pubspec.to_yaml }
+    # 执行 更改包名、Logo 命令
+    sh("fvm", "flutter", "pub" ,"run", "flutter_launcher_icons:main")
+  end
+  if _apiEnv != 'prod' && _apiEnv != 'pre'
+    if platform === 'iOS'
+      Dir.chdir "../ios/" do
+        _badgeIcon = "../fastlane/badges/#{_apiEnv}.png"
+        sh("badge --custom #{_badgeIcon}")
+      end
+    end
+
+    if platform === 'Android'
+      Dir.chdir "../android/" do
+        _badgeIcon = "../fastlane/badges/#{_apiEnv}.png"
+        _ic_launcher = "/**/ic_launcher.png"
+        sh("badge --glob \"#{_ic_launcher}\" --custom \"#{_badgeIcon}\"")
+      end
+    end
+  end
+end
+
+def get_app_out_name(appName, _apiEnv)
+  # app 版本号
+  _version= get_flutter_app_version()
+  # appName-版本号-build版本-分支-commitHash-api环境
+  _outFileName = "#{appName}-#{_version}-#{git_branch}-#{last_git_commit[:abbreviated_commit_hash]}-#{_apiEnv}"
+  _outFileName
+end
+
+def read_config_yaml_data(_platform, _key)
+  check_config_yaml_file_exits()
+  _app_dist_config = YAML.load(json = File.read(ENV["CONFIG_YAML_FILE_PATH"]))
+  value = _app_dist_config[_platform][_key]
+  puts "读取 #{_platform} - #{_key} : [#{value}]"
+  puts _app_dist_config
+  value
+end
+
+def write_config_yaml_data(_platform, _key, _value)
+  check_config_yaml_file_exits()
+  _app_dist_config = YAML.load(json = File.read(ENV["CONFIG_YAML_FILE_PATH"]))
+  _app_dist_config[_platform][_key] = _value
+  puts "写入 #{_platform} - #{_key} : [#{_value}]"
+  File.write(ENV["CONFIG_YAML_FILE_PATH"], _app_dist_config.to_yaml)
+end
+
+def check_config_yaml_file_exits()
+  _app_builds_config = "../app_builds_config"
+  if !File.directory?(_app_builds_config)
+    Dir.mkdir(_app_builds_config)
+    puts "创建#{_app_builds_config}"
+  end
+
+  if !File.exist?(ENV["CONFIG_YAML_FILE_PATH"])
+    File.write(ENV["CONFIG_YAML_FILE_PATH"], { "iOS" => { "app_path" => '', "app_url" => ''}, "Android" => { "app_path" => '', "app_url" => ''} }.to_yaml)
+    puts "写入文件 #{ENV["CONFIG_YAML_FILE_PATH"]}"
+  end
+end
+
+def upload_file(file_path)
+  # start upload
+  conn_options = {
+    request: {
+      timeout:       1000,
+      open_timeout:  300
+    }
+  }
+
+  request_client = Faraday.new(nil, conn_options) do |c|
+    c.request :multipart
+    c.request :url_encoded
+    c.response :json, content_type: /\bjson$/
+    c.adapter :net_http
+  end
+
+  params = {
+    'file' => Faraday::UploadIO.new(file_path, 'application/octet-stream')
+  }
+
+  response = request_client.post ENV["APP_UPLOAD_API"], params
+  info = response.body
+end

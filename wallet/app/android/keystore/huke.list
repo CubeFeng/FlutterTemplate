@@ -1,0 +1,41 @@
+密钥库类型: jks
+密钥库提供方: SUN
+
+您的密钥库包含 1 个条目
+
+别名: huke
+创建日期: 2019-5-4
+条目类型: PrivateKeyEntry
+证书链长度: 1
+证书[1]:
+所有者: CN=huke
+发布者: CN=huke
+序列号: 29391c3
+有效期为 Sat May 04 16:23:07 CST 2019 至 Wed Apr 27 16:23:07 CST 2044
+证书指纹:
+         MD5:  CF:C1:BE:F8:38:4E:7F:26:E3:AC:AC:5C:AE:27:62:58
+         SHA1: AA:E2:47:A1:92:DD:BC:21:74:DC:8A:4A:0F:D2:F7:EE:5B:39:40:C6
+         SHA256: C2:A9:85:92:D6:80:76:E4:9A:3D:8E:95:35:36:6B:C4:E8:D5:BC:DD:32:B7:A8:F7:51:EA:0C:01:9C:F4:04:87
+签名算法名称: SHA256withRSA
+主体公共密钥算法: 2048 位 RSA 密钥
+版本: 3
+
+扩展:
+
+#1: ObjectId: 2.5.29.14 Criticality=false
+SubjectKeyIdentifier [
+KeyIdentifier [
+0000: BB 4E 9C F2 6A 1F 32 A0   F1 B1 CB 52 1C 11 AF CB  .N..j.2....R....
+0010: ED D2 80 5B                                        ...[
+]
+]
+
+
+
+*******************************************
+*******************************************
+
+
+
+Warning:
+JKS 密钥库使用专用格式。建议使用 "keytool -importkeystore -srckeystore huke.jks -destkeystore huke.jks -deststoretype pkcs12" 迁移到行业标准格式 PKCS12。

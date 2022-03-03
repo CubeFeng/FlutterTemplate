@@ -1,0 +1,2016 @@
+[
+  {
+    "key": "ucore",
+    "zhCN": "UCore",
+    "zhTW": "UCore",
+    "en": "UCore",
+    "ko": "UCore",
+    "ja": "UCore"
+  },
+  {
+    "en": "Subscribe {} Days will release {} times plan",
+    "key": "subscribe_times_plan",
+    "zhCN": "认购{}天释放{}倍计划",
+    "ja": "購入{}日{}倍釈放するプラン",
+    "zhTW": "認購{}天釋放{}倍計劃"
+  },
+  {
+    "en": "Help Center",
+    "key": "help_center",
+    "zhCN": "帮助中心",
+    "ja": "サポートセンター",
+    "zhTW": "幫助中心"
+  },
+  {
+    "en": "Current Version {}",
+    "key": "current_version_",
+    "zhCN": "当前版本{}",
+    "ja": "{}バージョン",
+    "zhTW": "當前版本{}"
+  },
+  {
+    "en": "Multi-Language",
+    "key": "multi_language",
+    "zhCN": "多语言",
+    "ja": "多言語",
+    "zhTW": "多語言"
+  },
+  {
+    "en": "Personal Center",
+    "key": "personal_center",
+    "zhCN": "个人中心",
+    "ja": "個人センター",
+    "zhTW": "個人中心"
+  },
+  {
+    "en": "Not Logged In",
+    "key": "not_logged_in",
+    "zhCN": "未登录",
+    "ja": "ログインしてない",
+    "zhTW": "未登錄"
+  },
+  {
+    "en": "Register",
+    "key": "register",
+    "zhCN": "注册",
+    "ja": "登録",
+    "zhTW": "注册"
+  },
+  {
+    "en": "Choose Language",
+    "key": "choose_language",
+    "zhCN": "选择语言",
+    "ja": "言語選択",
+    "zhTW": "選擇語言"
+  },
+  {
+    "en": "My Binding",
+    "key": "my_binding",
+    "zhCN": "我的绑定",
+    "ja": "私のバインディング",
+    "zhTW": "我的綁定"
+  },
+  {
+    "en": "My Authorization",
+    "key": "my_authorization",
+    "zhCN": "我的授权",
+    "ja": "私の権限",
+    "zhTW": "我的授權"
+  },
+  {
+    "en": "Modify Login Password",
+    "key": "modify_login_password",
+    "zhCN": "修改登录密码",
+    "ja": "ログインパスワードを修正",
+    "zhTW": "修改登入密碼"
+  },
+  {
+    "en": "Quit to login",
+    "key": "logout",
+    "zhCN": "退出登录",
+    "ja": "ログアウト",
+    "zhTW": "登出"
+  },
+  {
+    "en": "Authorize Application",
+    "key": "authorize_application",
+    "zhCN": "授权应用",
+    "ja": "権限アプリケーション",
+    "zhTW": "授權應用"
+  },
+  {
+    "en": "Email Binding",
+    "key": "email_binding",
+    "zhCN": "邮箱绑定",
+    "ja": "メールアドレスバインディング",
+    "zhTW": "郵箱綁定"
+  },
+  {
+    "en": "Phone Binding",
+    "key": "phone_binding",
+    "zhCN": "手机绑定",
+    "ja": "スマホバインディング",
+    "zhTW": "手機綁定"
+  },
+  {
+    "en": "ID Binding",
+    "key": "id_binding",
+    "zhCN": "证件绑定",
+    "ja": "証明書バインディング",
+    "zhTW": "證件綁定"
+  },
+  {
+    "en": "Face ID Binding",
+    "key": "face_id_binding",
+    "zhCN": "人脸绑定",
+    "ja": "顔バインディング",
+    "zhTW": "人臉綁定"
+  },
+  {
+    "en": "Immediately Verify",
+    "key": "immediately_verify",
+    "zhCN": "立即认证",
+    "ja": "すぐ認証",
+    "zhTW": "立即認證"
+  },
+  {
+    "en": "My Information",
+    "key": "my_information",
+    "zhCN": "我的信息",
+    "ja": "私の情報",
+    "zhTW": "我的資訊"
+  },
+  {
+    "en": "Edit Profile",
+    "key": "edit_profile",
+    "zhCN": "编辑资料",
+    "ja": "資料編集",
+    "zhTW": "編輯資料"
+  },
+  {
+    "en": "Subscribe Topic",
+    "key": "subscribe_topic",
+    "zhCN": "订阅主题",
+    "ja": "トピックをフォロー",
+    "zhTW": "訂閱主題"
+  },
+  {
+    "en": "Check History",
+    "key": "check_history",
+    "zhCN": "阅读历史",
+    "ja": "閲覧履歴",
+    "zhTW": "閱讀歷史"
+  },
+  {
+    "en": "RSS Source Of Subscription",
+    "key": "rss_source_of_subscription",
+    "zhCN": "RSS订阅源",
+    "ja": "RSSフォロー元",
+    "zhTW": "RSS訂閱源"
+  },
+  {
+    "en": "Subscription",
+    "key": "subscription",
+    "zhCN": "订阅",
+    "ja": "フォロー",
+    "zhTW": "訂閱"
+  },
+  {
+    "en": "Unsubscribe",
+    "key": "unsubscribe",
+    "zhCN": "退订",
+    "ja": "フォローしない",
+    "zhTW": "退訂"
+  },
+  {
+    "en": "Subscribe Successfully",
+    "key": "subscribe_successfully",
+    "zhCN": "订阅成功",
+    "ja": "フォローしました",
+    "zhTW": "訂閱成功"
+  },
+  {
+    "en": "Unsubscribe Successfully",
+    "key": "unsubscribe_successfully",
+    "zhCN": "退订成功",
+    "ja": "フォローをキャンセルしました",
+    "zhTW": "退訂成功"
+  },
+  {
+    "en": "Information, Link and Connect the future",
+    "key": "link_future",
+    "zhCN": "资讯，链接未来",
+    "ja": "情報、未来をリンクする",
+    "zhTW": "資訊，連結未來"
+  },
+  {
+    "en": "Ranking For The Day",
+    "key": "ranking_for_the_day",
+    "zhCN": "今日排行",
+    "ja": "今日のランキング",
+    "zhTW": "今日排行"
+  },
+  {
+    "en": "Registration Method",
+    "key": "registration_method",
+    "zhCN": "注册方式",
+    "ja": "登録方式",
+    "zhTW": "注册管道"
+  },
+  {
+    "en": "Email CAPTCHA Registration",
+    "key": "email_captcha_registration",
+    "zhCN": "邮箱验证码注册",
+    "ja": "メールアドレス検証コード登録",
+    "zhTW": "郵箱驗證碼注册"
+  },
+  {
+    "en": "Text CAPTCHA Registration",
+    "key": "text_captcha_registration",
+    "zhCN": "短信验证码注册",
+    "ja": "メッセージ検証コード登録",
+    "zhTW": "簡訊驗證碼注册"
+  },
+  {
+    "en": "Face ID Registration",
+    "key": "face_id_registration",
+    "zhCN": "人脸活体注册",
+    "ja": "顔認証登録",
+    "zhTW": "人臉活體注册"
+  },
+  {
+    "en": "Registration Successful",
+    "key": "registration_successful",
+    "zhCN": "注册成功",
+    "ja": "登録できました",
+    "zhTW": "注册成功"
+  },
+  {
+    "en": "Confirm Password",
+    "key": "please_confirm_password",
+    "zhCN": "请确认密码",
+    "ja": "パスワードを確認してください",
+    "zhTW": "請確認密碼"
+  },
+  {
+    "en": "Confirm Password",
+    "key": "confirm_password",
+    "zhCN": "确认密码",
+    "ja": "パスワードを確認",
+    "zhTW": "確認密碼"
+  },
+  {
+    "en": "Reset Successfuly",
+    "key": "reset_successfuly",
+    "zhCN": "重置成功",
+    "ja": "リセットしました",
+    "zhTW": "重置成功"
+  },
+  {
+    "en": "Change Log in Password",
+    "key": "change_log_in_password",
+    "zhCN": "修改登录密码",
+    "ja": "パスワードを変更します",
+    "zhTW": "修改登入密碼"
+  },
+  {
+    "en": "Portrait",
+    "key": "portrait",
+    "zhCN": "头像",
+    "ja": "ポートレート",
+    "zhTW": "頭像"
+  },
+  {
+    "en": "Nickname",
+    "key": "nickname",
+    "zhCN": "昵称",
+    "ja": "ニックネーム",
+    "zhTW": "昵稱"
+  },
+  {
+    "en": "Edit Profile",
+    "key": "edit_profile",
+    "zhCN": "编辑资料",
+    "ja": "資料を編集する",
+    "zhTW": "編輯資料"
+  },
+  {
+    "en": "Camera",
+    "key": "camera",
+    "zhCN": "拍照",
+    "ja": "写真を撮ります",
+    "zhTW": "拍照"
+  },
+  {
+    "en": "Choose from the Album",
+    "key": "choose_from_the_album",
+    "zhCN": "从手机相册选取",
+    "ja": "携帯電話のアルバムから選ぶ",
+    "zhTW": "從手機相册選取"
+  },
+  {
+    "en": "Binding Phone Number",
+    "key": "binding_phone_number",
+    "zhCN": "绑定手机",
+    "ja": "携帯電話にバインディング",
+    "zhTW": "綁定手機"
+  },
+  {
+    "en": "Binding Email Address",
+    "key": "binding_email_address",
+    "zhCN": "绑定邮箱",
+    "ja": "メールアドレスにバインディング",
+    "zhTW": "綁定郵箱"
+  },
+  {
+    "en": "Email Binding Successful",
+    "key": "email_binding_successful",
+    "zhCN": "邮箱绑定成功",
+    "ja": "メールアドレスにバインディングしました",
+    "zhTW": "郵箱綁定成功"
+  },
+  {
+    "en": "Phone number Binding successful",
+    "key": "phone_number_binding_successful",
+    "zhCN": "手机绑定成功",
+    "ja": "携帯電話にバインディングしました",
+    "zhTW": "手機綁定成功"
+  },
+  {
+    "en": "Hello,",
+    "key": "hello_with_comma",
+    "zhCN": "你好，",
+    "ja": "こんにちは,",
+    "zhTW": "你好，"
+  },
+  {
+    "en": "Hello",
+    "key": "hello",
+    "zhCN": "你好",
+    "ja": "こんにちは",
+    "zhTW": "你好"
+  },
+  {
+    "en": "Welcome to login UCore",
+    "key": "welcome_to_login_ucore",
+    "zhCN": "欢迎登录 UCore",
+    "ja": "UCore　ようこそ",
+    "zhTW": "歡迎登錄UCore"
+  },
+  {
+    "en": "Phone Number\/ Email Addresses",
+    "key": "phone_or_email",
+    "zhCN": "手机号\/电子邮箱",
+    "ja": "電話番号／メールアドレス",
+    "zhTW": "手機號\/電子郵箱"
+  },
+  {
+    "en": "Please enter phone number/Email Address",
+    "key": "enter_phone_or_email",
+    "zhCN": "请输入手机号/电子邮箱",
+    "ja": "電話番号／メールアドレス入力してください",
+    "zhTW": "請輸入手機號/電子郵箱"
+  },
+  {
+    "en": "Password",
+    "key": "password",
+    "zhCN": "密码",
+    "ja": "パスワード",
+    "zhTW": "密碼"
+  },
+  {
+    "en": "Please enter password",
+    "key": "please_enter_password",
+    "zhCN": "请输入密码",
+    "ja": "パスワードを入力してください",
+    "zhTW": "請輸入密碼"
+  },
+  {
+    "en": "Login",
+    "key": "login",
+    "zhCN": "登录",
+    "ja": "ログイン",
+    "zhTW": "登入"
+  },
+  {
+    "en": "Face ID Login",
+    "key": "face_id_login",
+    "zhCN": "刷脸登录",
+    "ja": "顔認証ログイン",
+    "zhTW": "刷臉登入"
+  },
+  {
+    "en": "To register",
+    "key": "to_register",
+    "zhCN": "去注册",
+    "ja": "登録します",
+    "zhTW": "去注册"
+  },
+  {
+    "en": "Forget Password",
+    "key": "forget_password",
+    "zhCN": "忘记密码",
+    "ja": "パスワードを忘れました",
+    "zhTW": "忘記密碼"
+  },
+  {
+    "en": "Reset Password Method",
+    "key": "reset_password_method",
+    "zhCN": "重置密码方式",
+    "ja": "パスワードをリセットする方式",
+    "zhTW": "重置密碼管道"
+  },
+  {
+    "en": "Cancel",
+    "key": "cancel",
+    "zhCN": "取消",
+    "ja": "キャンセル",
+    "zhTW": "取消"
+  },
+  {
+    "en": "Email CAPTCHA Reset",
+    "key": "email_captcha_reset",
+    "zhCN": "邮箱验证码重置",
+    "ja": "メールアドレス検証コードリセット",
+    "zhTW": "郵箱驗證碼重置"
+  },
+  {
+    "en": "Text CAPTCHA Reset",
+    "key": "text_captcha_reset",
+    "zhCN": "短信验证码重置",
+    "ja": "メッセージ検証コードリセット",
+    "zhTW": "簡訊驗證碼重置"
+  },
+  {
+    "en": "Email Registration",
+    "key": "email_registration",
+    "zhCN": "邮箱注册",
+    "ja": "メールアドレス登録",
+    "zhTW": "郵箱註冊"
+  },
+  {
+    "en": "Email Address",
+    "key": "email_address",
+    "zhCN": "邮箱号",
+    "ja": "メールアドレス番号",
+    "zhTW": "郵箱號"
+  },
+  {
+    "en": "CAPTCHA",
+    "key": "captcha",
+    "zhCN": "验证码",
+    "ja": "検証コード",
+    "zhTW": "驗證碼"
+  },
+  {
+    "en": "Password Setting",
+    "key": "password_setting",
+    "zhCN": "设置密码",
+    "ja": "パスワードを設定する",
+    "zhTW": "設置密碼"
+  },
+  {
+    "en": "Invitation Code",
+    "key": "invitation_code",
+    "zhCN": "邀请码",
+    "ja": "招待コード",
+    "zhTW": "邀請碼"
+  },
+  {
+    "en": "Please enter email address",
+    "key": "please_enter_email_address",
+    "zhCN": "请输入邮箱号",
+    "ja": "メールアドレス入力してください",
+    "zhTW": "請輸入郵箱號"
+  },
+  {
+    "en": "Please enter CAPTCHA",
+    "key": "please_enter_captcha",
+    "zhCN": "请输入验证码",
+    "ja": "検証コードを入力してください",
+    "zhTW": "請輸入驗證碼"
+  },
+  {
+    "en": "Please Reset Password",
+    "key": "please_reset_password",
+    "zhCN": "请设置密码",
+    "ja": "パスワードを設定してください",
+    "zhTW": "請設置密碼"
+  },
+  {
+    "en": "Please Enter Invitation Code (Optional)",
+    "key": "enter_invitation_code",
+    "zhCN": "请输入请邀请码(选填)",
+    "ja": "招待コードを入力してください(記入任意)",
+    "zhTW": "請輸入請邀請碼（選填）"
+  },
+  {
+    "en": "Please Fill in Phone Number",
+    "key": "please_fill_in_phone",
+    "zhCN": "请填写手机号",
+    "ja": "電話番号を入力してください",
+    "zhTW": "請填寫手機號"
+  },
+  {
+    "en": "Please Fill in CAPTCHA",
+    "key": "please_fill_in_captcha",
+    "zhCN": "请填写验证码",
+    "ja": "検証コードを入力してください",
+    "zhTW": "請填寫驗證碼"
+  },
+  {
+    "en": "Password Format Error",
+    "key": "password_format_error",
+    "zhCN": "密码格式错误",
+    "ja": "パスワードフォーマットが間違っています",
+    "zhTW": "密碼格式錯誤"
+  },
+  {
+    "en": "Please Agree Users Protocol",
+    "key": "please_agree_users_protocol",
+    "zhCN": "请同意用户协议",
+    "ja": "ユーザプロトコルを承認してください",
+    "zhTW": "請同意使用者協定"
+  },
+  {
+    "en": "Please send CAPTCHA",
+    "key": "please_send_captcha",
+    "zhCN": "请发送验证码",
+    "ja": "検証コードを送ってください",
+    "zhTW": "請發送驗證碼"
+  },
+  {
+    "en": "Please enter the correct email address",
+    "key": "please_enter_correct_email",
+    "zhCN": "请输入正确的邮箱",
+    "ja": "正しいメールアドレスを入力してください",
+    "zhTW": "請輸入正確的郵箱"
+  },
+  {
+    "en": "CAPTCHA has been sent",
+    "key": "captcha_has_been_sent",
+    "zhCN": "验证码已发送",
+    "ja": "検証コードを送りました",
+    "zhTW": "驗證碼已發送"
+  },
+  {
+    "en": "This email address has been registered,please go to login",
+    "key": "this_email_registered",
+    "zhCN": "该邮箱已注册，可前往登录",
+    "ja": "このメールは登録されています、ログインに行きます",
+    "zhTW": "該郵箱已注册，可前往登入"
+  },
+  {
+    "en": "To login",
+    "key": "to_login",
+    "zhCN": "去登录",
+    "ja": "ログインします",
+    "zhTW": "去登入"
+  },
+  {
+    "en": "Getting CAPTCHA",
+    "key": "getting_captcha",
+    "zhCN": "获取验证码",
+    "ja": "検証コードを取得",
+    "zhTW": "獲取驗證碼"
+  },
+  {
+    "en": "Please Use",
+    "key": "please_use",
+    "zhCN": "请使用:",
+    "ja": "ご利用ください：",
+    "zhTW": "請使用："
+  },
+  {
+    "en": "At least 1 Capital Letter",
+    "key": "at_least_one_capital_letter",
+    "zhCN": "至少1个大写字母",
+    "ja": "最低1つの大文字",
+    "zhTW": "至少1個大寫字母"
+  },
+  {
+    "en": "At least 1 Lower Case Letter",
+    "key": "at_least_one_lower_case_letter",
+    "zhCN": "至少1个小写字母",
+    "ja": "最低1つの小文字",
+    "zhTW": "至少1個小寫字母"
+  },
+  {
+    "en": "At least One digit",
+    "key": "at_least_one_digit",
+    "zhCN": "至少1个数字",
+    "ja": "最低一つの数字",
+    "zhTW": "至少1個數位"
+  },
+  {
+    "en": "8-12 characters",
+    "key": "e_t_characters",
+    "zhCN": "8-12个字符",
+    "ja": "8-12 桁文字",
+    "zhTW": "8-12個字元"
+  },
+  {
+    "en": "Password entered does not match previous entered password",
+    "key": "password_not_match",
+    "zhCN": "两次密码不一致",
+    "ja": "2回のパスワードが一致していない",
+    "zhTW": "兩次密碼不一致"
+  },
+  {
+    "en": "1-10 Characters",
+    "key": "o_t_characters",
+    "zhCN": "1-10个字",
+    "ja": "1-10桁文字",
+    "zhTW": "1-10個字"
+  },
+  {
+    "en": "I have read and agreed",
+    "key": "i_have_read_and_agreed",
+    "zhCN": "我已阅读并同意",
+    "ja": "私はすでに読んで同意します",
+    "zhTW": "我已閱讀並同意"
+  },
+  {
+    "en": "Users Agreement",
+    "key": "users_agreement",
+    "zhCN": "《用户协议》",
+    "ja": "ユーザプロトコル",
+    "zhTW": "《用戶協議》"
+  },
+  {
+    "en": "Confirm submission",
+    "key": "confirm_submission",
+    "zhCN": "确认提交",
+    "ja": "提出確認",
+    "zhTW": "確認提交"
+  },
+  {
+    "en": "Registration Success",
+    "key": "registration_success",
+    "zhCN": "注册成功",
+    "ja": "新規登録できました",
+    "zhTW": "注册成功"
+  },
+  {
+    "en": "Please Enter Phone Number",
+    "key": "please_enter_phone_number",
+    "zhCN": "请输入手机号",
+    "ja": "電話番号を入力してください",
+    "zhTW": "請輸入手機號"
+  },
+  {
+    "en": "Text Registration",
+    "key": "text_registration",
+    "zhCN": "短信注册",
+    "ja": "メッセージ登録",
+    "zhTW": "簡訊注册"
+  },
+  {
+    "en": "Reset Password",
+    "key": "reset_password",
+    "zhCN": "重置密码",
+    "ja": "パスワードをリセットします",
+    "zhTW": "重置密碼"
+  },
+  {
+    "en": "Phone Number",
+    "key": "phone_number",
+    "zhCN": "手机号",
+    "ja": "電話番号",
+    "zhTW": "手機號"
+  },
+  {
+    "en": "Has Bound",
+    "key": "has_bound",
+    "zhCN": "已绑定",
+    "ja": "連携した",
+    "zhTW": "已綁定"
+  },
+  {
+    "en": "Withdraw Authentication",
+    "key": "withdraw_authentication",
+    "zhCN": "取消认证",
+    "ja": "認証を取り消し",
+    "zhTW": "取消認證"
+  },
+  {
+    "en": "Verification Rejected",
+    "key": "verification_rejected",
+    "zhCN": "审核驳回",
+    "ja": "審査却下",
+    "zhTW": "稽核駁回"
+  },
+  {
+    "en": "Verification Failed",
+    "key": "verification_failed",
+    "zhCN": "审核失败",
+    "ja": "審査が失敗しました",
+    "zhTW": "稽核失敗"
+  },
+  {
+    "en": "Has completed KYC procedure",
+    "key": "has_completed_kyc_procedure",
+    "zhCN": "已实名",
+    "ja": "実名認証",
+    "zhTW": "已實名"
+  },
+  {
+    "en": "Pending Verification",
+    "key": "pending_verification",
+    "zhCN": "待审核",
+    "ja": "審査待ち",
+    "zhTW": "待稽核"
+  },
+  {
+    "en": "Loading",
+    "key": "loading",
+    "zhCN": "正在加载",
+    "ja": "読み込み中",
+    "zhTW": "正在加載"
+  },
+  {
+    "en": "Pull Down to Refresh",
+    "key": "pull_down_to_refresh",
+    "zhCN": "下拉可以刷新",
+    "ja": "プルダウンは更新できます",
+    "zhTW": "下拉可以重繪"
+  },
+  {
+    "en": "Release to refresh immediately",
+    "key": "release_to_refresh_immediately",
+    "zhCN": "松开立即刷新",
+    "ja": "外してすぐに更新できます",
+    "zhTW": "鬆開立即重繪"
+  },
+  {
+    "en": "Data is Being Refreshed",
+    "key": "data_is_being_refreshed",
+    "zhCN": "正在刷新数据中...",
+    "ja": "データを更新しています..",
+    "zhTW": "正在重繪數據中…"
+  },
+  {
+    "en": "Click or Pull up to load more information",
+    "key": "click_load_more",
+    "zhCN": "点击或上拉加载更多",
+    "ja": "クリックまたプルしてもっとみる",
+    "zhTW": "點擊或上拉加載更多"
+  },
+  {
+    "en": "Loading More Data",
+    "key": "loading_more_data",
+    "zhCN": "正在加载更多的数据...",
+    "ja": "もっと多くのデータをロードしています",
+    "zhTW": "正在加載更多的數據…"
+  },
+  {
+    "en": "Has Completed Loading",
+    "key": "has_completed_loading",
+    "zhCN": "已经全部加载完毕",
+    "ja": "すべてロードしました",
+    "zhTW": "已經全部加載完畢"
+  },
+  {
+    "en": "Pull Up to load more information",
+    "key": "pull_load_more",
+    "zhCN": "上拉可以加载更多",
+    "ja": "プルアップはもっとロードする",
+    "zhTW": "上拉可以加載更多"
+  },
+  {
+    "en": "Release to immediately load more information",
+    "key": "release_load_more",
+    "zhCN": "松开立即加载更多",
+    "ja": "外してすぐにもっとロードする",
+    "zhTW": "鬆開立即加載更多"
+  },
+  {
+    "en": "Loading more data",
+    "key": "loading_more_data",
+    "zhCN": "正在加载更多的数据...",
+    "ja": "もっと多くのデータをロードしています...",
+    "zhTW": "正在加載更多的數據…"
+  },
+  {
+    "en": "Loading has completed",
+    "key": "loading_has_completed",
+    "zhCN": "已经全部加载完毕",
+    "ja": "すべてロードしました",
+    "zhTW": "已經全部加載完畢"
+  },
+  {
+    "en": "Latest Update",
+    "key": "latest_update",
+    "zhCN": "最后更新：",
+    "ja": "最後更新：",
+    "zhTW": "最後更新："
+  },
+  {
+    "en": "Today",
+    "key": "today",
+    "zhCN": "今天",
+    "ja": "今日",
+    "zhTW": "今天"
+  },
+  {
+    "en": "No Records",
+    "key": "no_records",
+    "zhCN": "无记录",
+    "ja": "記録無し",
+    "zhTW": "無記錄"
+  },
+  {
+    "en": "Current Version",
+    "key": "curr_version",
+    "zhCN": "当前版本",
+    "ja": "今のバージョン",
+    "zhTW": "當前版本"
+  },
+  {
+    "en": "Current Version Number",
+    "key": "curr_version_number",
+    "zhCN": "当前版本号:",
+    "ja": "今のバージョン番号",
+    "zhTW": "當前版本號："
+  },
+  {
+    "en": "Check Update",
+    "key": "check_update",
+    "zhCN": "检查更新",
+    "ja": "更新チャック",
+    "zhTW": "檢查更新"
+  },
+  {
+    "en": "Find New Version",
+    "key": "find_new_version",
+    "zhCN": "发现新版本",
+    "ja": "新しいバージョンを発見",
+    "zhTW": "發現新版本"
+  },
+  {
+    "en": "Do not Update Temporarily",
+    "key": "do_not_update",
+    "zhCN": "暂不更新",
+    "ja": "更新しない",
+    "zhTW": "暫不更新"
+  },
+  {
+    "en": "Update",
+    "key": "update",
+    "zhCN": "更新",
+    "ja": "更新",
+    "zhTW": "更新"
+  },
+  {
+    "en": "Has not found new version",
+    "key": "has_not_found_new_version",
+    "zhCN": "未发现新版本",
+    "ja": "新しいバージョンを発見していない",
+    "zhTW": "未發現新版本"
+  },
+  {
+    "en": "Country or Region",
+    "key": "country_or_region",
+    "zhCN": "国家或地区",
+    "ja": "国また地域",
+    "zhTW": "國家或地區"
+  },
+  {
+    "en": "Search",
+    "key": "search",
+    "zhCN": "搜索",
+    "ja": "サーチ",
+    "zhTW": "蒐索"
+  },
+  {
+    "en": "Resend in {}seconds",
+    "key": "resend_in_seconds",
+    "zhCN": "{}秒后重新发",
+    "ja": "{}秒後に再送します",
+    "zhTW": "{}秒後重新發"
+  },
+  {
+    "en": "This phone number has been registered,please head to login",
+    "key": "this_phone_registered",
+    "zhCN": "该手机号已注册，可前往登录",
+    "ja": "この携帯電話番号は登録されています、登録に行けます",
+    "zhTW": "該手機號已注册，可前往登入"
+  },
+  {
+    "en": "Original Password",
+    "key": "original_password",
+    "zhCN": "原密码",
+    "ja": "元パスワード",
+    "zhTW": "原密碼"
+  },
+  {
+    "en": "New Password",
+    "key": "new_password",
+    "zhCN": "新密码",
+    "ja": "新しいパスワード",
+    "zhTW": "新密碼"
+  },
+  {
+    "en": "Original Password (Can not be left empty)",
+    "key": "password_can_not_empty",
+    "zhCN": "原密码(不能为空)",
+    "ja": "元のパスワード(空にしてはいけない)",
+    "zhTW": "原密碼（不能為空）"
+  },
+  {
+    "en": "New Password (Can not be same with the previous password)",
+    "key": "password_can_not_same",
+    "zhCN": "新密码(不能与旧密码重复)",
+    "ja": "新しいパスワード(元パスワードと重複してはいけません)",
+    "zhTW": "新密碼（不能與舊密碼重複）"
+  },
+  {
+    "en": "Repeated Password( Can not be same with previous password)",
+    "key": "repeated_password_can_not_same",
+    "zhCN": "重复密码(不能与旧密码重复)",
+    "ja": "パスワード(重複(元パスワードと重複してはいけません)",
+    "zhTW": "重複密碼（不能與舊密碼重複）"
+  },
+  {
+    "en": "Modify",
+    "key": "modify",
+    "zhCN": "修改",
+    "ja": "修正",
+    "zhTW": "修改"
+  },
+  {
+    "en": "Successfully Modified",
+    "key": "successfully_modified",
+    "zhCN": "修改成功",
+    "ja": "修正ができました",
+    "zhTW": "修改成功"
+  },
+  {
+    "en": "When you change profile picture,you will need to take a picture or pick one from album",
+    "key": "change_picture",
+    "zhCN": "更换个人头像时，需要使用相机拍摄或者从相册选择一张作为头像。",
+    "ja": "プロフィール写真を変更する際に，カメラを用いて撮影またアルバムから1枚を利用して選択する必要がある.",
+    "zhTW": "更換個人頭像時，需要使用相機拍攝或者從相册選擇一張作為頭像。"
+  },
+  {
+    "en": "Setting Successful",
+    "key": "setting_successful",
+    "zhCN": "设置成功",
+    "ja": "設定しました",
+    "zhTW": "設定成功"
+  },
+  {
+    "en": "Completed",
+    "key": "completed",
+    "zhCN": "完成",
+    "ja": "完了",
+    "zhTW": "完成"
+  },
+  {
+    "en": "Choose your Nickname",
+    "key": "choose_your_nickname",
+    "zhCN": "设置昵称",
+    "ja": "ニックネームを設定します",
+    "zhTW": "設定昵稱"
+  },
+  {
+    "en": "Please enter your Nickname",
+    "key": "please_enter_your_nickname",
+    "zhCN": "请输入昵称",
+    "ja": "ニックネームを入力してください",
+    "zhTW": "請輸入昵稱"
+  },
+  {
+    "en": "30 Characters Maximum",
+    "key": "thirty_characters_maximum",
+    "zhCN": "最多30个字符",
+    "ja": "最大30桁文字",
+    "zhTW": "最多30個字元"
+  },
+  {
+    "en": "Nick name can not exceed 30 characters",
+    "key": "nick_name_can_not_exceed",
+    "zhCN": "昵称不能超过30个字符",
+    "ja": "ニックネームは最大30桁文字まで",
+    "zhTW": "昵稱不能超過30個字元"
+  },
+  {
+    "en": "When you change profile picture,you will need to take a picture to set as profile picture",
+    "key": "take_a_picture",
+    "zhCN": "更换个人头像时，需要使用相机拍摄一张作为头像",
+    "ja": "プロフィール写真を交換する際には、カメラで1枚の写真を撮影する必要があります",
+    "zhTW": "更換個人頭像時，需要使用相機拍攝一張作為頭像"
+  },
+  {
+    "en": "When you change your profile picture,you will need to pick one from the album",
+    "key": "pick_from_album",
+    "zhCN": "更换个人头像时，需要从相册中选择一张作为头像",
+    "ja": "プロフィール写真を交換する際には、アルバムから1枚の写真を利用する必要があります",
+    "zhTW": "更換個人頭像時，需要從相册中選擇一張作為頭像"
+  },
+  {
+    "en": "Authorization Failed,Authorization to access this application is rejected by UCore Users",
+    "key": "authorization_failed",
+    "zhCN": "授权失败，UCore用户拒绝授权给该应用",
+    "ja": "許可が失敗した，UCoreユーザはそのアプリケーションへの許可を拒否した",
+    "zhTW": "授權失敗，UCore用戶拒絕授權給該應用"
+  },
+  {
+    "en": "Save Pictures to local",
+    "key": "save_pictures_to_local",
+    "zhCN": "保存图片到本地",
+    "ja": "写真をスマホに保存します",
+    "zhTW": "保存圖片到本地"
+  },
+  {
+    "en": "Scan and Recognize the QR code",
+    "key": "scan_and_recognize_the_qr_code",
+    "zhCN": "识别图中二维码",
+    "ja": "写真のQRコードを識別する",
+    "zhTW": "識別圖中二維碼"
+  },
+  {
+    "en": "Save Picture Failed",
+    "key": "save_picture_failed",
+    "zhCN": "保存图片失败",
+    "ja": "写真の保存が失敗した",
+    "zhTW": "保存圖片失敗"
+  },
+  {
+    "en": "Save Picture Success",
+    "key": "save_picture_success",
+    "zhCN": "保存图片成功",
+    "ja": "写真の保存が失敗しました",
+    "zhTW": "保存圖片成功"
+  },
+  {
+    "en": "Copy Content",
+    "key": "copy_content",
+    "zhCN": "复制内容",
+    "ja": "内容コピー",
+    "zhTW": "複製內容"
+  },
+  {
+    "en": "Copy success",
+    "key": "copy_success",
+    "zhCN": "复制成功",
+    "ja": "コピーした",
+    "zhTW": "複製成功"
+  },
+  {
+    "en": "Scan QR Code to recognize document and text",
+    "key": "qr_code_recognize_text",
+    "zhCN": "二维码识别文本",
+    "ja": "QRコードでテキストを認識する",
+    "zhTW": "二維碼識別文字"
+  },
+  {
+    "en": "Unsubscribe Theme",
+    "key": "unsubscribe_theme",
+    "zhCN": "退订主题",
+    "ja": "トピックをキャンセル",
+    "zhTW": "退訂主題"
+  },
+  {
+    "en": "Subscribe Theme",
+    "key": "subscribe_theme",
+    "zhCN": "订阅主题",
+    "ja": "トピックをフォロー",
+    "zhTW": "訂閱主題"
+  },
+  {
+    "en": "Reason for Abnormal Function",
+    "key": "reason_for_abnormal_function",
+    "zhCN": "异常原因",
+    "ja": "異常な原因",
+    "zhTW": "异常原因"
+  },
+  {
+    "en": "Page can not display",
+    "key": "page_can_not_display",
+    "zhCN": "页面无法显示",
+    "ja": "ページは表示できない",
+    "zhTW": "頁面無法顯示"
+  },
+  {
+    "en": "Information Infringement",
+    "key": "information_infringement",
+    "zhCN": "资讯侵权",
+    "ja": "不正な情報",
+    "zhTW": "資訊侵權"
+  },
+  {
+    "en": "Fake News, Misleading Information",
+    "key": "fake_news",
+    "zhCN": "虚假新闻,不良资讯",
+    "ja": "虚偽ニュース、不良な情報",
+    "zhTW": "虛假新聞，不良資訊"
+  },
+  {
+    "key": "content_infringement",
+    "zhCN": "内容侵权",
+    "zhTW": "內容侵權",
+    "en": "Content infringement",
+    "ja": "内容による権利侵害"
+  },
+  {
+    "en": "Report Unusual Status",
+    "key": "report_unusual_status",
+    "zhCN": "上报异常",
+    "ja": "異常を報告",
+    "zhTW": "上報异常"
+  },
+  {
+    "en": "Report Successfully",
+    "key": "report_successfully",
+    "zhCN": "上报成功",
+    "ja": "報告が成功した",
+    "zhTW": "上報成功"
+  },
+  {
+    "en": "About to return to information checklist confirmation",
+    "key": "about_to_return_to_information_checklist_confirmation",
+    "zhCN": "确认将返回资讯列表",
+    "ja": "情報リストに戻る",
+    "zhTW": "確認將返回資訊清單"
+  },
+  {
+    "en": "Confirm",
+    "key": "confirm",
+    "zhCN": "确认",
+    "ja": "確認",
+    "zhTW": "確認"
+  },
+  {
+    "en": "All",
+    "key": "all",
+    "zhCN": "全部",
+    "ja": "全部",
+    "zhTW": "全部"
+  },
+  {
+    "en": "Subscribed",
+    "key": "subscribed",
+    "zhCN": "已订阅",
+    "ja": "フォローした",
+    "zhTW": "已訂閱"
+  },
+  {
+    "en": "Suggest",
+    "key": "suggest",
+    "zhCN": "提建议",
+    "ja": "アドバイス",
+    "zhTW": "提建議"
+  },
+  {
+    "en": "Submit",
+    "key": "submit",
+    "zhCN": "提交",
+    "ja": "提出",
+    "zhTW": "提交"
+  },
+  {
+    "en": "Else",
+    "key": "other",
+    "zhCN": "其他",
+    "ja": "ほか",
+    "zhTW": "其他"
+  },
+  {
+    "en": "APP Layout Map Optimization",
+    "key": "layout_optimization",
+    "zhCN": "APP布局图优化",
+    "ja": "アプリ予定表最適化",
+    "zhTW": "APP佈局圖優化"
+  },
+  {
+    "en": "New Added Functions",
+    "key": "new_added_functions",
+    "zhCN": "新增功能",
+    "ja": "追加の機能",
+    "zhTW": "新增功能"
+  },
+  {
+    "en": "Theme Origin is not sufficient",
+    "key": "theme_origin_is_not_sufficient",
+    "zhCN": "主题源不够",
+    "ja": "トピックソース不足",
+    "zhTW": "主題源不够"
+  },
+  {
+    "en": "Suggested Types",
+    "key": "suggested_types",
+    "zhCN": "建议类型",
+    "ja": "アドバイス種類",
+    "zhTW": "建議類型"
+  },
+  {
+    "en": "Upload Pictures",
+    "key": "upload_one_pictures",
+    "zhCN": "上传图片(最多1张)",
+    "ja": "画像をアップロード(最大1枚)",
+    "zhTW": "上傳圖片（最多1張）"
+  },
+  {
+    "en": "Please fill in related contents",
+    "key": "fill_in_contents",
+    "zhCN": "请填写相关内容",
+    "ja": "関連内容を記入してください",
+    "zhTW": "請填寫相關內容"
+  },
+  {
+    "en": "Specific Contents",
+    "key": "specific_contents",
+    "zhCN": "具体内容",
+    "ja": "具体的な内容",
+    "zhTW": "具體內容"
+  },
+  {
+    "en": "Please Enter your Email Address",
+    "key": "enter_your_email_address",
+    "zhCN": "请输入邮箱",
+    "ja": "メールアドレスを入力してください",
+    "zhTW": "請輸入郵箱"
+  },
+  {
+    "en": "Ways to Contact",
+    "key": "ways_to_contact",
+    "zhCN": "联系方式",
+    "ja": "連絡先",
+    "zhTW": "聯繫方式"
+  },
+  {
+    "en": "Types",
+    "key": "types",
+    "zhCN": "类型",
+    "ja": "種類",
+    "zhTW": "類型"
+  },
+  {
+    "en": "Related information",
+    "key": "related_information",
+    "zhCN": "相关信息",
+    "ja": "関連情報",
+    "zhTW": "相關資訊"
+  },
+  {
+    "en": "Submit",
+    "key": "submit",
+    "zhCN": "提交",
+    "ja": "提出",
+    "zhTW": "提交"
+  },
+  {
+    "en": "We have received your suggestions, If needed, we will contact you to ask for the feedbacks",
+    "key": "received_suggestions",
+    "zhCN": "您的宝贵建议已经收到。如有需要，我们将联系您进行回访。",
+    "ja": "お客様の貴重な提案はもう受け取りました。必要があれば、ご連絡いたします。",
+    "zhTW": "您的寶貴建議已經收到。如有需要，我們將聯系您進行回訪。"
+  },
+  {
+    "en": "Heading to download UCore, Login Once, Permanent Authorization",
+    "key": "heading_to_download_ucore",
+    "zhCN": "前往下载UCore，一次登录，永久授权。",
+    "ja": "UCoreをダウンロードして、一度にログインすると、永遠に許可します",
+    "zhTW": "前往下載UCore，一次登入，永久授權。"
+  },
+  {
+    "en": "Binding Successfully",
+    "key": "binding_successfully",
+    "zhCN": "绑定成功",
+    "ja": "バインディングした",
+    "zhTW": "綁定成功"
+  },
+  {
+    "en": "Okay",
+    "key": "okay",
+    "zhCN": "好的",
+    "ja": "いいよ",
+    "zhTW": "好的"
+  },
+  {
+    "en": "Station Letter",
+    "key": "station_letter",
+    "zhCN": "站内信",
+    "ja": "メッセージ",
+    "zhTW": "站內信"
+  },
+  {
+    "en": "Origin",
+    "key": "origin",
+    "zhCN": "来源",
+    "ja": "出所",
+    "zhTW": "來源"
+  },
+  {
+    "en": "Service Connection Success",
+    "key": "service_connection_success",
+    "zhCN": "服务连接成功。",
+    "ja": "サービス接続した",
+    "zhTW": "服務連接成功。"
+  },
+  {
+    "en": "Service Connection Failed",
+    "key": "service_connection_failed",
+    "zhCN": "服务连接失败。",
+    "ja": "サービス接続失敗",
+    "zhTW": "服務連接失敗。"
+  },
+  {
+    "en": "Service Disconnected",
+    "key": "service_disconnected",
+    "zhCN": "服务连接断开。",
+    "ja": "サービス接続エラー",
+    "zhTW": "服務連接斷開。"
+  },
+  {
+    "key": "no_data",
+    "en": "No data",
+    "zhCN": "暂无数据",
+    "ja": "データがありません",
+    "zhTW": "暫無數據"
+  },
+  {
+    "en": "Users Agreement",
+    "key": "users_agreement_t",
+    "zhCN": "用户协议",
+    "ja": "ユーザプロトコル",
+    "zhTW": "用戶協議"
+  },
+  {
+    "en": "Appearance settings",
+    "key": "theme_settings",
+    "zhCN": "外观设置",
+    "ja": "外観の設定",
+    "zhTW": "外觀設定"
+  },
+  {
+    "en": "Follow system settings",
+    "key": "follow_system",
+    "zhCN": "跟随系统设置",
+    "ja": "システム設定に従う",
+    "zhTW": "跟隨系統設置"
+  },
+  {
+    "key": "light_mode",
+    "zhCN": "浅色模式",
+    "zhTW": "淺色模式",
+    "en": "Light mode",
+    "ja": "明るい色モード"
+  },
+  {
+    "key": "dark_mode",
+    "zhCN": "深色模式",
+    "zhTW": "深色模式",
+    "en": "Dark Mode ",
+    "ja": "暗いモード"
+  },
+  {
+    "key": "refresh_succeeded",
+    "zhCN": "刷新成功",
+    "zhTW": "重繪成功",
+    "en": "Refresh succeeded",
+    "ja": "リフレッシュ成功"
+  },
+  {
+    "key": "refresh_failed",
+    "zhCN": "刷新失败",
+    "zhTW": "重繪失敗",
+    "en": "refresh failed",
+    "ja": "更新失敗"
+  },
+  {
+    "key": "loading_failed_click_retry",
+    "zhCN": "加载失败, 点击重试",
+    "zhTW": "加載失敗，點擊重試",
+    "en": "Loading failed, click Retry",
+    "ja": "読み込みに失敗しました。もう一度クリックしてください。"
+  },
+  {
+    "key": "username_or_email",
+    "zhCN": "用户名或邮箱",
+    "zhTW": "用戶名或郵箱",
+    "en": "Username or email",
+    "ja": "ユーザ名またはメールボックス"
+  },
+  {
+    "key": "change_language",
+    "zhCN": "切换语言",
+    "zhTW": "切換語言",
+    "en": "Language",
+    "ja": "言語を切り替え"
+  },
+  {
+    "key": "face_register",
+    "zhCN": "人脸注册",
+    "zhTW": "人臉注册",
+    "en": "Face registration",
+    "ja": "顔登録"
+  },
+  {
+    "key": "face_login",
+    "zhCN": "人脸登录",
+    "zhTW": "人臉登入",
+    "en": "Face login",
+    "ja": "ログイン"
+  },
+  {
+    "key": "please_enter_the_associated_account",
+    "zhCN": "请输入关联的账号",
+    "zhTW": "請輸入關聯的帳號",
+    "en": "Please enter the associated account number",
+    "ja": "関連アカウントを入力してください。"
+  },
+  {
+    "key": "set_account_6_32_bits",
+    "zhCN": "设置账号(6-32位)",
+    "zhTW": "設定帳號（6-32比特）",
+    "en": "Set account number (6-32 bits)",
+    "ja": "アカウントの設定（6-32ビット）"
+  },
+  {
+    "key": "please_enter_the_account_6_32_bits",
+    "zhCN": "请输入6-32位账号",
+    "zhTW": "請輸入6-32比特帳號",
+    "en": "Please enter a 6-32-bit account number",
+    "ja": "6-32桁のアカウントを入力してください。"
+  },
+  {
+    "key": "set_password_8_12_bits",
+    "zhCN": "设置密码(8-12位)",
+    "zhTW": "設置密碼（8-12比特）",
+    "en": "Set password (8-12 digits)",
+    "ja": "パスワードの設定(8-12ビット)"
+  },
+  {
+    "key": "please_enter_the_password_8_12_bits",
+    "zhCN": "请输入8-12位密码",
+    "zhTW": "請輸入8-12比特密碼",
+    "en": "Please enter the 8-12 digit password",
+    "ja": "8-12ビットのパスワードを入力してください。"
+  },
+  {
+    "key": "clear",
+    "zhCN": "清空",
+    "zhTW": "清空",
+    "en": "empty",
+    "ja": "空をクリア"
+  },
+  {
+    "key": "clear_input_box",
+    "zhCN": "清空输入框",
+    "zhTW": "清空輸入框",
+    "en": "Clear the input box",
+    "ja": "入力ボックスを空にします"
+  },
+  {
+    "key": "password_visible_switch",
+    "zhCN": "密码可见开关",
+    "zhTW": "密碼可見開關",
+    "en": "Password visible switch",
+    "ja": "パスワード表示スイッチ"
+  },
+  {
+    "key": "is_the_password_visible",
+    "zhCN": "密码是否可见",
+    "zhTW": "密碼是否可見",
+    "en": "Is the password visible",
+    "ja": "パスワードが表示されますか"
+  },
+  {
+    "key": "failed_to_reset_password_please_try_again",
+    "zhCN": "重置密码失败, 请重试!",
+    "zhTW": "重置密碼失敗，請重試！",
+    "en": "Failed to reset password, please try again!",
+    "ja": "パスワードをリセットできませんでした。やり直してください。"
+  },
+  {
+    "key": "registration_failed_please_try_again",
+    "zhCN": "注册失败, 请重试!",
+    "zhTW": "注册失敗，請重試！",
+    "en": "Registration failed, please try again!",
+    "ja": "登録に失敗しました。やり直してください。"
+  },
+  {
+    "key": "verification_code_error",
+    "zhCN": "验证码错误",
+    "zhTW": "驗證碼錯誤",
+    "en": "Verification code error",
+    "ja": "認証コードエラー"
+  },
+  {
+    "key": "login_failed_please_try_again",
+    "zhCN": "登录失败, 请重试!",
+    "zhTW": "登入失敗，請重試！",
+    "en": "Login failed, please try again!",
+    "ja": "ログインに失敗しました。やり直してください。"
+  },
+  {
+    "key": "easy_to_use",
+    "zhCN": "轻松使用",
+    "zhTW": "輕鬆使用",
+    "en": "Easy to use",
+    "ja": "楽に使う"
+  },
+  {
+    "key": "new_world_knowledge",
+    "zhCN": "世界新知",
+    "zhTW": "世界新知",
+    "en": "New world knowledge",
+    "ja": "世界新のお知らせ"
+  },
+  {
+    "key": "individual_reading",
+    "zhCN": "个性阅读",
+    "zhTW": "個性閱讀",
+    "en": "Individual reading",
+    "ja": "個性読み"
+  },
+  {
+    "key": "experience_now",
+    "zhCN": "立即体验",
+    "zhTW": "立即體驗",
+    "en": "Experience now",
+    "ja": "即座に体験する"
+  },
+  {
+    "key": "picture_upload_failed_please_try_again",
+    "zhCN": "图片上传失败, 请重试!",
+    "zhTW": "圖片上傳失敗，請重試！",
+    "en": "Picture upload failed, please try again!",
+    "ja": "画像のアップロードに失敗しました。やり直してください。"
+  },
+  {
+    "key": "suggestions_have_been_received",
+    "zhCN": "您的宝贵建议已经收到。\n 如有需要，我们将联系您进行回访。",
+    "zhTW": "您的寶貴建議已經收到。\n如有需要，我們將聯系您進行回訪。",
+    "en": "Your valuable suggestions have been received.\nIf necessary, we will contact you for a return visit.",
+    "ja": "貴重なご提案を受け取りました。\n必要があれば、ご連絡します。"
+  },
+  {
+    "key": "please_enter_contact_information",
+    "zhCN": "请输入联系方式",
+    "zhTW": "請輸入聯繫方式",
+    "en": "Please enter contact information",
+    "ja": "連絡先を入力してください。"
+  },
+  {
+    "key": "please_enter_the_content",
+    "zhCN": "请输入内容",
+    "zhTW": "請輸入內容",
+    "en": "Please enter the content",
+    "ja": "内容を入力してください"
+  },
+  {
+    "key": "upload_pictures_one_at_most",
+    "zhCN": "上传图片\n最多一张",
+    "zhTW": "上傳圖片\n最多一張",
+    "en": "Upload pictures\nOne at most",
+    "ja": "画像をアップロード\n最大一枚"
+  },
+  {
+    "key": "all_read",
+    "zhCN": "全部已读",
+    "zhTW": "全部已讀",
+    "en": "All read",
+    "ja": "すべて読みました"
+  },
+  {
+    "key": "change_password",
+    "zhCN": "修改密码",
+    "zhTW": "修改密碼",
+    "en": "Change Password",
+    "ja": "パスワードを変更"
+  },
+  {
+    "key": "open",
+    "zhCN": "打开",
+    "zhTW": "打開",
+    "en": "open",
+    "ja": "開く"
+  },
+  {
+    "key": "in_vivo_sampling",
+    "zhCN": "活体取样",
+    "zhTW": "活體取樣",
+    "en": "In vivo sampling",
+    "ja": "生体サンプリング"
+  },
+  {
+    "key": "view_sample",
+    "zhCN": "查看取样示例",
+    "zhTW": "查看取樣示例",
+    "en": "View sample",
+    "ja": "サンプルの例を表示"
+  },
+  {
+    "key": "in_vivo_sampling_cannot_be_empty",
+    "zhCN": "活体取样不能为空",
+    "zhTW": "活體取樣不能為空",
+    "en": "In vivo sampling cannot be empty",
+    "ja": "生体サンプリングは空ではいけません。"
+  },
+  {
+    "key": "click_sampling",
+    "zhCN": "点击取样",
+    "zhTW": "點擊取樣",
+    "en": "Click sampling",
+    "ja": "サンプリングをクリックします"
+  },
+  {
+    "key": "next_step",
+    "zhCN": "下一步",
+    "zhTW": "下一步",
+    "en": "next step",
+    "ja": "次のステップ"
+  },
+  {
+    "key": "certificate_information",
+    "zhCN": "证件信息",
+    "zhTW": "證件資訊",
+    "en": "Certificate information",
+    "ja": "証明書の情報"
+  },
+  {
+    "key": "document_type",
+    "zhCN": "证件类型",
+    "zhTW": "證件類型",
+    "en": "Document type ",
+    "ja": "証明書の種類"
+  },
+  {
+    "key": "full_name",
+    "zhCN": "姓名",
+    "zhTW": "姓名",
+    "en": "full name",
+    "ja": "名前"
+  },
+  {
+    "key": "automatic_identification_after_uploading",
+    "zhCN": "上传后自动识别",
+    "zhTW": "上傳後自動識別",
+    "en": "Automatic identification after uploading",
+    "ja": "アップロード後自動認識"
+  },
+  {
+    "key": "please_fill_in_your_name",
+    "zhCN": "请填写本人姓名",
+    "zhTW": "請填寫本人姓名",
+    "en": "Please fill in your name",
+    "ja": "本人の名前を記入してください。"
+  },
+  {
+    "key": "identification_number",
+    "zhCN": "证件号码",
+    "zhTW": "證件號碼",
+    "en": "Identification Number ",
+    "ja": "証明書番号"
+  },
+  {
+    "key": "please_enter_the_id_number",
+    "zhCN": "请输入证件号码",
+    "zhTW": "請輸入證件號碼",
+    "en": "Please enter the ID number",
+    "ja": "証明書の番号を入力してください。"
+  },
+  {
+    "key": "certificate_information_cannot_be_blank",
+    "zhCN": "证件信息不能为空",
+    "zhTW": "證件資訊不能為空",
+    "en": "Certificate information cannot be blank",
+    "ja": "証明書の情報は空です。"
+  },
+  {
+    "key": "please_upload_your_id_photo",
+    "zhCN": "请上传身份照片",
+    "zhTW": "請上傳身份照片",
+    "en": "Please upload your ID photo",
+    "ja": "身分写真をアップロードしてください。"
+  },
+  {
+    "key": "click_to_shoot_personal_information",
+    "zhCN": "点击拍摄个人信息面",
+    "zhTW": "點擊拍攝個人資訊面",
+    "en": "Click to shoot personal information",
+    "ja": "クリックして個人情報を撮影します。"
+  },
+  {
+    "key": "shoot_personal_information_avatar",
+    "zhCN": "拍摄个人信息(头像)面",
+    "zhTW": "拍攝個人資訊（頭像）面",
+    "en": "Shoot personal information (avatar)",
+    "ja": "個人情報（顔写真）を撮影します。"
+  },
+  {
+    "key": "upload_failed_please_upload_again",
+    "zhCN": "上传失败，请重新上传",
+    "zhTW": "上傳失敗，請重新上傳",
+    "en": "Upload failed, please upload again",
+    "ja": "アップロードに失敗しました。もう一度アップロードしてください。"
+  },
+  {
+    "key": "uploading",
+    "zhCN": "上传中...",
+    "zhTW": "上傳中…",
+    "en": "Uploading",
+    "ja": "アップロード中.."
+  },
+  {
+    "key": "click_to_shoot_the_national_emblem",
+    "zhCN": "点击拍摄国徽面",
+    "zhTW": "點擊拍攝國徽面",
+    "en": "Click to shoot the national emblem",
+    "ja": "国章面を撮影するにはクリックしてください。"
+  },
+  {
+    "key": "shoot_other_information",
+    "zhCN": "拍摄其他信息面",
+    "zhTW": "拍攝其他資訊面",
+    "en": "Shoot other information",
+    "ja": "他の情報面を撮影します。"
+  },
+  {
+    "key": "identity_photo_cannot_be_empty",
+    "zhCN": "身份照片不能为空",
+    "zhTW": "身份照片不能為空",
+    "en": "Identity photo cannot be empty",
+    "ja": "身分写真は空です。"
+  },
+  {
+    "key": "information_global_data_center",
+    "zhCN": "信息正在同步至全球数据中心",
+    "zhTW": "資訊正在同步至全球資料中心",
+    "en": "Information is being synchronized to the global data center",
+    "ja": "情報はグローバルデータセンターに同期しています。"
+  },
+  {
+    "key": "it_is_expected_to_take_1_minute",
+    "zhCN": "预计耗时1分钟",
+    "zhTW": "預計耗時1分鐘",
+    "en": "It is expected to take 1 minute",
+    "ja": "時間は1分かかる予定です"
+  },
+  {
+    "key": "closing_the_page_will_interrupt_authentication",
+    "zhCN": "关闭页面将会中断认证",
+    "zhTW": "關閉頁面將會中斷認證",
+    "en": "Closing the page will interrupt authentication",
+    "ja": "ページを閉じると認証が中断されます。"
+  },
+  {
+    "key": "sync_progress_value",
+    "zhCN": "同步进度 {}%",
+    "zhTW": "同步進度 {}%",
+    "en": "Sync progress {}%",
+    "ja": "同期進捗 {}%"
+  },
+  {
+    "key": "realname_authentication",
+    "zhCN": "实名认证",
+    "zhTW": "實名認證",
+    "en": "Real name authentication",
+    "ja": "実名認証"
+  },
+  {
+    "key": "upload_succeeded_please_wait_for_approval",
+    "zhCN": "上传成功，请等待审核",
+    "zhTW": "上傳成功，請等待稽核",
+    "en": "Upload succeeded, please wait for approval",
+    "ja": "アップロードが成功しました。審査を待ってください。"
+  },
+  {
+    "key": "it_is_expected_to_be_completed_within_2_working_days",
+    "zhCN": "预计2个工作日内日完成",
+    "zhTW": "預計2個工作日內日完成",
+    "en": "It is expected to be completed within 2 working days",
+    "ja": "2営業日以内に完成する予定です。"
+  },
+  {
+    "key": "please_select_the_type_of_authentication_id",
+    "zhCN": "请选择认证身份证件类型",
+    "zhTW": "請選擇認證身份證件類型",
+    "en": "Please select the type of authentication ID",
+    "ja": "認証身分証の種類を選んでください。"
+  },
+  {
+    "key": "mainland_id_card_cn",
+    "zhCN": "身份证(CN)",
+    "zhTW": "身份證（CN）",
+    "en": "ID card (CN)",
+    "ja": "身分証（CN）"
+  },
+  {
+    "key": "hk_macao_and_taiwan_identity_card_cn",
+    "zhCN": "港澳台身份证(CN)",
+    "zhTW": "港澳臺身份證（CN）",
+    "en": "Hong Kong, Macao and Taiwan identity card (CN)",
+    "ja": "香港とマカオの身分証（CN）"
+  },
+  {
+    "key": "passport",
+    "zhCN": "护照",
+    "zhTW": "護照",
+    "en": "passport",
+    "ja": "パスポート"
+  },
+  {
+    "key": "passpore_desc",
+    "zhCN": "(含港澳台旅游签证/通行证/回乡证)",
+    "zhTW": "（含港澳臺旅遊簽證/通行證/回鄉證）",
+    "en": "(including Hong Kong, Macao and Taiwan tourist visa / pass / Home Return Permit)",
+    "ja": "（香港マカオ台湾観光ビザ/通行証/帰省証を含む）"
+  },
+  {
+    "key": "id_card_of_other_countries",
+    "zhCN": "其他国家身份证",
+    "zhTW": "其他國家身份證",
+    "en": "ID card of other countries",
+    "ja": "他の国の身分証"
+  },
+  {
+    "key": "other_documents",
+    "zhCN": "其他证件",
+    "zhTW": "其他證件",
+    "en": "Other documents",
+    "ja": "その他の証明書"
+  },
+  {
+    "key": "resampling_in_vivo",
+    "zhCN": "重新活体采样",
+    "zhTW": "重新活體採樣",
+    "en": "Resampling in vivo",
+    "ja": "再活性サンプリング"
+  },
+  {
+    "key": "submit_for_manual_review",
+    "zhCN": "提交人工审核",
+    "zhTW": "提交人工稽核",
+    "en": "Submit for manual review",
+    "ja": "人工審査にかける"
+  },
+  {
+    "key": "solution_1_re_sampling_in_vivo",
+    "zhCN": "解决办法一：重新活体采样。",
+    "zhTW": "解決辦法一：重新活體採樣。",
+    "en": "Solution 1: re sampling in vivo.",
+    "ja": "解決方法1：生体サンプリングを再開する。"
+  },
+  {
+    "key": "solution_2_submit_it_for_manual_audit",
+    "zhCN": "解决办法二：提交人工审核，约2-3天出审核结果。",
+    "zhTW": "解決辦法二：提交人工稽核，約2-3天出稽核結果。",
+    "en": "Solution 2: submit it for manual audit, and the audit results will be issued in about 2-3 days.",
+    "ja": "解決方法2：人工審査を提出し、約2～3日で審査結果を出す。"
+  },
+  {
+    "key": "the_head_picture_living_disaccord",
+    "zhCN": "证件照头像与活体匹配不一致",
+    "zhTW": "證件照頭像與活體匹配不一致",
+    "en": "The head picture of the certificate is inconsistent with the living body",
+    "ja": "証明書写真の顔写真は生体と一致しません。"
+  },
+  {
+    "key": "auth_prompt",
+    "zhCN": "认证提示",
+    "zhTW": "認證提示",
+    "en": "Authentication prompt",
+    "ja": "認証メッセージ"
+  },
+  {
+    "key": "living_avatar",
+    "zhCN": "活体头像",
+    "zhTW": "活體頭像",
+    "en": "Living Avatar",
+    "ja": "上半身写真"
+  },
+  {
+    "key": "id_photo",
+    "zhCN": "证件照头像",
+    "zhTW": "證件照頭像",
+    "en": "ID photo",
+    "ja": "証明書の写真"
+  },
+  {
+    "key": "hide",
+    "zhCN": "隐藏",
+    "zhTW": "隱藏",
+    "en": "hide",
+    "ja": "非表示"
+  },
+  {
+    "key": "unfold",
+    "zhCN": "展开",
+    "zhTW": "展開",
+    "en": "open",
+    "ja": "展開"
+  },
+  {
+    "key": "auth_pass",
+    "zhCN": "认证合格",
+    "zhTW": "認證合格",
+    "en": "Certified qualified",
+    "ja": "認証に合格する"
+  },
+  {
+    "key": "auth_failed",
+    "zhCN": "认证失败",
+    "zhTW": "認證失敗",
+    "en": "Authentication failed",
+    "ja": "認証に失敗しました"
+  },
+  {
+    "key": "auth_result",
+    "zhCN": "认证结果",
+    "zhTW": "認證結果",
+    "en": "Certification results",
+    "ja": "認証結果"
+  },
+  {
+    "key": "bind_failed_retry",
+    "zhCN": "绑定失败, 请重试!",
+    "zhTW": "綁定失敗，請重試！",
+    "en": "Binding failed, please try again!",
+    "ja": "バインディングに失敗しました。やり直してください。"
+  },
+  {
+    "key": "modify_failed_retry",
+    "zhCN": "修改失败, 请重试!",
+    "zhTW": "修改失敗，請重試！",
+    "en": "Modification failed, please try again!",
+    "ja": "修正に失敗しました。やり直してください。"
+  },
+  {
+    "key": "face_recognition_failed",
+    "zhCN": "人脸识别失败",
+    "zhTW": "人臉識別失敗",
+    "en": "Face recognition failed",
+    "ja": "顔認識に失敗しました"
+  },
+  {
+    "key": "failed_to_sync_please_confirm_the_archive_again",
+    "zhCN": "同步信息失败，请从新确认存档",
+    "zhTW": "同步資訊失敗，請從新確認存檔",
+    "en": "Failed to synchronize information. Please confirm the archive again",
+    "ja": "同期情報に失敗しました。アーカイブを再確認してください。"
+  },
+  {
+    "key": "vcode_check_failed",
+    "zhCN": "验证码校验失败",
+    "zhTW": "驗證碼校驗失敗",
+    "en": "Verification code verification failed",
+    "ja": "検証コードの検証に失敗しました。"
+  },
+  {
+    "key": "save_to_album",
+    "zhCN": "保存图片到本地",
+    "zhTW": "保存圖片到本地",
+    "en": "Save picture to local",
+    "ko": "로 컬 에 그림 저장",
+    "ja": "画像をローカルに保存"
+  },
+  {
+    "key": "recognition_qrcode",
+    "zhCN": "识别图中二维码",
+    "zhTW": "識別圖中二維碼",
+    "en": "Identify the QR code in the drawing",
+    "ko": "식별 도 에서 QR 코드",
+    "ja": "図中の二次元コードを識別する"
+  },
+  {
+    "key": "copy_to_clipboard",
+    "zhCN": "链接已复制到剪切板",
+    "zhTW": "連結已複製到剪切板",
+    "en": "Link copied to clipboard",
+    "ko": "클립보드 로 링크 복사 됨",
+    "ja": "リンクをクリップボードにコピーしました。"
+  },
+  {
+    "key": "already_registered",
+    "zhCN": "该人脸已注册",
+    "zhTW": "該人臉已注册",
+    "en": "The face is already registered",
+    "ko": "이 사람의 얼굴 은 이미 등록 되 었 다.",
+    "ja": "その顔は登録されています"
+  },
+  {
+    "key": "logout_Tips",
+    "zhCN": "提示",
+    "zhTW": "提示",
+    "en": "Reminder",
+    "ja": "ご注意"
+  },
+  {
+    "key": "sure_logout",
+    "zhCN": "确定退出登录吗？",
+    "zhTW": "確定登出嗎？",
+    "en": "Confirm Quitting Log out",
+    "ja": "ログアウトしますか"
+  },
+  {
+    "key": "account_is_inconsistent",
+    "zhCN": "当前认证账号不一致，请先切换账号",
+    "zhTW": "當前認證帳號不一致，請先切換帳號",
+    "en": "Current Verified Account is inconsistent with the previous one, please switch the account first",
+    "ja": "現在の認証アカウントが一致ではない、先にアカウントを切り替えてください"
+  }
+]

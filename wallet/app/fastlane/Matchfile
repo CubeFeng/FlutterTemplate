@@ -1,0 +1,2 @@
+git_url("git@gitlab.tqxd.com:flutter/native/apple-certificates.git")
+git_branch("master")

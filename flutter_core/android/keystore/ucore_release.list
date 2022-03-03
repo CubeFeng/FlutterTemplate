@@ -1,0 +1,36 @@
+密钥库类型: PKCS12
+密钥库提供方: SUN
+
+您的密钥库包含 1 个条目
+
+别名: ucore
+创建日期: 2021-9-10
+条目类型: PrivateKeyEntry
+证书链长度: 1
+证书[1]:
+所有者: CN=tianqixuda.com, OU=tianqixuda.com, O=tianqixuda.com, L=ShenZhen, ST=GuangDong, C=CN
+发布者: CN=tianqixuda.com, OU=tianqixuda.com, O=tianqixuda.com, L=ShenZhen, ST=GuangDong, C=CN
+序列号: b859547
+有效期为 Fri Sep 10 11:27:32 CST 2021 至 Tue Sep 04 11:27:32 CST 2046
+证书指纹:
+         MD5:  1F:74:7C:0E:F7:80:1C:BA:5B:36:F5:E4:1D:BE:E6:4C
+         SHA1: 36:F3:1C:30:CC:A0:26:4C:4A:22:3C:AB:87:0E:4F:45:CD:39:EC:CD
+         SHA256: 1C:A9:D0:A0:0B:16:92:8B:2F:54:F9:3D:31:82:C4:F1:35:3F:C5:5A:44:38:77:A5:6C:90:7E:50:E6:26:74:55
+签名算法名称: SHA256withRSA
+主体公共密钥算法: 2048 位 RSA 密钥
+版本: 3
+
+扩展:
+
+#1: ObjectId: 2.5.29.14 Criticality=false
+SubjectKeyIdentifier [
+KeyIdentifier [
+0000: BE A7 1D 1B 74 32 B2 B8   DD D8 20 7B 25 24 56 BC  ....t2.... .%$V.
+0010: 9F 9D 7D 25                                        ...%
+]
+]
+
+
+
+*******************************************
+*******************************************

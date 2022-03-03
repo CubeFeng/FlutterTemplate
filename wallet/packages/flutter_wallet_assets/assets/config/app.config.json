@@ -1,0 +1,18 @@
+{
+  "iOS": {
+    "channelType": "TF",
+    "channelName": "TF-01",
+    "channelVersion": "2.0.5",
+    "buildTime": "",
+    "commitId": "",
+    "branch": ""
+  },
+  "Android": {
+    "channelType": "GF",
+    "channelName": "GF",
+    "channelVersion": "2.0.5",
+    "buildTime": "",
+    "commitId": "",
+    "branch": ""
+  }
+}

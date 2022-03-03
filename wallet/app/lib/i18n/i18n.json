@@ -1,0 +1,3036 @@
+[
+  {
+    "zhCN": "助记词（备选)",
+    "ko": "보조어",
+    "ja": "バックアップ助詞（代替品）",
+    "zhTW": "助記詞（備選)",
+    "en": "Mnemonic（Alternatives)",
+    "key": "importFixTitle"
+  },
+  {
+    "zhCN": "仅针对旧版本单链助记词的导入",
+    "ko": "이전 버전 단일 체인 연상어만 가져오기",
+    "ja": "旧バージョン1本鎖助数詞のみの導入",
+    "zhTW": "僅針對舊版本單鏈助記詞的導入",
+    "en": "Only Target For Previous Version Single Chain Mnemonic Word Import",
+    "key": "importFixDesc"
+  },
+  {
+    "key": "databaseUpdateTip",
+    "zhCN": "系统检测到您在旧版钱包存在私钥数据，是否导入到新版钱包？",
+    "zhTW": "系統檢測到您在舊版錢包存在私鑰數據，是否導入到新版錢包？",
+    "en": "System have found private key data stored in your previous version of wallet, do you want to import new wallet?",
+    "ko": "시스템에서 이전 지갑에 개인 키 데이터가 있음을 감지했습니다. 새 지갑으로 가져오시겠습니까?",
+    "ja": "システムはあなたが古いウォレットにプライベートキーデータが存在することを検出しましたが、新しいウォレットに導入されますか？"
+  },
+
+  {
+    "key": "importRightNow",
+    "zhCN": "立刻导入",
+    "zhTW": "立刻導入",
+    "en": "Immediately Import",
+    "ko": "지금 가져오기",
+    "ja": "すぐ導入する"
+  },
+
+  {
+    "key": "clearData",
+    "zhCN": "清除数据",
+    "zhTW": "清除數據",
+    "en": "Clear Data",
+    "ko": "수를 지우다.",
+    "ja": "データを消去する"
+  },
+  {
+    "key": "copyToClipboardAndOpenBrowser",
+    "zhCN": "链接已复制到剪切板",
+    "zhTW": "鏈接已復製到剪切板",
+    "en": "The link has been copied to the clipboard",
+    "ko": "링크가 클립보드로 복사됨",
+    "ja": "リンクはカットボードにコピーされました"
+  },
+  {
+    "zhCN": "无法连接服务器，请检查网络",
+    "ko": "서버에 연결할 수 없습니다. 네트워크를 확인하십시오.",
+    "ja": "サーバーに接続できませんので、インターネットをチェックしてください",
+    "zhTW": "無法連接服務器，請檢查網絡",
+    "en": "Unable to connect to the server, please check the network",
+    "key": "unableconnectserver"
+  },
+  {
+    "zhCN": "矿工费太低",
+    "ko": "광부비가 너무 낮다.",
+    "ja": "鉱工業費が低すぎる",
+    "zhTW": "礦工費太低",
+    "en": "The gas fee is too low",
+    "key": "gasistoolow"
+  },
+  {
+    "zhCN": "恢复",
+    "ko": "회복",
+    "ja": "復元",
+    "zhTW": "恢復",
+    "en": "Restore",
+    "key": "recovery"
+  },
+  {
+    "zhCN": "未知",
+    "ko": "미지",
+    "ja": "未知",
+    "zhTW": "未知",
+    "en": "Unknown",
+    "key": "unknown"
+  },
+  {
+    "zhCN": "请选择网络",
+    "ko": "네트워크 선택",
+    "ja": "ネットワークを選択してください",
+    "zhTW": "請選擇網絡",
+    "en": "Please select network",
+    "key": "pleaseSelectANetwork"
+  },
+  {
+    "zhCN": "添加网络是HD身份钱包的亮点功能，它可以将用户的同一套助记词复用到其它区块链网络，生成私钥和地址。新增钱包的名称和密码与身份钱包相同。",
+    "ko": "네트워크 를 추가 하 는 것 은 HD 신분 지갑 의 하 이 라이트 기능 으로 사용자 의 같은 보조 단 어 를 다른 블록 체인 네트워크 에 재 활용 하여 비밀 키 와 주 소 를 생 성 할 수 있 습 니 다.새로 추 가 된 지갑 의 이름과 비밀 번 호 는 신분 지갑 과 같 습 니 다.",
+    "ja": "ネットワーク追加は、HD識別ウォレットのハイライト機能であり、ユーザの同じセットのニーモニックコードを他のブロックチェーンネットワークに使って、プライベートキーとアドレスを生成することができる。ウォレットの名前とパスワードはアイデンティティウォレットと同じです。",
+    "zhTW": "添加網絡是HD身份錢包的亮點功能，它可以將用戶的同一套助記詞複用到其它區塊鏈網絡，生成私密金鑰和地址。 新增錢包的名稱和密碼與身份錢包相同。",
+    "en": "Adding network is the highlight function of HD identity wallet. It can reuse the same set of mnemonics of users to other blockchain networks to generate private keys and addresses. The name and password of the new wallet are the same as the identity wallet.",
+    "key": "addingNetworkIsTheHighlightFunctionOfHDIdentityWalletItCanReuseTheSameSetOfMnemonicsOfUsersToOtherBlockchainNetworksToGeneratePrivateKeysAndAddressesTheNameAndPasswordOfTheNewWalletAreTheSameAsTheIdentityWallet"
+  },
+  {
+    "zhCN": "该DAPP只支持{}链，\n您尚未拥有{}钱包，是否添加钱包？",
+    "ko": "이 DAPP 는 {} 체인 만 지원 합 니 다. \n {} 지갑 을 가지 고 있 지 않 습 니 다. 지갑 을 추가 하 시 겠 습 니까?",
+    "ja": "このDAPPは{}チェーンだけをサポートしています。\nあなたはまだ{}ウォレットを持っていません、ウォレット追加しますか",
+    "zhTW": "該DAPP只支持{}鏈，\n您尚未擁有{}錢包，是否添加錢包？",
+    "en": "This DAPP only supports {} chain, \n you don't have {} wallet yet. Whether to add wallet ？",
+    "key": "thisDAPPOnlySupportsChainYouDontHaveWalletYetDoYouWantToAddWallet"
+  },
+  {
+    "zhCN": "在线",
+    "ko": "온라인",
+    "ja": "オンライン",
+    "zhTW": "線上",
+    "en": "On-line",
+    "key": "online"
+  },
+  {
+    "zhCN": "离线",
+    "ko": "오프라인",
+    "ja": "オフライン",
+    "zhTW": "離線",
+    "en": "Off-line",
+    "key": "offline"
+  },
+  {
+    "zhCN": "打开DAPP",
+    "ko": "DAPP 열기",
+    "ja": "DAPPを開く",
+    "zhTW": "打開DAPP",
+    "en": "Open DAPP",
+    "key": "openDAPP"
+  },
+  {
+    "zhCN": "点开DAPP右上角的Connect Wallet，选择 WalletConnect；",
+    "ko": "DAPP 오른쪽 상단 에 있 는 Connect Wallet 을 누 르 고 WalletConnect 를 선택 하 십시오.",
+    "ja": "DAPPの右上のConnect Walletをつけて、WalletConnectを選択します。",
+    "zhTW": "點開DAPP右上角的Connect Wallet，選擇WalletConnect；",
+    "en": "Click Connect wallet in the upper right corner of DAPP and select walletconnect;",
+    "key": "clickConnectWalletInTheUpperRightCornerOfDAPPAndSelectWalletconnect"
+  },
+  {
+    "zhCN": "选择地址",
+    "ko": "주소 선택",
+    "ja": "アドレスを選択",
+    "zhTW": "選擇地址",
+    "en": "Select Address",
+    "key": "selectAddress"
+  },
+  {
+    "zhCN": "扫描成功后，选择你要连接的地址；",
+    "ko": "검색 에 성공 한 후 연결 할 주 소 를 선택 하 십시오.",
+    "ja": "スキャンに成功したら、接続するアドレスを選択します。",
+    "zhTW": "掃描成功後，選擇你要連接的地址；",
+    "en": "After scanning succeed, select the address you want to connect;",
+    "key": "afterSuccessfulScanningSelectTheAddressYouWantToConnect"
+  },
+  {
+    "zhCN": "确认连接",
+    "ko": "연결 확인",
+    "ja": "接続の確認",
+    "zhTW": "確認連接",
+    "en": "Confirm Connection",
+    "key": "confirmConnection"
+  },
+  {
+    "zhCN": "点击“授权连接“，DAPP将得到授权，可直接使用该地址进行转账交易。",
+    "ko": "'권한 부여 연결' 을 누 르 면 DAPP 는 이 주 소 를 직접 이용 해 계좌 이체 거래 를 할 수 있 는 권한 을 부여 받는다.",
+    "ja": "「接続を許可する」をクリックすると、DAPPは許可されます。直接にこのアドレスを使って送金取引ができます。",
+    "zhTW": "點擊“授權連接“，DAPP將得到授權，可直接使用該地址進行轉帳交易。",
+    "en": "Click \"Authorized Connection\", DAPP will be authorized to directly use this address for transfer transactions.",
+    "key": "clickAuthorizedConnectionDAPPWillBeAuthorizedToDirectlyUseThisAddressForTransferTransactions"
+  },
+  {
+    "zhCN": "请求连接",
+    "ko": "연결 요청",
+    "ja": "接続を要求",
+    "zhTW": "請求連接",
+    "en": "Connection Request",
+    "key": "requestConnection"
+  },
+  {
+    "zhCN": "权限",
+    "ko": "권한",
+    "ja": "パーミッション",
+    "zhTW": "許可權",
+    "en": "Authorization",
+    "key": "jurisdiction"
+  },
+  {
+    "zhCN": "允许查看地址余额和链上信息",
+    "ko": "주소 잔액 과 체인 정 보 를 볼 수 있 습 니 다.",
+    "ja": "アドレス残高とチェーン情報の表示を許可します。",
+    "zhTW": "允許查看地址餘額和鏈上資訊",
+    "en": "Allows you to check balances in the address and information on-chain",
+    "key": "allowsYouToViewAddressBalancesAndChainInformation"
+  },
+  {
+    "zhCN": "允许发生交易时向地址请求授权",
+    "ko": "거래 가 발생 할 때 주소 에 권한 을 요청 할 수 있 도록 합 니 다.",
+    "ja": "取引が許可されている場合は、アドレスに授権を要求します。",
+    "zhTW": "允許發生交易時向地址請求授權",
+    "en": "Allow to request authorization from the address when a transaction occurs",
+    "key": "permissionToRequestAuthorizationFromTheAddressWhenATransactionOccurs"
+  },
+  {
+    "zhCN": "授权不会泄露你的助记词和私钥",
+    "ko": "권한 수 여 는 당신 의 보조 단어 와 비밀 키 를 누설 하지 않 습 니 다.",
+    "ja": "授権はあなたのニーモニックコードとプライベートキーを漏らしません。",
+    "zhTW": "授權不會洩露你的助記詞和私密金鑰",
+    "en": "Authorization will not reveal your mnemonics and private key",
+    "key": "authorizationWillNotRevealYourMnemonicsAndPrivateKey"
+  },
+  {
+    "zhCN": "连接地址",
+    "ko": "연결 주소",
+    "ja": "接続アドレス",
+    "zhTW": "連接地址",
+    "en": "Connection address",
+    "key": "connectionAddress"
+  },
+  {
+    "zhCN": "授权连接",
+    "ko": "권한 부여 연결",
+    "ja": "接続を許可する",
+    "zhTW": "授權連接",
+    "en": "Authorized connection",
+    "key": "authorizedConnection"
+  },
+  {
+    "zhCN": "WalletConnect正在连接你的钱包······",
+    "ko": "WalletConnect 에서 지갑 을 연결 하고 있 습 니 다.",
+    "ja": "WalletConnectはあなたのウォレットに繋がっています略",
+    "zhTW": "WalletConnect正在連接你的錢包······",
+    "en": "Walletconnect is connecting your wallet...",
+    "key": "walletconnectIsConnectingYourWallet"
+  },
+  {
+    "zhCN": "连接钱包",
+    "ko": "지갑 연결",
+    "ja": "接続ウォレット",
+    "zhTW": "連接錢包",
+    "en": "Connect Wallet",
+    "key": "connectWallet"
+  },
+  {
+    "zhCN": "通过WalletConnect\n协议连接DAPP授权，可快速交易",
+    "ko": "WalletConnect @ @ 프로 토 콜 을 통 해 DAPP 인증 을 연결 하면 빠 른 거래 가 가능 합 니 다.",
+    "ja": "WalletConnectプロトコルでDAPPに\n接続して授権すると、速やかに取引ができます。",
+    "zhTW": "通過WalletConnect\n協定連接DAPP授權，可快速交易",
+    "en": "Connect DAPP authorization through walletconnect \n protocol to promote fast transaction",
+    "key": "connectDAPPAuthorizationThroughWalletconnectProtocolToFacilitateFastTransaction"
+  },
+  {
+    "zhCN": "通过WalletConnect协议连接DAPP授权，可快速交易",
+    "ko": "WalletConnect 프로 토 콜 을 통 해 DAPP 인증 을 연결 하면 빠 른 거래 가 가능 합 니 다.",
+    "ja": "WalletConnectプロトコルでDAPPに接続して授権します。迅速に取引できます。",
+    "zhTW": "通過WalletConnect協定連接DAPP授權，可快速交易",
+    "en": "Connect DAPP authorization through walletconnect protocol for quick transaction",
+    "key": "connectDAPPAuthorizationThroughWalletconnectProtocolToQuicklyTrade"
+  },
+  {
+    "zhCN": "连接详情",
+    "ko": "연결 정보",
+    "ja": "接続の詳細",
+    "zhTW": "連接詳情",
+    "en": "Connection Details ",
+    "key": "connectionDetails"
+  },
+  {
+    "zhCN": "详情",
+    "ko": "상세 한 상황",
+    "ja": "詳細",
+    "zhTW": "詳情",
+    "en": "Details",
+    "key": "details"
+  },
+  {
+    "zhCN": "连接状态",
+    "ko": "연결 상태",
+    "ja": "接続状態",
+    "zhTW": "連接狀態",
+    "en": "Connection Status",
+    "key": "connectionStatus"
+  },
+  {
+    "zhCN": "最近连接",
+    "ko": "최근 연결",
+    "ja": "最近の接続",
+    "zhTW": "最近連接",
+    "en": "Recent Connection",
+    "key": "recentConnection"
+  },
+  {
+    "zhCN": "主网",
+    "ko": "메 인 네트워크",
+    "ja": "メインネットワーク",
+    "zhTW": "主網",
+    "en": "Main-Net",
+    "key": "mainNetwork"
+  },
+  {
+    "zhCN": "授权交易",
+    "ko": "권한 수여 거래",
+    "ja": "ライセンス取引",
+    "zhTW": "授權交易",
+    "en": "Authorized Transaction",
+    "key": "authorizedTransaction"
+  },
+  {
+    "zhCN": "笔",
+    "ko": "붓.",
+    "ja": "回",
+    "zhTW": "筆",
+    "en": "Pen",
+    "key": "pen"
+  },
+  {
+    "zhCN": "授权连接",
+    "ko": "권한 부여 연결",
+    "ja": "接続を許可する",
+    "zhTW": "授權連接",
+    "en": "Authorize Connection",
+    "key": "authorizedConnection"
+  },
+  {
+    "zhCN": "连接地址",
+    "ko": "연결 주소",
+    "ja": "接続アドレス",
+    "zhTW": "連接地址",
+    "en": "Connection Address",
+    "key": "connectionAddress"
+  },
+  {
+    "zhCN": "断开连接",
+    "ko": "연결 을 끊다",
+    "ja": "接続を切断",
+    "zhTW": "斷開連接",
+    "en": "Disconnect",
+    "key": "disconnect"
+  },
+  {
+    "zhCN": "连接失败，请检查网络",
+    "ko": "연결 에 실 패 했 습 니 다. 네트워크 를 확인 하 십시오.",
+    "ja": "接続に失敗しました。ネットワークを確認してください。",
+    "zhTW": "連接失敗，請檢查網絡",
+    "en": "Connection failed, please check the network",
+    "key": "connectionFailedPleaseCheckTheNetwork"
+  },
+  {
+    "zhCN": "解锁 AITD Wallet",
+    "ko": "AITD 지갑 잠 금 해제",
+    "ja": "AITD Walletのロック解除",
+    "zhTW": "解鎖AITD Wallet",
+    "en": "Unlock AITD Wallet",
+    "key": "unlockAITDWallet"
+  },
+  {
+    "zhCN": "改用钱包密码",
+    "ko": "지갑 비밀번호 변경",
+    "ja": "ウォレットのパスワードに変更します",
+    "zhTW": "改用錢包密碼",
+    "en": "Use wallet password instead",
+    "key": "useWalletPasswordInstead"
+  },
+  {
+    "zhCN": "返回",
+    "ko": "뒷전",
+    "ja": "戻す",
+    "zhTW": "返回",
+    "en": "Return",
+    "key": "back"
+  },
+  {
+    "zhCN": "请选择网络",
+    "ko": "네트워크 선택",
+    "ja": "ネットワークを選択してください",
+    "zhTW": "請選擇網絡",
+    "en": "Please select a network",
+    "key": "pleaseSelectANetwork"
+  },
+  {
+    "zhCN": "添加网络是HD身份钱包的亮点功能，它可以将用户的同一套助记词复用到其它区块链网络，生成私钥和地址。新增钱包的名称和密码与身份钱包相同。",
+    "ko": "네트워크 를 추가 하 는 것 은 HD 신분 지갑 의 하 이 라이트 기능 으로 사용자 의 같은 보조 단 어 를 다른 블록 체인 네트워크 에 재 활용 하여 비밀 키 와 주 소 를 생 성 할 수 있 습 니 다.새로 추 가 된 지갑 의 이름과 비밀 번 호 는 신분 지갑 과 같 습 니 다.",
+    "ja": "ネットワーク追加は、HDウォレットのハイライト機能であり、ユーザの同じセットのニーモニックコードを他のブロックチェーンネットワークに使って、プライベートキーとアドレスを生成することができる。ウォレットの名前とパスワードはアイデンティティウォレットと同じです。",
+    "zhTW": "添加網絡是HD身份錢包的亮點功能，它可以將用戶的同一套助記詞複用到其它區塊鏈網絡，生成私密金鑰和地址。 新增錢包的名稱和密碼與身份錢包相同。",
+    "en": "Adding network is the highlight function of HD identity wallet. It can reuse the same set of mnemonics of users to other blockchain networks to generate private keys and addresses. The name and password of the new wallet are the same as the identity wallet.",
+    "key": "addingNetworkIsTheHighlightFunctionOfHDIdentityWalletItCanReuseTheSameSetOfMnemonicsOfUsersToOtherBlockchainNetworksToGeneratePrivateKeysAndAddressesTheNameAndPasswordOfTheNewWalletAreTheSameAsTheIdentityWallet"
+  },
+  {
+    "zhCN": "区块高度:",
+    "ko": "블록 높이:",
+    "ja": "ブロックの高さ:",
+    "zhTW": "區塊高度：",
+    "en": "Block height:",
+    "key": "blockHeight"
+  },
+  {
+    "zhCN": "选择节点",
+    "ko": "노드 선택",
+    "ja": "ノードを選択",
+    "zhTW": "選擇節點",
+    "en": "Select Nodes",
+    "key": "selectNode"
+  },
+  {
+    "zhCN": "其他",
+    "ko": "기타",
+    "ja": "その他",
+    "zhTW": "其他",
+    "en": "Other",
+    "key": "other"
+  },
+  {
+    "zhCN": "如何选择节点",
+    "ko": "노드 를 어떻게 선택 합 니까?",
+    "ja": "ノードの選択方法",
+    "zhTW": "如何選擇節點",
+    "en": "How to select nodes",
+    "key": "howToSelectNodes"
+  },
+  {
+    "zhCN": "1-优先区块高度大的。节点的作用是同步链上数据，区块高度越大，其数据同步更加完整。\n2-优先延迟低的。网络延迟越低，数据越准确。",
+    "ko": "1 - 우선 블록 높이 가 큰 것.노드 의 역할 은 동기 화 체인 의 데이터 입 니 다. 블록 높이 가 클 수록 데이터 동기 화가 더욱 완전 합 니 다. \n2 - 우선 지연 이 낮은 것.네트워크 지연 이 낮 을 수록 데이터 가 정확 하 다.",
+    "ja": "1-ブロックの高さが大きいものを優先。ノードの役割は、同期チェーン上のデータで、ブロックの高さが大きいほど、データ同期がより完全である。\n2-遅延が低いものを優先。ネットワークの遅延が低いほど、データが正確になります。",
+    "zhTW": "1-優先區塊高度大的。 節點的作用是同步鏈上數據，區塊高度越大，其資料同步更加完整。\n2-優先延遲低的。 網路延遲越低，數據越準確。",
+    "en": "1 - Higher altitude of Block is priority, the function of Node is to synchronize the data on-chain, the higher Block altitude will have highly integrated synchronized data.\n2 - Low priority delay. The lower the network delay, the more accurate the data.",
+    "key": "keyDesc"
+  },
+  {
+    "zhCN": "一般",
+    "ko": "여 간",
+    "ja": "一般",
+    "zhTW": "一般",
+    "en": "General",
+    "key": "commonly"
+  },
+  {
+    "zhCN": "请选择节点",
+    "ko": "노드 선택",
+    "ja": "ノードを選択してください",
+    "zhTW": "請選擇節點",
+    "en": "Please select a node",
+    "key": "pleaseSelectANode"
+  },
+  {
+    "zhCN": "节点设置",
+    "ko": "노드 설정",
+    "ja": "ノードの設定",
+    "zhTW": "節點設定",
+    "en": "Node Settings",
+    "key": "nodeSettings"
+  },
+  {
+    "zhCN": "手机没有开通指纹功能",
+    "ko": "휴대 전화 에 지문 기능 이 개통 되 지 않 았 다.",
+    "ja": "携帯に指紋機能が追加していません。",
+    "zhTW": "手機沒有開通指紋功能",
+    "en": "You have not turned on fingerprint setting on your phone",
+    "key": "thePhoneHasNoFingerprintFunction"
+  },
+  {
+    "zhCN": "解锁",
+    "ko": "자 물 쇠 를 풀다",
+    "ja": "アンロック",
+    "zhTW": "解鎖",
+    "en": "Unlock",
+    "key": "unlock"
+  },
+  {
+    "zhCN": "请验证指纹",
+    "ko": "지문 확인 해 주세요.",
+    "ja": "指紋を確認してください",
+    "zhTW": "請驗證指紋",
+    "en": "Please verify the fingerprint",
+    "key": "pleaseVerifyTheFingerprint"
+  },
+  {
+    "zhCN": "验证指纹通过后，继续下一步操作",
+    "ko": "지문 검증 통과 후 다음 작업 계속",
+    "ja": "指紋を検証した後、次の操作を続けます。",
+    "zhTW": "驗證指紋通過後，繼續下一步操作",
+    "en": "After verifying the fingerprint, Move on to the next step",
+    "key": "afterVerifyingTheFingerprintContinueToTheNextStep"
+  },
+  {
+    "zhCN": "识别失败",
+    "ko": "인식 실패",
+    "ja": "認識が失敗しました",
+    "zhTW": "識別失敗",
+    "en": "Recognition failed",
+    "key": "recognitionFailed"
+  },
+  {
+    "zhCN": "识别异常",
+    "ko": "식별 이상",
+    "ja": "認識異常",
+    "zhTW": "識別异常",
+    "en": "Recognition exceptions",
+    "key": "identifyExceptions"
+  },
+  {
+    "zhCN": "钱包密码错误",
+    "ko": "지갑 비밀번호 오류",
+    "ja": "ウォレットのパスワードエラー",
+    "zhTW": "錢包密碼錯誤",
+    "en": "Wallet password error",
+    "key": "walletPasswordError"
+  },
+  {
+    "zhCN": "验证密码",
+    "ko": "인증 암호",
+    "ja": "パスワードを検証",
+    "zhTW": "驗證密碼",
+    "en": "Verify password",
+    "key": "verifyPassword"
+  },
+  {
+    "zhCN": "请输入钱包密码",
+    "ko": "지갑 비밀 번 호 를 입력 하 세 요",
+    "ja": "ウォレットのパスワードを入力してください。",
+    "zhTW": "請輸入錢包密碼",
+    "en": "Please enter your wallet password",
+    "key": "pleaseEnterYourWalletPassword"
+  },
+  {
+    "zhCN": "发现新版本",
+    "ko": "새 버 전 발견",
+    "ja": "新しいバージョンが見つかりました",
+    "zhTW": "發現新版本",
+    "en": "New version found",
+    "key": "newVersionFound"
+  },
+  {
+    "zhCN": "更新",
+    "ko": "업데이트",
+    "ja": "更新",
+    "zhTW": "更新",
+    "en": "To update",
+    "key": "toUpdate"
+  },
+  {
+    "zhCN": "节点",
+    "ko": "노드",
+    "ja": "ノード",
+    "zhTW": "節點",
+    "en": "Node",
+    "key": "node"
+  },
+  {
+    "zhCN": "切换节点",
+    "ko": "전환 노드",
+    "ja": "ノードを切り替え",
+    "zhTW": "切換節點",
+    "en": "Switch Node",
+    "key": "switchNode"
+  },
+  {
+    "zhCN": "失败",
+    "ko": "실패 하 다.",
+    "ja": "失敗",
+    "zhTW": "失敗",
+    "en": "Fail",
+    "key": "fail"
+  },
+  {
+    "key": "fast",
+    "zhCN": "快",
+    "zhTW": "快",
+    "en": "Fast",
+    "ko": "빠르다.",
+    "ja": "速い"
+  },
+  {
+    "key": "slow",
+    "zhCN": "慢",
+    "zhTW": "慢",
+    "en": "Slow",
+    "ko": "느리다",
+    "ja": "遅い"
+  },
+  {
+    "key": "languages",
+    "zhCN": "语言",
+    "zhTW": "語言",
+    "en": "Languages ",
+    "ko": "언어.",
+    "ja": "言語"
+  },
+  {
+    "key": "website",
+    "zhCN": "官网",
+    "zhTW": "官網",
+    "en": "Official Website",
+    "ko": "홈 페이지",
+    "ja": "公式サイト"
+  },
+  {
+    "key": "more",
+    "zhCN": "更多",
+    "zhTW": "更多",
+    "en": "More",
+    "ko": "훨씬",
+    "ja": "詳細"
+  },
+  {
+    "key": "scan",
+    "zhCN": "扫码",
+    "zhTW": "掃碼",
+    "en": "Scan Code",
+    "ko": "스 캔 코드",
+    "ja": "QRコードをスキャン"
+  },
+  {
+    "key": "cancel",
+    "zhCN": "取消",
+    "zhTW": "取消",
+    "en": "Cancel",
+    "ko": "취소 하 다.",
+    "ja": "キャンセル"
+  },
+  {
+    "key": "clear",
+    "zhCN": "清空",
+    "zhTW": "清空",
+    "en": "Clear",
+    "ko": "텅 비다",
+    "ja": "クリア"
+  },
+  {
+    "key": "all",
+    "zhCN": "全部",
+    "zhTW": "全部",
+    "en": "All",
+    "ko": "온통",
+    "ja": "全部"
+  },
+  {
+    "key": "transferOut",
+    "zhCN": "转出",
+    "zhTW": "轉出",
+    "en": "Transfer out",
+    "ko": "전출",
+    "ja": "転出する"
+  },
+  {
+    "key": "transferIn",
+    "zhCN": "转入",
+    "zhTW": "轉入",
+    "en": "Transferred in",
+    "ko": "전입",
+    "ja": "導入"
+  },
+  {
+    "key": "info",
+    "zhCN": "信息",
+    "zhTW": "資訊",
+    "en": "Information",
+    "ko": "정보.",
+    "ja": "メッセージ"
+  },
+  {
+    "key": "confirm",
+    "zhCN": "确定",
+    "zhTW": "確定",
+    "en": "Confirm",
+    "ko": "확정 하 다.",
+    "ja": "確認"
+  },
+  {
+    "key": "no",
+    "zhCN": "编号",
+    "zhTW": "編號",
+    "en": "Serial Number",
+    "ko": "번호",
+    "ja": "番号"
+  },
+  {
+    "key": "network",
+    "zhCN": "网络",
+    "zhTW": "網絡",
+    "en": "Network",
+    "ko": "네트워크",
+    "ja": "ネットワーク"
+  },
+  {
+    "key": "transfer",
+    "zhCN": "转账",
+    "zhTW": "轉帳",
+    "en": "Transfer ",
+    "ko": "대체 하 다",
+    "ja": "振替"
+  },
+  {
+    "key": "icon",
+    "zhCN": "图标",
+    "zhTW": "圖標",
+    "en": "Icon",
+    "ko": "아이콘",
+    "ja": "アイコン"
+  },
+  {
+    "key": "recommend",
+    "zhCN": "推荐",
+    "zhTW": "推薦",
+    "en": "Recommendation ",
+    "ko": "추천 하 다.",
+    "ja": "おすすめ"
+  },
+  {
+    "key": "privateKey",
+    "zhCN": "私钥",
+    "zhTW": "私密金鑰",
+    "en": "Private Key",
+    "ko": "비밀 열쇠",
+    "ja": "プライベートキー"
+  },
+  {
+    "key": "assets",
+    "zhCN": "代币",
+    "zhTW": "代幣",
+    "en": "Coins",
+    "ko": "토큰",
+    "ja": "トーケン"
+  },
+  {
+    "key": "author",
+    "zhCN": "作者",
+    "zhTW": "作者",
+    "en": "Author",
+    "ko": "저자.",
+    "ja": "作者"
+  },
+  {
+    "key": "platform",
+    "zhCN": "平台",
+    "zhTW": "平臺",
+    "en": "Platform",
+    "ko": "플랫폼",
+    "ja": "プラットフォーム"
+  },
+  {
+    "key": "export",
+    "zhCN": "导出",
+    "zhTW": "匯出",
+    "en": "Export",
+    "ko": "도 출",
+    "ja": "エクスポート"
+  },
+  {
+    "key": "description",
+    "zhCN": "描述",
+    "zhTW": "描述",
+    "en": "Description",
+    "ko": "묘사 하 다.",
+    "ja": "説明"
+  },
+  {
+    "key": "receive",
+    "zhCN": "收款",
+    "zhTW": "收款",
+    "en": "Receive",
+    "ko": "돈 을 받다",
+    "ja": "受け取り"
+  },
+  {
+    "key": "currency",
+    "zhCN": "货币",
+    "zhTW": "貨幣",
+    "en": "Currency",
+    "ko": "화폐.",
+    "ja": "トーケン"
+  },
+  {
+    "key": "eng",
+    "zhCN": "英文",
+    "zhTW": "英文",
+    "en": "English",
+    "ko": "영어.",
+    "ja": "英語"
+  },
+  {
+    "key": "pwd",
+    "zhCN": "密码",
+    "zhTW": "密碼",
+    "en": "Password",
+    "ko": "비밀 번호",
+    "ja": "パスワード"
+  },
+  {
+    "key": "finish",
+    "zhCN": "完成",
+    "zhTW": "完成",
+    "en": "Completed",
+    "ko": "완성 하 다.",
+    "ja": "完了"
+  },
+  {
+    "key": "ok",
+    "zhCN": "好的",
+    "zhTW": "好的",
+    "en": "Okay",
+    "ko": "좋다",
+    "ja": "はい"
+  },
+  {
+    "key": "name",
+    "zhCN": "名称",
+    "zhTW": "名稱",
+    "en": "Name",
+    "ko": "명칭.",
+    "ja": "名前"
+  },
+  {
+    "key": "version",
+    "zhCN": "版本",
+    "zhTW": "版本",
+    "en": "Version",
+    "ko": "판본",
+    "ja": "バージョン"
+  },
+  {
+    "key": "address",
+    "zhCN": "地址",
+    "zhTW": "地址",
+    "en": "Address",
+    "ko": "주소.",
+    "ja": "アドレス"
+  },
+  {
+    "key": "choose",
+    "zhCN": "选择",
+    "zhTW": "選擇",
+    "en": "Choose",
+    "ko": "선택 하 다.",
+    "ja": "選択"
+  },
+  {
+    "key": "update",
+    "zhCN": "更新",
+    "zhTW": "更新",
+    "en": "Update",
+    "ko": "업데이트",
+    "ja": "更新"
+  },
+  {
+    "key": "auxiliaryWord",
+    "zhCN": "助记词",
+    "zhTW": "助記詞",
+    "en": "Mnemonic Word",
+    "ko": "조사",
+    "ja": "ニーモニックコード"
+  },
+  {
+    "key": "committed",
+    "zhCN": "已提交",
+    "zhTW": "已提交",
+    "en": "Committed",
+    "ko": "제출 됨",
+    "ja": "提出済み"
+  },
+  {
+    "key": "balance",
+    "zhCN": "余额",
+    "zhTW": "餘額",
+    "en": "Balance",
+    "ko": "잔고",
+    "ja": "残高"
+  },
+  {
+    "key": "clipboard",
+    "zhCN": "剪贴板",
+    "zhTW": "剪貼板",
+    "en": "Clipboard",
+    "ko": "클립보드",
+    "ja": "クリップボード"
+  },
+  {
+    "key": "pleaseUse",
+    "zhCN": "请使用",
+    "zhTW": "請使用",
+    "en": "Please use",
+    "ko": "사용 하 세 요",
+    "ja": "ご利用ください"
+  },
+  {
+    "key": "purchaser",
+    "zhCN": "购买者",
+    "zhTW": "購買者",
+    "en": "Purchaser",
+    "ko": "구매자",
+    "ja": "購入者"
+  },
+  {
+    "key": "browser",
+    "zhCN": "浏览器",
+    "zhTW": "瀏覽器",
+    "en": "Browser",
+    "ko": "브 라 우 저",
+    "ja": "ブラウザ"
+  },
+  {
+    "key": "collection",
+    "zhCN": "收藏品",
+    "zhTW": "收藏品",
+    "en": "Collection",
+    "ko": "소장 품",
+    "ja": "コレクション"
+  },
+  {
+    "key": "miningLaborFee",
+    "zhCN": "矿工费",
+    "zhTW": "礦工費",
+    "en": "Gas fee",
+    "ko": "광부 비",
+    "ja": "マイナー代"
+  },
+  {
+    "key": "qrCode",
+    "zhCN": "二维码",
+    "zhTW": "二維碼",
+    "en": "QR Code",
+    "ko": "QR 코드",
+    "ja": "QRコード"
+  },
+  {
+    "key": "fee",
+    "zhCN": "手续费",
+    "zhTW": "手續費",
+    "en": "Handling Fee",
+    "ko": "수수료",
+    "ja": "手数料"
+  },
+  {
+    "key": "added",
+    "zhCN": "已添加",
+    "zhTW": "已添加",
+    "en": "Has been added",
+    "ko": "추가 됨",
+    "ja": "追加しました"
+  },
+  {
+    "key": "sellers",
+    "zhCN": "出售者",
+    "zhTW": "出售者",
+    "en": "Sellers",
+    "ko": "판매자",
+    "ja": "販売者"
+  },
+  {
+    "key": "transferTo",
+    "zhCN": "转账至",
+    "zhTW": "轉帳至",
+    "en": "Transfer to",
+    "ko": "입금",
+    "ja": "振り込み先"
+  },
+  {
+    "key": "billingDetail",
+    "zhCN": "账单详情",
+    "zhTW": "帳單詳情",
+    "en": "Billing Details",
+    "ko": "계산서 상세 정보",
+    "ja": "請求書の詳細"
+  },
+  {
+    "key": "verifyPwd",
+    "zhCN": "验证密码",
+    "zhTW": "驗證密碼",
+    "en": "Verify Password",
+    "ko": "인증 암호",
+    "ja": "パスワードを検証"
+  },
+  {
+    "key": "safekeeping",
+    "zhCN": "妥善保管",
+    "zhTW": "妥善保管",
+    "en": "For Safe Keeping",
+    "ko": "잘 보관 하 다",
+    "ja": "適切に保管する"
+  },
+  {
+    "key": "notes",
+    "zhCN": "注意事项",
+    "zhTW": "注意事項",
+    "en": "Notes",
+    "ko": "주의 사항",
+    "ja": "注意事項"
+  },
+  {
+    "key": "hdWallet",
+    "zhCN": "身份钱包",
+    "zhTW": "身份錢包",
+    "en": "HD Wallet",
+    "ko": "신분 지갑",
+    "ja": "個人用財布"
+  },
+  {
+    "key": "transferRecord",
+    "zhCN": "流转记录",
+    "zhTW": "流轉記錄",
+    "en": "Transfer record",
+    "ko": "유전 기록",
+    "ja": "流通記録"
+  },
+  {
+    "key": "assetDetails",
+    "zhCN": "资产详情",
+    "zhTW": "資產詳情",
+    "en": "Asset Details",
+    "ko": "자산 상세",
+    "ja": "資産の詳細"
+  },
+  {
+    "key": "turnOut",
+    "zhCN": "全部转出",
+    "zhTW": "全部轉出",
+    "en": "All transfer out",
+    "ko": "전출",
+    "ja": "すべてを転送"
+  },
+  {
+    "key": "createWallet",
+    "zhCN": "创建钱包",
+    "zhTW": "創建錢包",
+    "en": "Creating Wallets",
+    "ko": "지갑 만 들 기",
+    "ja": "ウォレットを作成"
+  },
+  {
+    "key": "confirmTransfer",
+    "zhCN": "确认转账",
+    "zhTW": "確認轉帳",
+    "en": "Confirm transfer",
+    "ko": "이체 확인",
+    "ja": "振替確認"
+  },
+  {
+    "key": "finishTime",
+    "zhCN": "完成时间",
+    "zhTW": "完成時間",
+    "en": "Complete Time",
+    "ko": "완료 시간",
+    "ja": "完了時間"
+  },
+  {
+    "key": "toSetting",
+    "zhCN": "前往设置",
+    "zhTW": "前往設定",
+    "en": "Head to Settings",
+    "ko": "설정 으로 가기",
+    "ja": "設定します"
+  },
+  {
+    "key": "receivingAddress",
+    "zhCN": "收款地址",
+    "zhTW": "收款地址",
+    "en": "Receiving address",
+    "ko": "수취 주소",
+    "ja": "入金先"
+  },
+  {
+    "key": "dontTransfer",
+    "zhCN": "请勿传输",
+    "zhTW": "請勿傳輸",
+    "en": "Please Do Not Transfer",
+    "ko": "전송 하지 마 십시오.",
+    "ja": "転送しないでください"
+  },
+  {
+    "key": "recentlyUsed",
+    "zhCN": "最近使用",
+    "zhTW": "最近使用",
+    "en": "Recently used",
+    "ko": "최근 사용",
+    "ja": "最近使う"
+  },
+  {
+    "key": "iKnow",
+    "zhCN": "我知道了",
+    "zhTW": "我知道了",
+    "en": "I know",
+    "ko": "알 겠 습 니 다.",
+    "ja": "分かりました"
+  },
+  {
+    "key": "tokenList",
+    "zhCN": "代币列表",
+    "zhTW": "代幣清單",
+    "en": "Coin's",
+    "ko": "토 큰 리스트",
+    "ja": "トークンリスト"
+  },
+  {
+    "key": "dontCapture",
+    "zhCN": "请勿截图",
+    "zhTW": "請勿截圖",
+    "en": "Please do not screenshoot",
+    "ko": "캡 처 하지 마 세 요.",
+    "ja": "キャプチャーしないでください"
+  },
+  {
+    "key": "customerService",
+    "zhCN": "在线客服",
+    "zhTW": "線上客服",
+    "en": "Online customer service Representatives",
+    "ko": "온라인 고객 지원",
+    "ja": "オンラインサービス"
+  },
+  {
+    "key": "invite",
+    "zhCN": "邀请好友",
+    "zhTW": "邀請好友",
+    "en": "Inviting Friends",
+    "ko": "친구 초대",
+    "ja": "親友を紹介"
+  },
+  {
+    "key": "modify",
+    "zhCN": "修改成功",
+    "zhTW": "修改成功",
+    "en": "Modify Successfully",
+    "ko": "수정 성공",
+    "ja": "修正できました"
+  },
+  {
+    "key": "changeLog",
+    "zhCN": "版本日志",
+    "zhTW": "版本日誌",
+    "en": "Version log",
+    "ko": "버 전 로그",
+    "ja": "バージョンログ"
+  },
+  {
+    "key": "exportPrivateKey",
+    "zhCN": "导出私钥",
+    "zhTW": "匯出私密金鑰",
+    "en": "Export Private Key",
+    "ko": "비밀 키 내 보 내기",
+    "ja": "プライベートキーをエクスポート"
+  },
+  {
+    "key": "managemer",
+    "zhCN": "钱包管理",
+    "zhTW": "錢包管理",
+    "en": "Wallet Management",
+    "ko": "지갑 관리",
+    "ja": "ウォレット管理"
+  },
+  {
+    "key": "deleteWallet",
+    "zhCN": "删除钱包",
+    "zhTW": "删除錢包",
+    "en": "Delete Wallet",
+    "ko": "지갑 삭제",
+    "ja": "ウォレットを削除"
+  },
+  {
+    "key": "securityCenter",
+    "zhCN": "安全中心",
+    "zhTW": "安全中心",
+    "en": "Security Center ",
+    "ko": "안전 센터",
+    "ja": "安全センター"
+  },
+  {
+    "key": "confirmDelete",
+    "zhCN": "确认删除",
+    "zhTW": "確認删除",
+    "en": "Confirm Deletion",
+    "ko": "삭제 확인",
+    "ja": "削除します"
+  },
+  {
+    "key": "confirmTheDeletion",
+    "zhCN": "删除成功",
+    "zhTW": "删除成功",
+    "en": "Delete Successfully",
+    "ko": "삭제 성공",
+    "ja": "削除できました"
+  },
+  {
+    "key": "addCurrency",
+    "zhCN": "添加币种",
+    "zhTW": "添加幣種",
+    "en": "Add The Coins",
+    "ko": "화폐 종류 를 첨가 하 다",
+    "ja": "トーケンを添加する"
+  },
+  {
+    "key": "blockHeight",
+    "zhCN": "区块高度",
+    "zhTW": "區塊高度",
+    "en": "Block Height",
+    "ko": "블록 높이",
+    "ja": "ブロックの高さ"
+  },
+  {
+    "key": "offLineSaving",
+    "zhCN": "离线保存",
+    "zhTW": "離線保存",
+    "en": "Off-Line Saving ",
+    "ko": "오프라인 저장",
+    "ja": "オフライン保存"
+  },
+  {
+    "key": "changeCurrency",
+    "zhCN": "切换币种",
+    "zhTW": "切換幣種",
+    "en": "Switch Coin",
+    "ko": "화폐 종 류 를 바꾸다.",
+    "ja": "トーケンの種類を切り替える"
+  },
+  {
+    "key": "addNetwork",
+    "zhCN": "添加网络",
+    "zhTW": "添加網絡",
+    "en": "Add network",
+    "ko": "네트워크 추가",
+    "ja": "ネットワークを追加"
+  },
+  {
+    "key": "chineseTraditional",
+    "zhCN": "繁体中文",
+    "zhTW": "繁體中文",
+    "en": "Traditional Chinese",
+    "ko": "중국어",
+    "ja": "中国語"
+  },
+  {
+    "key": "transferAmount",
+    "zhCN": "转账金额",
+    "zhTW": "轉帳金額",
+    "en": "Transfer amount",
+    "ko": "이체 금액",
+    "ja": "振替金額"
+  },
+  {
+    "key": "simplifiedChinese",
+    "zhCN": "简体中文",
+    "zhTW": "簡體中文",
+    "en": "Simplified Chinese",
+    "ko": "중국어 간 체",
+    "ja": "簡体字中国語"
+  },
+  {
+    "key": "currencyUnit",
+    "zhCN": "货币单位",
+    "zhTW": "貨幣單位",
+    "en": "Currency Unit",
+    "ko": "화폐 단위",
+    "ja": "トーケン単位"
+  },
+  {
+    "key": "sysMsg",
+    "zhCN": "系统消息",
+    "zhTW": "系統消息",
+    "en": "System Message",
+    "ko": "시스템 메시지",
+    "ja": "システムメッセージ"
+  },
+  {
+    "key": "transferMsg",
+    "zhCN": "转账消息",
+    "zhTW": "轉帳消息",
+    "en": "Transfer Message",
+    "ko": "이체 소식",
+    "ja": "振替メッセージ"
+  },
+  {
+    "key": "allRead",
+    "zhCN": "全部已读",
+    "zhTW": "全部已讀",
+    "en": "Read All",
+    "ko": "모두 읽 음",
+    "ja": "すべて読みました"
+  },
+  {
+    "key": "receiveFrom",
+    "zhCN": "收款来自",
+    "zhTW": "收款來自",
+    "en": "Receive From",
+    "ko": "수금",
+    "ja": "入金は"
+  },
+  {
+    "key": "msgCenter",
+    "zhCN": "消息中心",
+    "zhTW": "消息中心",
+    "en": "Message Center",
+    "ko": "메시지 센터",
+    "ja": "メッセージセンター"
+  },
+  {
+    "key": "addressManagemer",
+    "zhCN": "地址管理",
+    "zhTW": "地址管理",
+    "en": "Address Managemer",
+    "ko": "주소 관리",
+    "ja": "アドレス管理"
+  },
+  {
+    "key": "sysSetting",
+    "zhCN": "系统设置",
+    "zhTW": "系統設置",
+    "en": "System Setting",
+    "ko": "시스템 설정",
+    "ja": "システム設定"
+  },
+  {
+    "key": "expertMode",
+    "zhCN": "高级模式",
+    "zhTW": "高級模式",
+    "en": "Expert mode",
+    "ko": "고급 모드",
+    "ja": "エキスパートモード"
+  },
+  {
+    "key": "import",
+    "zhCN": "导入钱包",
+    "zhTW": "導入錢包",
+    "en": "Import",
+    "ko": "지갑 가 져 오기",
+    "ja": "ウォレットをインポート"
+  },
+  {
+    "key": "aboutUs",
+    "zhCN": "关于我们",
+    "zhTW": "關於我們",
+    "en": "About Us",
+    "ko": "우리",
+    "ja": "私たちについて"
+  },
+  {
+    "key": "tradeSuc",
+    "zhCN": "交易成功",
+    "zhTW": "交易成功",
+    "en": "Trade Successfully",
+    "ko": "거래 성공",
+    "ja": "取引ができました"
+  },
+  {
+    "key": "newAddress",
+    "zhCN": "新建地址",
+    "zhTW": "新建地址",
+    "en": "New Created Address",
+    "ko": "새 주소",
+    "ja": "新規アドレス"
+  },
+  {
+    "key": "copySuc",
+    "zhCN": "复制成功",
+    "zhTW": "複製成功",
+    "en": "Copy Successfully",
+    "ko": "복사 성공",
+    "ja": "コピーができました"
+  },
+  {
+    "key": "changeWallet",
+    "zhCN": "切换钱包",
+    "zhTW": "切換錢包",
+    "en": "Change Wallet",
+    "ko": "지갑 전환",
+    "ja": "ウォレットを切り替え"
+  },
+  {
+    "key": "backHome",
+    "zhCN": "返回首页",
+    "zhTW": "返回首頁",
+    "en": "Back home",
+    "ko": "홈 페이지 로 돌아 가기",
+    "ja": "最初のページに戻ります"
+  },
+  {
+    "key": "serviceClause",
+    "zhCN": "服务条款",
+    "zhTW": "服務條款",
+    "en": "Service Clause",
+    "ko": "서비스 약관",
+    "ja": "サービス条項"
+  },
+  {
+    "key": "privacyClause",
+    "zhCN": "隐私条款",
+    "zhTW": "隱私條款",
+    "en": "Privacy Clause",
+    "ko": "프라이버시 조항",
+    "ja": "プライバシー条項"
+  },
+  {
+    "key": "easyMode",
+    "zhCN": "简单模式",
+    "zhTW": "簡單模式",
+    "en": "Easy mode",
+    "ko": "단순 모드",
+    "ja": "シンプルモード"
+  },
+  {
+    "key": "myMsg",
+    "zhCN": "我的消息",
+    "zhTW": "我的消息",
+    "en": "My Messages",
+    "ko": "나의 소식",
+    "ja": "私のメッセージ"
+  },
+  {
+    "key": "walletPwd",
+    "zhCN": "钱包密码",
+    "zhTW": "錢包密碼",
+    "en": "The wallet password",
+    "ko": "지갑 비밀번호",
+    "ja": "ウォレットのパスワード"
+  },
+  {
+    "key": "transactionId",
+    "zhCN": "交易ID",
+    "zhTW": "交易ID",
+    "en": "Transaction ID",
+    "ko": "거래 ID",
+    "ja": "取引ID"
+  },
+  {
+    "key": "findNewVersion",
+    "zhCN": "发现新版本",
+    "zhTW": "發現新版本",
+    "en": "Find New Version",
+    "ko": "새 버 전 발견",
+    "ja": "新しいバージョンが見つかりました"
+  },
+  {
+    "key": "forgotPwd",
+    "zhCN": "忘记密码",
+    "zhTW": "忘記密碼",
+    "en": "Forgot Password",
+    "ko": "비밀 번 호 를 잊다",
+    "ja": "パスワードを忘れました"
+  },
+  {
+    "key": "pleaseEnterPwd",
+    "zhCN": "请输入密码",
+    "zhTW": "請輸入密碼",
+    "en": "Please Enter Password",
+    "ko": "비밀 번 호 를 입력 하 세 요",
+    "ja": "パスワードを入力してください"
+  },
+  {
+    "key": "gasLimit",
+    "zhCN": "Gas限制",
+    "zhTW": "Gas限制",
+    "en": "Gas limit",
+    "ko": "가스 제한",
+    "ja": "Gas制限"
+  },
+  {
+    "key": "backUpAuxWord",
+    "zhCN": "备份助记词",
+    "zhTW": "備份助記詞",
+    "en": "Back-up Mnemonic ",
+    "ko": "백업",
+    "ja": "ニーモニックコードをバックアップ"
+  },
+  {
+    "key": "haveBeedAddToken",
+    "zhCN": "已添加代币",
+    "zhTW": "已添加代幣",
+    "en": "Coins have been added",
+    "ko": "토 큰 추가 됨",
+    "ja": "トークンを追加しました"
+  },
+  {
+    "key": "copyAuxiliary",
+    "zhCN": "复制助记词",
+    "zhTW": "複製助記詞",
+    "en": "Copy Mnemonic Word",
+    "ko": "복사",
+    "ja": "ニーモニックコードをコピーする"
+  },
+  {
+    "key": "clearInputBox",
+    "zhCN": "清空输入框",
+    "zhTW": "清空輸入框",
+    "en": "Clear the input box",
+    "ko": "입력 상자 비우 기",
+    "ja": "入力欄を空にします"
+  },
+  {
+    "key": "gasPrice",
+    "zhCN": "Gas价格",
+    "zhTW": "Gas價格",
+    "en": "Gas price",
+    "ko": "가스 가격",
+    "ja": "Gas代"
+  },
+  {
+    "key": "pleaseScan",
+    "zhCN": "请直接扫描",
+    "zhTW": "請直接掃描",
+    "en": "Please Scan Directly",
+    "ko": "직접 스 캔 하 세 요.",
+    "ja": "直接スキャンしてください"
+  },
+  {
+    "key": "changeWalletName",
+    "zhCN": "更改钱包名称",
+    "zhTW": "更改錢包名稱",
+    "en": "Change  Name",
+    "ko": "지갑 이름 변경",
+    "ja": "ウォレットの名前を変更"
+  },
+  {
+    "key": "createSignleWallet",
+    "zhCN": "创建单链钱包",
+    "zhTW": "創建單鏈錢包",
+    "en": "Create a single chain wallet",
+    "ko": "단일 체인 지갑 만 들 기",
+    "ja": "シングルチェーンウォレットを作成"
+  },
+  {
+    "key": "walletPwdErr",
+    "zhCN": "钱包密码错误",
+    "zhTW": "錢包密碼錯誤",
+    "en": "Wrong Password Error",
+    "ko": "지갑 비밀번호 오류",
+    "ja": "ウォレットのパスワードエラー"
+  },
+  {
+    "key": "changeSecPwd",
+    "zhCN": "修改安全密码",
+    "zhTW": "修改安全密碼",
+    "en": "Change Security Password",
+    "ko": "보안 암호 수정",
+    "ja": "セキュリティパスワードの変更"
+  },
+  {
+    "key": "pwdVisibleSwitch",
+    "zhCN": "密码可见开关",
+    "zhTW": "密碼可見開關",
+    "en": "Password visible switch",
+    "ko": "암호 가시 스위치",
+    "ja": "パスワード表示スイッチ"
+  },
+  {
+    "key": "enableFacePayment",
+    "zhCN": "开启指纹/人脸支付",
+    "zhTW": "開啟指紋/人臉支付",
+    "en": "Enable fingerprint/face payment",
+    "ko": "지문 / 얼굴 결제 오픈",
+    "ja": "指紋を開く/顔認証で支払う"
+  },
+  {
+    "key": "enableFaceLogin",
+    "zhCN": "开启指纹/人脸登录",
+    "zhTW": "開啟指紋/人臉登入",
+    "en": "Enable fingerprint/face login",
+    "ko": "지문 / 얼굴 등록 오픈",
+    "ja": "指紋を開く/顔認証で登録する"
+  },
+  {
+    "key": "myDapps",
+    "zhCN": "我的DApp",
+    "zhTW": "我的DApp",
+    "en": "My dapps",
+    "ko": "나의 DApp",
+    "ja": "私のDApp"
+  },
+  {
+    "key": "toDapps",
+    "zhCN": "前往DApp",
+    "zhTW": "前往DApp",
+    "en": "To Dapps",
+    "ko": "DApp 로 가기",
+    "ja": "DAppに行きます"
+  },
+  {
+    "key": "hdWallet",
+    "zhCN": "HD身份钱包",
+    "zhTW": "HD身份錢包",
+    "en": "HD Wallet",
+    "ko": "HD 신분 지갑",
+    "ja": "HDアイデンティティーウォレット"
+  },
+  {
+    "key": "setWalletPwd",
+    "zhCN": "设置钱包密码",
+    "zhTW": "設定錢包密碼",
+    "en": "Set wallet password",
+    "ko": "지갑 비밀번호 설정",
+    "ja": "ウォレットのパスワードを設定"
+  },
+  {
+    "key": "ensurePerimeterSec",
+    "zhCN": "确保周边安全",
+    "zhTW": "確保周邊安全",
+    "en": "Ensure Perimeter Area Security",
+    "ko": "주변 안전 확보",
+    "ja": "周辺の安全を確保する"
+  },
+  {
+    "key": "importSingleWallet",
+    "zhCN": "导入单链钱包",
+    "zhTW": "導入單鏈錢包",
+    "en": "Import a single chain wallet",
+    "ko": "단일 체인 지갑 가 져 오기",
+    "ja": "シングルチェーンウォレットをインポート"
+  },
+  {
+    "key": "chooseWalletType",
+    "zhCN": "请选择钱包类型",
+    "zhTW": "請選擇錢包類型",
+    "en": "Please Select Wallet Type",
+    "ko": "지갑 종류 선택",
+    "ja": "ウォレットの種類を選択してください"
+  },
+  {
+    "key": "enterSafePwd",
+    "zhCN": "请输入安全密码",
+    "zhTW": "請輸入安全密碼",
+    "en": "Please Enter Safe Password",
+    "ko": "보안 비밀 번 호 를 입력 하 세 요",
+    "ja": "セキュリティパスワードを入力してください。"
+  },
+  {
+    "key": "enterWalletPwd",
+    "zhCN": "请输入钱包密码",
+    "zhTW": "請輸入錢包密碼",
+    "en": "Please enter wallet password",
+    "ko": "지갑 비밀 번 호 를 입력 하 세 요",
+    "ja": "ウォレットのパスワードを入力してください。"
+  },
+  {
+    "key": "pleaseEnterWalletName",
+    "zhCN": "请输入钱包名称",
+    "zhTW": "請輸入錢包名稱",
+    "en": "Please enter name of the wallet",
+    "ko": "지갑 이름 입력",
+    "ja": "ウォレットの名前を入力してください。"
+  },
+  {
+    "key": "itIsCurrentlyTheLatestVersion",
+    "zhCN": "当前已是最新版",
+    "zhTW": "當前已是最新版",
+    "en": "Current is the latest version",
+    "ko": "현재 최신 버 전 입 니 다.",
+    "ja": "現在は最新版です。"
+  },
+  {
+    "key": "whatIfIForgotMyPassword",
+    "zhCN": "忘记密码怎么办",
+    "zhTW": "忘記密碼怎麼辦",
+    "en": "What If I Forgot My Password",
+    "ko": "비밀번호 까 먹 으 면 어 떡 해.",
+    "ja": "パスワードを忘れたらどうすればいいですか？"
+  },
+  {
+    "key": "theTwoPasswordsAreInconsistent",
+    "zhCN": "两次密码不一致",
+    "zhTW": "兩次密碼不一致",
+    "en": "The two passwords are inconsistent with each other",
+    "ko": "두 번 의 비밀번호 가 일치 하지 않 습 니 다.",
+    "ja": "二回のパスワードが一致しません。"
+  },
+  {
+    "key": "pleaseEnterTheCollectionAddress",
+    "zhCN": "请输入收款地址",
+    "zhTW": "請輸入收款地址",
+    "en": "Please enter the receiving address",
+    "ko": "입금 주소 입력",
+    "ja": "入金先を入力してください。"
+  },
+  {
+    "key": "iHaventAddedAWalletYet",
+    "zhCN": "还没添加过钱包",
+    "zhTW": "還沒添加過錢包",
+    "en": "Haven't added wallet yet",
+    "ko": "아직 지갑 을 추가 한 적 이 없어 요.",
+    "ja": "まだウォレットを追加していません。"
+  },
+  {
+    "key": "pleaseEnterThePasswordAgain",
+    "zhCN": "请再次输入密码",
+    "zhTW": "請再次輸入密碼",
+    "en": "Please enter the password again",
+    "ko": "비밀 번 호 를 다시 입력 하 세 요",
+    "ja": "パスワードをもう一度入力してください。"
+  },
+  {
+    "key": "pleaseSelectTheImportMethod",
+    "zhCN": "请选择导入方式",
+    "zhTW": "請選擇導入管道",
+    "en": "Please Select Ways To Import",
+    "ko": "가 져 오 는 방법 을 선택 하 십시오",
+    "ja": "インポート方式を選択してください"
+  },
+  {
+    "key": "pleaseEnterTheTransferAddress",
+    "zhCN": "请输入转账地址",
+    "zhTW": "請輸入轉帳地址",
+    "en": "Please enter the transfer address",
+    "ko": "계좌 이체 주 소 를 입력 하 세 요",
+    "ja": "振替のアドレスを入力してください。"
+  },
+  {
+    "key": "decentralizedMultiChainWallet",
+    "zhCN": "去中心化多链钱包",
+    "zhTW": "去中心化多鏈錢包",
+    "en": "Decentralized Multi-Chain Wallet",
+    "ko": "탈 중심 화 멀 티 체인 지갑",
+    "ja": "脱中心化ウォレット"
+  },
+  {
+    "key": "createHdIdentityWallet",
+    "zhCN": "创建HD身份钱包",
+    "zhTW": "創建HD身份錢包",
+    "en": "Create HD identity wallet",
+    "ko": "HD 신분 지갑 만 들 기",
+    "ja": "HDアイデンティティーウォレットを作成します"
+  },
+  {
+    "key": "importHdIdentityWallet",
+    "zhCN": "导入HD身份钱包",
+    "zhTW": "導入HD身份錢包",
+    "en": "Import HD identity wallet",
+    "ko": "HD 신분 지갑 가 져 오기",
+    "ja": "HDウォレットを導入"
+  },
+  {
+    "key": "onlyNumbersCanBeEntered",
+    "zhCN": "只能输入≥1的数字",
+    "zhTW": "只能輸入≥1的數位",
+    "en": "Only numbers ≥ 1 can be entered",
+    "ko": "≥ 1 의 숫자 만 입력 할 수 있다",
+    "ja": "≧1の数字しか入力できません"
+  },
+  {
+    "key": "pleaseEnterTheContractAddressToFind",
+    "zhCN": "输入代币名称或合约地址",
+    "zhTW": "輸入代幣名稱或合約地址",
+    "en": "Enter coin or contract address ",
+    "ko": "계약 주소 입력 찾기",
+    "ja": "トーケン名称また契約アドレスを入力"
+  },
+  {
+    "key": "dontSetWalletPwd",
+    "zhCN": "你尚未设置钱包密码",
+    "zhTW": "你尚未設定錢包密碼",
+    "en": "You haven't set your wallet password yet",
+    "ko": "지갑 비밀 번 호 를 설정 하지 않 았 습 니 다.",
+    "ja": "ウォレットのパスワードが設定されていません。"
+  },
+  {
+    "key": "valueCirculationIsSaferAndFaster",
+    "zhCN": "价值流通，安全快速",
+    "zhTW": "價值流通，安全快速",
+    "en": "Value circulation is safer and faster",
+    "ko": "가치 유통, 안전 신속",
+    "ja": "価値が流通し、安全が迅速である。"
+  },
+  {
+    "key": "instantTransparencyEnjoyEarningsEasily",
+    "zhCN": "即时透明，坐享收益",
+    "zhTW": "即時透明，坐享收益",
+    "en": "Instant and transparent, enjoy earnings easily",
+    "ko": "즉시 투명, 앉 아서 수익 을 누 립 니 다.",
+    "ja": "リアルタイム透明、座って収益を享受する"
+  },
+  {
+    "key": "backupMnemonics",
+    "zhCN": "备份助记词(推荐)",
+    "zhTW": "備份助記詞（推薦）",
+    "en": "Backup mnemonics (recommended)",
+    "ko": "백업 보조 단어 (추천)",
+    "ja": "バックアップ助詞（推奨）"
+  },
+  {
+    "key": "transactionDataSignedBroadcast",
+    "zhCN": "交易数据已签名广播",
+    "zhTW": "交易數據已簽名廣播",
+    "en": "Transaction data signed and broadcasted",
+    "ko": "거래 데이터 서명 방송",
+    "ja": "取引データは署名放送されました。"
+  },
+  {
+    "key": "assetsSafetyNotes",
+    "zhCN": "资产安全，悉心守护",
+    "zhTW": "資產安全，悉心守護",
+    "en": "Assets safety, Devoting all the attention into guarding assets",
+    "ko": "자산 안전, 세 심하게 수호",
+    "ja": "資産の安全を心をこめて守る。"
+  },
+  {
+    "key": "exportKeystore",
+    "zhCN": "导出Keystore",
+    "zhTW": "匯出Keystore",
+    "en": "Export Keystore",
+    "ko": "키 저장 소 내 보 내기",
+    "ja": "Keystoreエクスポート"
+  },
+  {
+    "key": "inputErrorPleaseReEnter",
+    "zhCN": "输入错误，请重新输入",
+    "zhTW": "輸入錯誤，請重新輸入",
+    "en": "Input error, please re-enter",
+    "ko": "입력 오류, 다시 입력 하 세 요",
+    "ja": "入力エラー、再入力してください。"
+  },
+  {
+    "key": "aSetOfMnemonicsManagesAllAssets",
+    "zhCN": "一套助记词管理所有资产",
+    "zhTW": "一套助記詞管理所有資產",
+    "en": "A set of mnemonics manages all assets",
+    "ko": "보조 기사 한 세트 로 모든 자산 을 관리 하 다.",
+    "ja": "一式の助数詞はすべての資産を管理する。"
+  },
+  {
+    "key": "importWalletByEnteringPlaintextPrivateKey",
+    "zhCN": "通过输入明文私钥导入钱包",
+    "zhTW": "通過輸入明文私密金鑰導入錢包",
+    "en": "Import wallet by entering plaintext private key",
+    "ko": "비밀 키 입력 으로 지갑 가 져 오기",
+    "ja": "秘密鍵を入力してウォレットをインポートします"
+  },
+  {
+    "key": "searchDappOrEnterALink",
+    "zhCN": "搜索Dapp或者输入链接",
+    "zhTW": "蒐索Dapp或者輸入連結",
+    "en": "Search DAPP or enter a link",
+    "ko": "Dapp 검색 또는 링크 입력",
+    "ja": "Dapp検索またはリンク入力"
+  },
+  {
+    "key": "onlyNumbersLes1000CanBeEntered",
+    "zhCN": "只能输入≤1000的数字",
+    "zhTW": "只能輸入≤1000的數位",
+    "en": "Only numbers ≤ 1000 can be entered",
+    "ko": "≤ 1000 의 숫자 만 입력 가능",
+    "ja": "≤1000の数字しか入力できません。"
+  },
+  {
+    "key": "onlyNumbersLes10000000000CanBeEntered",
+    "zhCN": "只能输入≤10^10的数字",
+    "zhTW": "只能輸入≤10^10的數位",
+    "en": "Only numbers ≤ 10 ^ 10 can be entered",
+    "ko": "≤ 10 ^ 10 의 숫자 만 입력 가능",
+    "ja": "≤10^10の数字しか入力できません。"
+  },
+  {
+    "key": "pleaseEnterTheCorrectDappAddress",
+    "zhCN": "请输入正确的Dapp地址!",
+    "zhTW": "請輸入正確的Dapp地址！",
+    "en": "Please enter the correct DAPP address!",
+    "ko": "정확 한 Dapp 주 소 를 입력 하 세 요!",
+    "ja": "正しいDappアドレスを入力してください。"
+  },
+  {
+    "key": "pleaseCheckTheBlockDetailsForMoreDetails",
+    "zhCN": "更多详情请在区块详情上查看",
+    "zhTW": "更多詳情請在區塊詳情上查看",
+    "en": "Please check the block details for more details",
+    "ko": "더 자세 한 정 보 는 블록 상세 정보 에서 확인 하 세 요.",
+    "ja": "詳細はブロックの詳細をご覧ください。"
+  },
+  {
+    "key": "wereAboutToCreateAnHdIdentityWalletForYou",
+    "zhCN": "我们即将为你创建HD身份钱包",
+    "zhTW": "我們即將為你創建HD身份錢包",
+    "en": "We're about to create an HD identity wallet for you",
+    "ko": "저희 가 곧 HD 신분 지갑 을 만들어 드릴 게 요.",
+    "ja": "私たちはもうすぐあなたのためにHD身分のウォレットを作ります。"
+  },
+  {
+    "key": "mnemonicWordsNotes",
+    "zhCN": "助记词可以生成HD身份钱包，方便管理",
+    "zhTW": "助記詞可以生成HD身份錢包，方便管理",
+    "en": "Mnemonic words can generate HD identity wallet for easy management",
+    "ko": "보조 기 사 는 HD 신분 지갑 을 생 성하 여 관리 하기 편리 하 다.",
+    "ja": "ニーモニックコードはHD身分のウォレットを生成して、管理しやすいです"
+  },
+  {
+    "key": "addWalletByEnteringKeystoreFile",
+    "zhCN": "通过输入Keystore文件添加钱包",
+    "zhTW": "通過輸入Keystore檔案添加錢包",
+    "en": "Add wallet by entering keystore file",
+    "ko": "Keystore 파일 입력 으로 지갑 추가",
+    "ja": "Keystoreファイルを入力してウォレットを追加します"
+  },
+  {
+    "key": "passwordImportant",
+    "zhCN": "密码用于保护私钥交易授权，非常重要；",
+    "zhTW": "密碼用於保護私密金鑰交易授權，非常重要；",
+    "en": "Password is used to protect private key transaction authorization, which is very important;",
+    "ko": "비밀 번 호 는 비밀 키 거래 권한 수 여 를 보호 하 는 데 매우 중요 합 니 다.",
+    "ja": "プライベートキー取引の承認を保護するためのパスワードは、非常に重要です。"
+  },
+  {
+    "key": "gasPriceAndGasLimitNote",
+    "zhCN": "注：矿工费 = Gas价格 * Gas限制",
+    "zhTW": "注：礦工費= Gas價格* Gas限制",
+    "en": "Note: mining labor fee = gas price * gas limit",
+    "ko": "주의: 광부 비 = 가스 가격 * 가스 제한",
+    "ja": "注：マイナー代=Gas代*Gas制限"
+  },
+  {
+    "key": "passwordMinLengthNotes",
+    "zhCN": "请设置不少于6位的密码，密码强度越高越好；",
+    "zhTW": "請設定不少於6比特的密碼，密碼强度越高越好；",
+    "en": "Please set a password of no less than 6 digits. The higher the password strength, the better;",
+    "ko": "6 자리 이상 의 비밀 번 호 를 설정 하 십시오. 비밀번호 강도 가 높 을 수록 좋 습 니 다.",
+    "ja": "6桁以下のパスワードを設定してください。パスワードの強度が高いほどいいです。"
+  },
+  {
+    "key": "walletPwdNotes",
+    "zhCN": "钱包不负责储存密码，也无法找回，请务必牢记。",
+    "zhTW": "錢包不負責儲存密碼，也無法找回，請務必牢記。",
+    "en": "The wallet is not responsible for storing the password and cannot be retrieved. Please keep it in mind.",
+    "ko": "지갑 은 비밀 번 호 를 저장 하 는 것 도 책임 지지 않 고 찾 을 수도 없 으 니 꼭 기억 하 세 요.",
+    "ja": "ウォレットは暗証番号を保管する責任がありません。取り戻すできません、必ず覚えてください。"
+  },
+  {
+    "key": "auxiliaryWordsNextNotes",
+    "zhCN": "请按顺序抄下下方12个助记词，我们将在下一步验证",
+    "zhTW": "請按順序抄下下方12個助記詞，我們將在下一步驗證",
+    "en": "Please copy 12 Mnemonic words below in sequence, we will verify it in the following steps.",
+    "ko": "아래 12 개의 보조 기 사 를 순서대로 베 끼 십시오. 우 리 는 다음 단계 에 검증 할 것 입 니 다.",
+    "ja": "下の12桁のニーモニックコードを順番に写してください。次のステップで検証します。"
+  },
+  {
+    "key": "qrCodeSecNotes",
+    "zhCN": "请勿在公共场所打开二位码，扫描前务必确保周边没有其它摄像头",
+    "zhTW": "請勿在公共場所打開二比特碼，掃描前務必確保周邊沒有其它監視器",
+    "en": "Do not open the QRcode in public places. Make sure there are no other cameras around before scanning",
+    "ko": "공공장소 에서 두 자리 코드 를 켜 지 마 십시오. 스 캔 하기 전에 주변 에 다른 카메라 가 없 는 지 확인 하 십시오.",
+    "ja": "公共の場所で二桁のコードを開けないでください。スキャンする前に必ず周辺に他のカメラがないようにしてください。"
+  },
+  {
+    "key": "lossOfMnemonicsMeansLossOfProperty",
+    "zhCN": "丢失助记词即丢失财产！\n请用纸笔抄下助记词并存放在安全的地方！",
+    "zhTW": "遺失助記詞即遺失財產！\n 請用紙筆抄下助記詞並存放在安全的地方！",
+    "en": "Loss of mnemonics means loss of property\n Please write down mnemonics on paper and store them in a safe place!",
+    "ko": "조 사 를 잃 으 면 재산 을 잃 는 다!\n종이 와 펜 으로 보조 기 사 를 베 끼 고 안전 한 곳 에 보관 하 세 요!",
+    "ja": "ニーモニックコードをなくしたら財産をなくします。\nニーモニックコードを紙ペンで写して安全なところに保管してください。"
+  },
+  {
+    "key": "qrCodeNotes",
+    "zhCN": "二维码仅供用户在安全环境下直接扫描以便导入钱包，请勿截图和拍照。",
+    "zhTW": "二維碼僅供用戶在安全環境下直接掃描以便導入錢包，請勿截圖和拍照。",
+    "en": "The QR code is only for users to scan directly in a secure environment in order to import the wallet. Please do not take screenshots and photos.",
+    "ko": "QR 코드 는 사용자 가 지갑 을 가 져 올 수 있 도록 안전 한 환경 에서 직접 스 캔 할 수 있 습 니 다. 캡 처 와 사진 을 찍 지 마 십시오.",
+    "ja": "QRコードは、ユーザーが安全環境下で直接スキャンしてウォレットを導入するためにのみ使用します。スクリーンショットや写真を撮らないでください。"
+  },
+  {
+    "key": "deletedWalletNotes",
+    "zhCN": "钱包删除后无法恢复，只能重新导入，请务必确认您已备份助记词或私钥",
+    "zhTW": "錢包删除後無法恢復，只能重新導入，請務必確認您已備份助記詞或私密金鑰",
+    "en": "After the wallet is deleted, it cannot be recovered and can only be re-imported. Please make sure you have backed up the mnemonic or private key",
+    "ko": "지갑 을 삭제 한 후 복구 할 수 없습니다. 다시 가 져 올 수 있 습 니 다. 백업 한 단어 나 비밀 키 를 확인 하 십시오.",
+    "ja": "ウォレットを削除しても元に戻せません。再導入しかできません。必ずニーモニックコードやプライベートキーをバックアップしてください。"
+  },
+  {
+    "key": "offlineScanQRCode",
+    "zhCN": "网络传输很危险，很容易被黑客获取内容。建议离线设备通过扫描二维码方式传输",
+    "zhTW": "網絡傳輸很危險，很容易被駭客獲取內容。 建議離線設備通過掃描二維碼管道傳輸",
+    "en": "Network transmission is very dangerous, and it is easy for hackers to access content. It is recommended that offline equipment transmit by scanning QR code",
+    "ko": "인터넷 전송 은 매우 위험 해서 해커 에 의 해 내용 을 얻 기 쉽다.오프라인 장치 가 QR 코드 를 스 캔 하여 전송 하 는 것 을 권장 합 니 다.",
+    "ja": "ネットワーク伝送は危険です。ハッキングされやすいです。オフラインデバイスはQRコードをスキャンして伝送することをおすすめします。"
+  },
+  {
+    "key": "savedSecNotes",
+    "zhCN": "请勿保存在邮箱、聊天工具、网盘等互联网能够接触的地方，强烈建议抄写在纸质文本上",
+    "zhTW": "請勿保存在郵箱、聊天工具、網盤等互聯網能够接觸的地方，強烈建議抄寫在紙質文字上",
+    "en": "Please do not save it in email, chat tools, online disk and other places accessible to the Internet. It is strongly recommended to copy it on paper text",
+    "ko": "메 일, 메 신 저, 인터넷 등 인터넷 이 접 할 수 있 는 곳 에 저장 하지 마 십시오. 종이 텍스트 에 베껴 쓰 는 것 을 강력 히 권장 합 니 다.",
+    "ja": "メールアドレス、チャットツール、ネットディスクなどのインターネットの接触できるところに保管しないでください。紙のテキストに書き写すことを強く勧めます。"
+  },
+  {
+    "key": "aitdWalletPrivateKeyNotes",
+    "zhCN": "AITD Wallet不会存储用户的私钥，私钥一旦丢失将无法找回资产，请妥善保管您的私钥",
+    "zhTW": "AITD Wallet不會存儲用戶的私密金鑰，私密金鑰一旦遺失將無法找回資產，請妥善保管您的私密金鑰",
+    "en": "AITD wallet will not store the user's private key. Once the private key is lost, the asset cannot be retrieved. Please keep your private key in a propoer spaces.",
+    "ko": "AITD Wallet 은 사용자 의 비밀 키 를 저장 하지 않 습 니 다. 비밀 키 를 잃 어 버 리 면 자산 을 찾 을 수 없습니다. 비밀 키 를 잘 보관 하 십시오.",
+    "ja": "AITD Walletはユーザーのプライベートキーを保存しません。プライベートキーがなくなったら、資産を探し出せません。プライベートキーを大切に保管してください。"
+  },
+  {
+    "key": "walletPwdSecNotes",
+    "zhCN": "为了安全，钱包不会存储用户的密码。如果忘记密码，无法导出助记词和私钥等，只能在“设置—安全中心”中清除钱包数据，再重新设置密码，创建或导入钱包。",
+    "zhTW": "為了安全，錢包不會存儲用戶的密碼。 如果忘記密碼，無法匯出助記詞和私密金鑰等，只能在“設定—安全中心”中清除錢包數據，再重新設置密碼，創建或導入錢包。",
+    "en": "For security, the wallet does not store the user's password. If you forget your password and cannot export mnemonics and private keys, you can only clear the wallet data in Settings - Security Center, and then reset your password to create or import a wallet.",
+    "ko": "안전 을 위해 지갑 은 사용자 의 비밀 번 호 를 저장 하지 않 습 니 다.비밀 번 호 를 잊 어 버 리 면 보조 단어 와 비밀 키 등 을 내 보 낼 수 없고 '설정 - 보안 센터' 에서 지갑 데 이 터 를 지우 고 비밀 번 호 를 다시 설정 하여 지갑 을 만 들 거나 가 져 올 수 있 습 니 다.",
+    "ja": "安全のために、ウォレットはユーザのパスワードを保存しません。パスワードを忘れたら、ニーモニックコードやプライベートキーなどがエクスポートできません。「安全センターの設定」でウォレットデータをクリアし、パスワードを再設定し、ウォレットを作成または導入するしかありません。"
+  },
+  {
+    "key": "hdWalletDesc",
+    "zhCN": "HD身份钱包全称是分层确定性(Hierarchical Deterministic)钱包的缩写。\nHD身份钱包可以通过一套助记词，管理所有链上的资产，简单快捷！",
+    "zhTW": "HD身份錢包全稱是分層確定性（Hierarchical Deterministic）錢包的縮寫。\n HD身份錢包可以通過一套助記詞，管理所有鏈上的資產，簡單快捷！",
+    "en": "The full name of HD identity wallet is the abbreviation of hierarchical deterministic wallet.\nHD identity wallet can manage all assets on the chain through a set of mnemonics, which is simple and fast!",
+    "ko": "HD 신분 지갑 은 모두 계층 확정 성 (Hierarchical Deterministic) 지갑 의 줄 임 말이다.\nHD 신분 지갑 은 보조 기 사 를 통 해 모든 체인 의 자산 을 관리 할 수 있 습 니 다. 간단 하고 빠 릅 니 다!",
+    "ja": "HDアイデンティングウォレットは、階層的確定性ウォレットの略語です。\nHDアイデンティティーウォレットは、すべてのチェーン上の資産を管理するためのニーモニックコードセットで簡単かつ迅速に使えます。"
+  },
+  {
+    "key": "no_data",
+    "en": "No data temporarily",
+    "zhCN": "暂无数据",
+    "ja": "データがありません",
+    "zhTW": "暫無數據",
+    "ko": "데이터 없 음"
+  },
+  {
+    "en": "Pull Down To Refresh",
+    "key": "pull_down_to_refresh",
+    "zhCN": "下拉可以刷新",
+    "ja": "プルダウンは更新できます",
+    "zhTW": "下拉可以重繪",
+    "ko": "드 롭 다운 하면 리 셋 가능"
+  },
+  {
+    "en": "Release to refresh immediately",
+    "key": "release_to_refresh_immediately",
+    "zhCN": "松开立即刷新",
+    "ja": "外してすぐに更新できます",
+    "zhTW": "鬆開立即重繪",
+    "ko": "풀 어 즉시 리 셋"
+  },
+  {
+    "en": "Data is Being Refreshed",
+    "key": "data_is_being_refreshed",
+    "zhCN": "正在刷新数据中...",
+    "ja": "データを更新しています..",
+    "zhTW": "正在重繪數據中…",
+    "ko": "데이터 새로 고침 중..."
+  },
+  {
+    "key": "refresh_succeeded",
+    "zhCN": "刷新成功",
+    "zhTW": "重繪成功",
+    "en": "Refresh succeeded",
+    "ja": "リフレッシュした",
+    "ko": "리 셋 성공"
+  },
+  {
+    "en": "Pull Up to load more information",
+    "key": "pull_load_more",
+    "zhCN": "上拉可以加载更多",
+    "ja": "プルアップは更にロードする",
+    "zhTW": "上拉可以加載更多",
+    "ko": "위로 당기 면 더 많이 불 러 올 수 있 습 니 다."
+  },
+  {
+    "en": "Release to immediately load more information",
+    "key": "release_load_more",
+    "zhCN": "松开立即加载更多",
+    "ja": "外して更にロードする",
+    "zhTW": "鬆開立即加載更多",
+    "ko": "풀다"
+  },
+  {
+    "en": "Loading more data",
+    "key": "loading_more_data",
+    "zhCN": "正在加载更多的数据...",
+    "ja": "もっと多くのデータをロードしています...",
+    "zhTW": "正在加載更多的數據…",
+    "ko": "더 많은 데 이 터 를 불 러 오 는 중..."
+  },
+  {
+    "key": "Loading_failed_click_retry",
+    "zhCN": "加载失败, 点击重试",
+    "zhTW": "加載失敗，點擊重試",
+    "en": "Loading failed, click Retry",
+    "ja": "読み込みに失敗しました。もう一度クリックしてください",
+    "ko": "불 러 오 는 데 실 패 했 습 니 다. 다시 시도 하려 면 누 르 십시오."
+  },
+  {
+    "en": "Loading has completed",
+    "key": "loading_has_completed",
+    "zhCN": "已经全部加载完毕",
+    "ja": "すべてロードしました",
+    "zhTW": "已經全部加載完畢",
+    "ko": "모두 불 러 오기 완료"
+  },
+  {
+    "key": "refresh_failed",
+    "zhCN": "刷新失败",
+    "zhTW": "重繪失敗",
+    "en": "refresh failed",
+    "ja": "更新失敗",
+    "ko": "리 셋 실패"
+  },
+  {
+    "key": "year",
+    "zhCN": "年",
+    "ko": "년.",
+    "ja": "年",
+    "zhTW": "年",
+    "en": "year"
+  },
+  {
+    "key": "month",
+    "zhCN": "月",
+    "ko": "월.",
+    "ja": "月",
+    "zhTW": "月",
+    "en": "month"
+  },
+  {
+    "key": "success",
+    "zhCN": "成功",
+    "ko": "성공 하 다.",
+    "ja": "成功",
+    "zhTW": "成功",
+    "en": "success"
+  },
+  {
+    "key": "confirmationInProgress",
+    "zhCN": "确认中",
+    "ko": "확인 중",
+    "ja": "確認中",
+    "zhTW": "確認中",
+    "en": "Confirmation in progress"
+  },
+  {
+    "key": "youCantTransferItToYourself",
+    "zhCN": "不能转账给自己",
+    "ko": "자신 에 게 이체 할 수 없다",
+    "ja": "自分に振替できません",
+    "zhTW": "不能轉帳給自己",
+    "en": "You can't transfer it to yourself"
+  },
+  {
+    "key": "theBalanceIsNotEnoughToPayTheHandlingFee",
+    "zhCN": "的余额不足以支付手续费",
+    "ko": "수수료",
+    "ja": "の残額は手数料を支払うのに足りません",
+    "zhTW": "的餘額不足以支付手續費",
+    "en": "The balance is not enough to pay the handling fee"
+  },
+  {
+    "key": "sorryYourCreditIsRunningLow",
+    "zhCN": "余额不足",
+    "ko": "잔고 가 부족 하 다",
+    "ja": "残高が足りない",
+    "zhTW": "餘額不足",
+    "en": "Insufficient balance"
+  },
+  {
+    "key": "pleaseEnterTheTransferAmount",
+    "zhCN": "请输入转账金额",
+    "ko": "이체 금액 을 입력 하 세 요",
+    "ja": "振替金額を入力してください",
+    "zhTW": "請輸入轉帳金額",
+    "en": "Please enter the transfer amount"
+  },
+  {
+    "key": "list",
+    "zhCN": "列表",
+    "ko": "리스트",
+    "ja": "リスト",
+    "zhTW": "清單",
+    "en": "list"
+  },
+  {
+    "key": "quantity",
+    "zhCN": "数量",
+    "ko": "수량",
+    "ja": "数",
+    "zhTW": "數量",
+    "en": "quantity"
+  },
+  {
+    "key": "collectionTransactionHistory",
+    "zhCN": "收藏品详情",
+    "ko": "소장 품 거래 역사",
+    "ja": "コレクションの詳細",
+    "zhTW": "收藏品詳情",
+    "en": "Details of the collection"
+  },
+  {
+    "key": "give",
+    "zhCN": "赠送",
+    "ko": "증정 하 다.",
+    "ja": "贈る",
+    "zhTW": "贈送",
+    "en": "Give"
+  },
+  {
+    "key": "pleaseEnterTheCollectionAddress",
+    "zhCN": "请输入收款地址",
+    "ko": "입금 주소 입력",
+    "ja": "入金先を入力してください。",
+    "zhTW": "請輸入收款地址",
+    "en": "Please enter the receiving address"
+  },
+  {
+    "key": "confirmationInProgress",
+    "zhCN": "确认中",
+    "ko": "확인 중",
+    "ja": "確認中",
+    "zhTW": "確認中",
+    "en": "Confirmation in progress"
+  },
+  {
+    "key": "low",
+    "zhCN": "弱",
+    "ko": "약 하 다",
+    "ja": "弱い",
+    "zhTW": "弱",
+    "en": "Weak"
+  },
+  {
+    "key": "middle",
+    "zhCN": "中",
+    "ko": "중.",
+    "ja": "中",
+    "zhTW": "中",
+    "en": "Middle"
+  },
+  {
+    "key": "strong",
+    "zhCN": "强",
+    "ko": "강하 다.",
+    "ja": "強い",
+    "zhTW": "强",
+    "en": "strong"
+  },
+  {
+    "key": "creating",
+    "zhCN": "正在创建······",
+    "ko": "생 성 중",
+    "ja": "作成中略",
+    "zhTW": "正在創建······",
+    "en": "Creating..."
+  },
+  {
+    "key": "importing",
+    "zhCN": "正在导入······",
+    "ko": "가 져 오 는 중",
+    "ja": "インポート中略",
+    "zhTW": "正在導入······",
+    "en": "Importing..."
+  },
+  {
+    "key": "filePasswordCannotBeEmpty",
+    "zhCN": "文件密码不能为空",
+    "ko": "파일 암호 가 비어 있 으 면 안 됩 니 다.",
+    "ja": "ファイルのパスワードが空ではいけない",
+    "zhTW": "檔案密碼不能為空",
+    "en": "File password cannot be empty"
+  },
+  {
+    "key": "mnemonicAlreadyExists",
+    "zhCN": "助记词已经存在",
+    "ko": "보조 기 사 는 이미 존재 한다.",
+    "ja": "ニーモニックコードはすでに存在します",
+    "zhTW": "助記詞已經存在",
+    "en": "Mnemonic has already exists"
+  },
+  {
+    "key": "addressAlreadyExists",
+    "zhCN": "地址已经存在",
+    "ko": "주소 가 이미 존재 합 니 다",
+    "ja": "アドレスは既に存在します",
+    "zhTW": "地址已經存在",
+    "en": "Address already exists"
+  },
+  {
+    "key": "createdSuccessfully",
+    "zhCN": "创建成功",
+    "ko": "생 성 성공",
+    "ja": "作成成功",
+    "zhTW": "創建成功",
+    "en": "Created successfully"
+  },
+  {
+    "key": "importSucceeded",
+    "zhCN": "导入成功",
+    "ko": "가 져 오기 성공",
+    "ja": "インポート成功",
+    "zhTW": "導入成功",
+    "en": "Import succeed"
+  },
+  {
+    "key": "creationFailed",
+    "zhCN": "创建失败",
+    "ko": "생 성 실패",
+    "ja": "作成に失敗しました",
+    "zhTW": "創建失敗",
+    "en": "Creation failed"
+  },
+  {
+    "key": "importFailed",
+    "zhCN": "导入失败",
+    "ko": "가 져 오기 실패",
+    "ja": "インポート失敗",
+    "zhTW": "導入失敗",
+    "en": "Import failed"
+  },
+  {
+    "key": "creationComplete",
+    "zhCN": "创建完成",
+    "ko": "생 성 완료",
+    "ja": "作成完了",
+    "zhTW": "創建完成",
+    "en": "Creation complete"
+  },
+  {
+    "key": "importComplete",
+    "zhCN": "导入完成",
+    "ko": "가 져 오기 완료",
+    "ja": "インポート完了",
+    "zhTW": "導入完成",
+    "en": "Import complete"
+  },
+  {
+    "key": "creating",
+    "zhCN": "正在创建······",
+    "ko": "생 성 중",
+    "ja": "作成中略",
+    "zhTW": "正在創建······",
+    "en": "Creating..."
+  },
+  {
+    "key": "importing",
+    "zhCN": "正在导入······",
+    "ko": "가 져 오 는 중",
+    "ja": "インポート中略",
+    "zhTW": "正在導入······",
+    "en": "Importing..."
+  },
+  {
+    "key": "verificationMnemonics",
+    "zhCN": "验证助记词",
+    "ko": "검증 조사",
+    "ja": "ニーモニックコード検証",
+    "zhTW": "驗證助記詞",
+    "en": "Verify mnemonics"
+  },
+  {
+    "key": "makeSureYouHaveBackedUpYourMnemonicsPleaseVerifyTheFollowingQuestions",
+    "zhCN": "确保您已备份好您的助记词，请验证如下问题",
+    "ko": "보조 단 어 를 백업 하 였 는 지 확인 하 십시오. 다음 문 제 를 확인 하 십시오.",
+    "ja": "あなたのニーモニックコードがバックアップされていることを確認してください。以下の問題を確認してく",
+    "zhTW": "確保您已備份好您的助記詞，請驗證如下問題",
+    "en": "Make sure you have backed up your mnemonics, please verify the following questions"
+  },
+  {
+    "key": "pleaseSelectTheWord",
+    "zhCN": "请选择第{}个单词",
+    "ko": "{} 번 단 어 를 선택 하 십시오.",
+    "ja": "第{}単語を選んでください",
+    "zhTW": "請選擇第{}個單詞",
+    "en": "Please select the {} word"
+  },
+  {
+    "key": "copy",
+    "zhCN": "复制",
+    "ko": "복제 하 다.",
+    "ja": "コピー",
+    "zhTW": "複製",
+    "en": "Copy"
+  },
+  {
+    "key": "importWallet",
+    "zhCN": "导入{}钱包",
+    "ko": "{} 지갑 가 져 오기",
+    "ja": "インポート{}ウォレット",
+    "zhTW": "導入{}錢包",
+    "en": "Import {} Wallet"
+  },
+  {
+    "key": "onlyNumbersOfCanBeEntered",
+    "zhCN": "只能输入{}的数字",
+    "ko": "{} 의 숫자 만 입력 할 수 있 습 니 다.",
+    "ja": "{}の数字しか入力できません",
+    "zhTW": "只能輸入{}的數位",
+    "en": "Only numbers of {} can be entered"
+  },
+  {
+    "key": "privateKeyError",
+    "zhCN": "私钥出错",
+    "ko": "비밀 키 오류",
+    "ja": "プライベートキーエラー",
+    "zhTW": "私密金鑰出錯",
+    "en": "Private key error"
+  },
+  {
+    "key": "insufficientPrivateKeyLength",
+    "zhCN": "私钥长度不够",
+    "ko": "비밀 키 길이 부족",
+    "ja": "プライベートキーの長さが足りません",
+    "zhTW": "私密金鑰長度不够",
+    "en": "Insufficient private key length"
+  },
+  {
+    "key": "pleaseEnterTheCorrectMnemonic",
+    "zhCN": "请输入正确的助记词",
+    "ko": "정확 한 보조 어 를 입력 하 세 요.",
+    "ja": "正しいニーモニックコードを入力してください",
+    "zhTW": "請輸入正確的助記詞",
+    "en": "Please enter the correct mnemonic"
+  },
+  {
+    "key": "pleaseEnterThePrivateKeyAddressOfWallet",
+    "zhCN": "请输入{}钱包的私钥地址",
+    "ko": "{} 지갑 의 비밀 키 주 소 를 입력 하 십시오.",
+    "ja": " {} ウォレットのプライベートキーのアドレスを入力してください",
+    "zhTW": "請輸入{}錢包的私密金鑰地址",
+    "en": "Please enter the private key address of {} Wallet"
+  },
+  {
+    "key": "pleaseEnterThePrivateKey",
+    "zhCN": "请输入私钥",
+    "ko": "비밀 키 입력",
+    "ja": "秘密鍵を入力してください",
+    "zhTW": "請輸入私密金鑰",
+    "en": "Please enter the private key"
+  },
+  {
+    "key": "pleaseEnterAMnemonicOfEnglishWords",
+    "zhCN": "请输入{}个英文单词的助记词",
+    "ko": "{} 영어 단어의 보조 단 어 를 입력 하 십시오.",
+    "ja": "英語の単語ニーモニックコードを入力してください",
+    "zhTW": "請輸入{}個英文單詞的助記詞",
+    "en": "Please enter a mnemonic of {} English words"
+  },
+  {
+    "key": "pleaseEnterMnemonicWordsSeparatedBySpaces",
+    "zhCN": "请输入{}个助记词，以空格隔开",
+    "ko": "{} 개의 보조 기 사 를 입력 하여 빈 칸 으로 구분 하 십시오.",
+    "ja": "ニーモニックコードを入力して、スペースで区切ってください",
+    "zhTW": "請輸入{}個助記詞，以空格隔開",
+    "en": "Please enter {} mnemonic words separated by spaces"
+  },
+  {
+    "key": "pleaseEnterTheKeystoreFileContentOfWallet",
+    "zhCN": "请输入{}钱包的KeyStore文件内容",
+    "ko": "{} 지갑 의 KeyStore 파일 내용 을 입력 하 십시오.",
+    "ja": "{}ウォレットのKey Storeファイルの内容を入力してください",
+    "zhTW": "請輸入{}錢包的KeyStore檔案內容",
+    "en": "Please enter the keystore file content of {} Wallet"
+  },
+  {
+    "key": "fileContent",
+    "zhCN": "文件内容",
+    "ko": "파일 내용",
+    "ja": "ファイルの内容",
+    "zhTW": "檔案內容",
+    "en": "File content"
+  },
+  {
+    "key": "pleaseEnterTheKeystorePassword",
+    "zhCN": "请输入KeyStore密码",
+    "ko": "KeyStore 비밀 번 호 를 입력 하 세 요",
+    "ja": "Key Storeパスワードを入力してください",
+    "zhTW": "請輸入KeyStore密碼",
+    "en": "Please enter the keystore password"
+  },
+  {
+    "key": "iHaveReadAndAgree",
+    "zhCN": "我已经阅读并同意",
+    "ko": "나 는 이미 읽 고 동의 했다.",
+    "ja": "すでに読んで同意しました",
+    "zhTW": "我已經閱讀並同意",
+    "en": "I have read and agree"
+  },
+  {
+    "key": "serviceAndPrivacyTerms",
+    "zhCN": "服务及隐私条款",
+    "ko": "서비스 및 프라이버시 조항",
+    "ja": "サービス及びプライバシー条項",
+    "zhTW": "服務及隱私條款",
+    "en": "Service and privacy terms"
+  },
+  {
+    "key": "unnamed",
+    "zhCN": "未命名",
+    "ko": "이름 없 음",
+    "ja": "名前なし",
+    "zhTW": "未命名",
+    "en": "Unnamed"
+  },
+  {
+    "key": "addWallet",
+    "zhCN": "添加钱包",
+    "ko": "지갑 추가",
+    "ja": "追加",
+    "zhTW": "添加錢包",
+    "en": "Add Wallet"
+  },
+  {
+    "key": "noMessage",
+    "zhCN": "暂无消息",
+    "ko": "잠시 소식 이 없다.",
+    "ja": "メッセージがない",
+    "zhTW": "暫無消息",
+    "en": "No message"
+  },
+  {
+    "key": "setUp",
+    "zhCN": "设置",
+    "ko": "설치 하 다.",
+    "ja": "設定",
+    "zhTW": "設定",
+    "en": "Set up"
+  },
+  {
+    "key": "miningLaborFeeNotes",
+    "zhCN": "由于链上转账需要一定的矿工费，因此全部转出后收到的数额是扣除矿工费之后的数额，实际收到会比全部数额少一些。",
+    "ko": "체인 에서 이 체 를 하려 면 일정한 광부 비가 필요 하기 때문에 모두 이 체 를 한 후에 받 은 액 수 는 광부 비 를 공제 한 후의 액수 이 고 실제 받 은 액 수 는 전체 금액 보다 약간 적다.",
+    "ja": "チェーン上で振替するには一定のマイナー料が必要です、全部転出して受け取った金額はマイナー料を差し引いた金額です。実際に受け取る金額は全部の金額より少ないです。",
+    "zhTW": "由於鏈上轉帳需要一定的礦工費，囙此全部轉出後收到的數額是扣除礦工費之後的數額，實際收到會比全部數額少一些。",
+    "en": "Transfer on-chain requires a certain amount of mining labor fee, the amount received after transfer  is the amount after deducting the mining labor fee, and the actual amount received will be less than the total amount."
+  },
+  {
+    "key": "thisChainIsNotSupportedTemporarilyDoYouWantToSwitchWallets",
+    "zhCN": "暂时不支持这条链，是否切换钱包",
+    "ko": "이 체인 은 지원 되 지 않 습 니 다. 지갑 을 바 꿀 지 여부 입 니 다.",
+    "ja": "このチェーンはサポートされていません。ウォレットを切り替えますか？",
+    "zhTW": "暫時不支持這條鏈，是否切換錢包",
+    "en": "This chain is not supported temporarily. Do you want to switch wallets?"
+  },
+  {
+    "key": "theDataComesFromHermesTheThirdpartyExchangePlatformAndTheSpecificContentIsSubjectToTheDataOnTheChain",
+    "zhCN": "数据来源于第三方交易所平台Hermes，具体内容以链上数据为准。",
+    "ko": "데 이 터 는 제3자 거래소 플랫폼 Hermes 에서 기원 되 고 구체 적 인 내용 은 체인 상의 데 이 터 를 기준 으로 한다.",
+    "ja": "データは第三者取引所プラットフォームのHermesからです。具体的な内容はチェーンデータに準じています。",
+    "zhTW": "數據來源於協力廠商交易所平臺Hermes，具體內容以鏈上數據為准。",
+    "en": "The data comes from Hermes, the third-party exchange platform, and the specific content is subject to the data on the chain."
+  },
+  {
+    "key": "completed",
+    "zhCN": "已完成",
+    "ko": "완료 됨",
+    "ja": "完了しました",
+    "zhTW": "已完成",
+    "en": "Completed"
+  },
+  {
+    "key": "deleteAddress",
+    "zhCN": "删除地址",
+    "ko": "주소 삭제",
+    "ja": "アドレスを削除",
+    "zhTW": "删除地址",
+    "en": "Delete address"
+  },
+  {
+    "key": "areYouSureYouWantToDeleteThisAddress",
+    "zhCN": "您确定要删除该地址吗",
+    "ko": "이 주 소 를 삭제 하 시 겠 습 니까?",
+    "ja": "本当にこのアドレスを削除しますか？",
+    "zhTW": "您確定要删除該地址嗎",
+    "en": "Are you sure you want to delete this address"
+  },
+  {
+    "key": "delete",
+    "zhCN": "删除",
+    "ko": "삭제",
+    "ja": "削除",
+    "zhTW": "删除",
+    "en": "delete"
+  },
+  {
+    "key": "addAddress",
+    "zhCN": "添加地址",
+    "ko": "주소 추가",
+    "ja": "アドレスを追加",
+    "zhTW": "添加地址",
+    "en": "Add address"
+  },
+  {
+    "key": "modifyAddress",
+    "zhCN": "修改地址",
+    "ko": "주소 수정",
+    "ja": "アドレスを変更",
+    "zhTW": "修改地址",
+    "en": "Modify address"
+  },
+  {
+    "key": "pleaseSetANameForThisAddressUpToCharacters",
+    "zhCN": "请为该地址设置名称，最多{}个字符",
+    "ko": "이 주소 의 이름 을 최대 {} 글자 로 설정 하 십시오.",
+    "ja": "この住所の名前を最大{}文字で設定してください。",
+    "zhTW": "請為該地址設定名稱，最多{}個字元",
+    "en": "Please set a name for this address, up to {} characters"
+  },
+  {
+    "key": "theWalletCanBePastedOrScanned",
+    "zhCN": "可粘贴或扫描输入钱包",
+    "ko": "지갑 을 붙 이거 나 스 캔 할 수 있 습 니 다.",
+    "ja": "入力ウォレットの貼り付けやスキャンができます。",
+    "zhTW": "可粘貼或掃描輸入錢包",
+    "en": "The wallet can be pasted or scanned"
+  },
+  {
+    "key": "modify",
+    "zhCN": "修改",
+    "ko": "수정 하 다.",
+    "ja": "変更",
+    "zhTW": "修改",
+    "en": "modify"
+  },
+  {
+    "key": "preservation",
+    "zhCN": "保存",
+    "ko": "보존 하 다.",
+    "ja": "保存",
+    "zhTW": "保存",
+    "en": "preservation"
+  },
+  {
+    "key": "selectMainChain",
+    "zhCN": "选择主链",
+    "ko": "메 인 체인 선택",
+    "ja": "メインチェーンを選択",
+    "zhTW": "選擇主鏈",
+    "en": "Select Key chain"
+  },
+  {
+    "zhCN": "扫一扫，向我付款",
+    "ko": "청소 하고 돈 내.",
+    "ja": "スキャンしてして、私にお金を払います。",
+    "zhTW": "掃一掃，向我付款",
+    "en": "Scan And Pay Me",
+    "key": "sweepAndPayMe"
+  },
+  {
+    "zhCN": "收款地址",
+    "ko": "수취 주소",
+    "ja": "入金先",
+    "zhTW": "收款地址",
+    "en": "Receiving Address",
+    "key": "collectionAddress"
+  },
+  {
+    "zhCN": "分享",
+    "ko": "함께 나누다",
+    "ja": "シェアー",
+    "zhTW": "分享",
+    "en": "Share",
+    "key": "share"
+  },
+  {
+    "zhCN": "注意：该地址仅适用于{}链上的转账，请勿用于其它币种",
+    "ko": "주의: 이 주 소 는 {} 체인 의 이체 에 만 적 용 됩 니 다. 다른 화폐 에 사용 하지 마 십시오.",
+    "ja": "注意：この住所は{}チェーン上の振込にのみ適用されます。他のトーケンには使用しないでください。",
+    "zhTW": "注意：該地址僅適用於{}鏈上的轉帳，請勿用於其它幣種",
+    "en": "Note: This address is only applicable to the transfer on the {} chain and should not be used in other currencies",
+    "key": "noteThisAddressIsOnlyApplicableToTheTransferOnTheXXXChainAndShouldNotBeUsedInOtherCurrencies"
+  },
+  {
+    "zhCN": "添加钱包",
+    "key": "addWallet",
+    "ko": "지갑 추가",
+    "ja": "ウォレットを追加",
+    "zhTW": "添加錢包",
+    "en": "Add Wallet"
+  },
+  {
+    "zhCN": "切换钱包",
+    "key": "switchWallet",
+    "ko": "지갑 전환",
+    "ja": "ウォレットを切り替え",
+    "zhTW": "切換錢包",
+    "en": "Switch Wallet"
+  },
+  {
+    "zhCN": "您尚未拥有{}钱包，是否添加钱包？",
+    "key": "dapp_addWallet_tip",
+    "ko": "{} 지갑 이 없습니다. 지갑 을 추가 하 시 겠 습 니까?",
+    "ja": "まだウォレットを持っていませんが、ウォレットを追加しますか？",
+    "zhTW": "您尚未擁有{}錢包，是否添加錢包？",
+    "en": "You don't have a {} wallet yet. Do you want to add a wallet?"
+  },
+  {
+    "zhCN": "该Dapp只支持{}链，是否切换钱包？",
+    "key": "dapp_switchWallet_tip",
+    "ko": "이 Dapp 는 {} 체인 만 지원 합 니 다. 지갑 을 전환 하 시 겠 습 니까?",
+    "ja": "このDappは{}チェーンのみをサポートしていますが、ウォレットを切り替えますか？",
+    "zhTW": "該Dapp只支持{}鏈，是否切換錢包？",
+    "en": "This DAPP only supports {} chains. Do you want to switch wallets?"
+  },
+  {
+    "zhCN": "设置新密码",
+    "ko": "새 비밀번호 설정",
+    "ja": "新しいパスワードを設定します",
+    "zhTW": "設定新密碼",
+    "en": "Set new password",
+    "key": "setNewPassword"
+  },
+  {
+    "zhCN": "修改钱包密码",
+    "ko": "지갑 비밀번호 수정",
+    "ja": "ウォレットのパスワードを変更",
+    "zhTW": "修改錢包密碼",
+    "en": "Change Wallet Password",
+    "key": "changeWalletPassword"
+  },
+  {
+    "zhCN": "恢复初始设置",
+    "ko": "초기 설정 복원",
+    "ja": "初期設定を復元",
+    "zhTW": "恢復初始設定",
+    "en": "Restore Initial Settings",
+    "key": "restoreInitialSettings"
+  },
+  {
+    "zhCN": "使用指纹支付",
+    "ko": "지문 으로 지불 하 다",
+    "ja": "指紋で支払う",
+    "zhTW": "使用指紋支付",
+    "en": "Pay with fingerprint",
+    "key": "payWithFingerprint"
+  },
+  {
+    "zhCN": "使用指纹登录",
+    "ko": "지문 으로 로그 인",
+    "ja": "指紋を登録する",
+    "zhTW": "使用指紋登入",
+    "en": "Log in with fingerprint",
+    "key": "logInWithFingerprint"
+  },
+  {
+    "zhCN": "使用人脸支付",
+    "ko": "페 이 퍼 페 이 먼 트",
+    "ja": "顔認証で支払う",
+    "zhTW": "使用人臉支付",
+    "en": "Pay with FaceID",
+    "key": "payWithFace"
+  },
+  {
+    "zhCN": "使用人脸登录",
+    "ko": "얼굴 등록 사용",
+    "ja": "顔認証でログインする",
+    "zhTW": "使用人臉登入",
+    "en": "Login with FaceID",
+    "key": "loginWithFace"
+  },
+  {
+    "zhCN": "该功能仅限于忘记钱包密码时使用",
+    "ko": "이 기능 은 지갑 비밀 번 호 를 잊 어 버 렸 을 때 만 사용 할 수 있 습 니 다.",
+    "ja": "この機能はウォレットのパスワードを忘れた時にのみ使用できます。",
+    "zhTW": "該功能僅限於忘記錢包密碼時使用",
+    "en": "This function is only available when you forget your wallet password",
+    "key": "restoreSettingsTip1"
+  },
+  {
+    "zhCN": "我已备份相关的助记词和私钥",
+    "ko": "나 는 이미 관련 된 보조 단어 와 비밀 키 를 백업 했다.",
+    "ja": "私は関連のニーモニックコードとプライベートキーをバックアップしました。",
+    "zhTW": "我已備份相關的助記詞和私密金鑰",
+    "en": "I have backed up the relevant mnemonics and private keys",
+    "key": "restoresSettingsTip2"
+  },
+  {
+    "zhCN": "我已知晓该功能会清除所有钱包数据",
+    "ko": "나 는 이 기능 이 모든 지갑 데 이 터 를 지 울 것 이라는 것 을 이미 알 고 있다.",
+    "ja": "この機能はすべてのウォレットデータをクリアすると知っています。",
+    "zhTW": "我已知曉該功能會清除所有錢包數據",
+    "en": "I know this feature will clear all wallet data",
+    "key": "restoreSettingsTip3"
+  },
+  {
+    "zhCN": "我愿意承担该操作所带来的风险",
+    "ko": "나 는 이 조작 이 가 져 온 위험 을 부담 하고 싶다.",
+    "ja": "この操作によるリスクを負担します。",
+    "zhTW": "我願意承擔該操作所帶來的風險",
+    "en": "I am willing to take the risk of this operation",
+    "key": "restoreSettingsTip4"
+  },
+  {
+    "zhCN": "不会存储用户的{}，一旦丢失将无法找回资产，请妥善保管您的{}",
+    "key": "aitdWalletExportLastNotes",
+    "ko": "사용자 의 {} 을 저장 하지 않 습 니 다. 잃 어 버 리 면 자산 을 찾 을 수 없습니다. {} 을 잘 보관 하 십시오.",
+    "ja": "ユーザーの{}は保存されませんので、一度なくしたら資産を取り戻せません。大切に保管してください。",
+    "zhTW": "不會存儲用戶的{}，一旦遺失將無法找回資產，請妥善保管您的{}",
+    "en": "The user's {} will not be stored. Once it lost, the assets will not be retrieved. Please keep your {} in secure place "
+  },
+  {
+    "zhCN": "分享邀请",
+    "ko": "초대 공유",
+    "ja": "紹介をシェアー",
+    "zhTW": "分享邀請",
+    "en": "Share Invitation",
+    "key": "myShareInvitation"
+  },
+  {
+    "zhCN": "我的",
+    "ko": "나의",
+    "ja": "私の",
+    "zhTW": "我的",
+    "en": "My",
+    "key": "mySettings"
+  },
+  {
+    "zhCN": "版本更新",
+    "ko": "버 전 업데이트",
+    "ja": "バージョンの更新",
+    "zhTW": "版本更新",
+    "en": "Version Update",
+    "key": "myVersionUpdate"
+  },
+  {
+    "zhCN": "当前已是最新版本",
+    "ko": "현재 최신 버 전 입 니 다.",
+    "ja": "現在は最新バージョンです。",
+    "zhTW": "當前已是最新版本",
+    "en": "Is currently the latest version",
+    "key": "myVersionLatest"
+  },
+  {
+    "zhCN": "请输入有效KeyStore文件",
+    "ko": "유효한 KeyStore 파일 을 입력 하 십시오",
+    "ja": "有効なKey Storeファイルを入力してください。",
+    "zhTW": "請輸入有效KeyStore檔案",
+    "en": "Please enter a valid keystore file",
+    "key": "pleaseEnterAValidKeystoreFile"
+  },
+  {
+    "zhCN": "恢复初始设置会将钱包密码和所有钱包数据（助记词，私钥，Keystore等）抹除，请您务必确认以下内容：",
+    "ko": "초기 설정 을 복원 하면 지갑 비밀번호 와 모든 지갑 데이터 (보조 단어, 비밀 키, Keystore 등) 를 지 웁 니 다. 다음 내용 을 확인 하 십시오.",
+    "ja": "初期設定を再開すると、ウォレットのパスワードとウォレットのデータ（プライベートキー、ニーモニックコード、Keystoreなど）を消去しますので、必ず以下の内容を確認してください。",
+    "zhTW": "恢復初始設定會將錢包密碼和所有錢包數據（助記詞，私密金鑰，Keystore等）抹除，請您務必確認以下內容：",
+    "en": "Restoring the initial settings will erase the wallet password and all wallet data (mnemonics, private keys, keystore, etc.). Please be sure to confirm the following:",
+    "key": "restoringSettingsTipTitle"
+  },
+  {
+    "zhCN": "功能暂未开放！",
+    "ko": "기능 아직 오픈 하지 않 았 습 니 다!",
+    "ja": "機能はまだオープンしていません。",
+    "zhTW": "功能暫未開放！",
+    "en": "The function is not open yet!",
+    "key": "theFunctionIsNotOpenYet"
+  },
+  {
+    "zhCN": "修改成功",
+    "ko": "수정 성공",
+    "ja": "修正した",
+    "zhTW": "修改成功",
+    "en": "Modified successfully",
+    "key": "modifiedSuccessfully"
+  },
+  {
+    "zhCN": "密码长度最小6，最长20",
+    "ko": "비밀번호 길이 최소 6, 최대 20",
+    "ja": "パスワードの長さは最小6、最大20",
+    "zhTW": "密碼長度最小6，最長20",
+    "en": "The minimum password length is 6 characters and the maximum password length is 20 characters",
+    "key": "thePasswordLengthTip"
+  },
+  {
+    "zhCN": "站内信",
+    "ko": "역 내 편지",
+    "ja": "お知らせ",
+    "zhTW": "站內信",
+    "en": "Station Letter ",
+    "key": "mailList"
+  },
+  {
+    "zhCN": "全部已读",
+    "ko": "모두 읽 음",
+    "ja": "すべて読みました",
+    "zhTW": "全部已讀",
+    "en": "All read",
+    "key": "mail_allRead"
+  },
+  {
+    "zhCN": "了解更多",
+    "ko": "더 알 아 보기",
+    "ja": "もっと知りたい",
+    "zhTW": "瞭解更多",
+    "en": "Learn more",
+    "key": "learnMore"
+  },
+  {
+    "zhCN": "暂无内容",
+    "ko": "내용 이 없다",
+    "ja": "内容はまだない",
+    "zhTW": "暫無內容",
+    "en": "No content Temporarily",
+    "key": "noContent"
+  },
+  {
+    "zhCN": "信息详情",
+    "ko": "정보",
+    "ja": "情報の詳細",
+    "zhTW": "資訊詳情",
+    "en": "Information Details",
+    "key": "mail_informationDetails"
+  },
+  {
+    "zhCN": "清除未读",
+    "ko": "읽 지 않 은 항목 지우 기",
+    "ja": "未読メッセージをクリア",
+    "zhTW": "清除未讀",
+    "en": "Clear unread",
+    "key": "clearUnread"
+  },
+  {
+    "zhCN": "您确定要将所有未读标记为已读吗?",
+    "ko": "읽 지 않 은 모든 것 을 읽 은 것 으로 표시 하 시 겠 습 니까?",
+    "ja": "本当に未読メッセージを既読にしますか？",
+    "zhTW": "您確定要將所有未讀標記為已讀嗎？",
+    "en": "Are you sure you want to mark all unread ?",
+    "key": "areYouSureYouWantToMarkAllUnreadAsRead"
+  },
+  {
+    "zhCN": "清除",
+    "ko": "깨끗이 제거 하 다",
+    "ja": "クリア",
+    "zhTW": "清除",
+    "en": "Eliminate",
+    "key": "eliminate"
+  },
+  {
+    "zhCN": "人民币",
+    "ko": "인민폐",
+    "ja": "人民元",
+    "zhTW": "人民幣",
+    "en": "RMB",
+    "key": "currency_rmb"
+  },
+  {
+    "zhCN": "美元",
+    "ko": "달러",
+    "ja": "ドル",
+    "zhTW": "美元",
+    "en": "USDollar",
+    "key": "currency_dollar"
+  },
+  {
+    "zhCN": "新加坡元",
+    "ko": "싱가포르 달러",
+    "ja": "シンガポールドル",
+    "zhTW": "新加坡元",
+    "en": "Singapore Dollar",
+    "key": "currency_singaporeDollar"
+  },
+  {
+    "zhCN": "专业安全\n的去中心化钱包",
+    "ko": "전문 안전 @ @ 의 탈 중심 화 지갑",
+    "ja": "専門安全@のは中心に行って財布を溶かします。",
+    "zhTW": "專業安全\n的去中心化錢包",
+    "en": "Professional and safe \n decentralized Wallet",
+    "key": "inviteShareTitle"
+  },
+  {
+    "zhCN": "Defi入口 · 六链八币 · 链游玩法 · 数据加密",
+    "ko": "Defi 입 구 · 6 체인 8 코 인 · 체인 게임 법 · 데이터 암호 화",
+    "ja": "Defi入口・六鎖八元・チェーン遊び・データ暗号化",
+    "zhTW": "Defi入口·六鏈八幣·鏈遊玩法·資料加密",
+    "en": "Defi entry · Six chains and eight coins · Chain game playing method · Data encryption",
+    "key": "inviteShareSubtitle"
+  },
+  {
+    "zhCN": "一个值得分享的去中心化钱包",
+    "ko": "나 눌 만 한 탈 중심 화 지갑",
+    "ja": "共有できる財布を中心にしてください。",
+    "zhTW": "一個值得分享的去中心化錢包",
+    "en": "A decentralized wallet worth sharing",
+    "key": "inviteShareBottomDec"
+  },
+  {
+    "zhCN": "港元",
+    "ko": "홍콩 달러",
+    "ja": "香港元",
+    "zhTW": "港元",
+    "en": "Hong Kong Dollar",
+    "key": "currency_hkdollar"
+  },
+  {
+    "zhCN": "切换账号",
+    "ko": "계정 변경",
+    "ja": "アカウントを切り替え",
+    "zhTW": "切換帳號",
+    "en": "Switch account",
+    "key": "switchAccount"
+  },
+  {
+    "zhCN": "复制链接",
+    "ko": "링크 복사",
+    "ja": "リンクをコピー",
+    "zhTW": "複製連結",
+    "en": "Copy link",
+    "key": "copyLink"
+  },
+  {
+    "zhCN": "刷新",
+    "ko": "리셋",
+    "ja": "更新",
+    "zhTW": "重繪",
+    "en": "Refresh",
+    "key": "refresh"
+  },
+  {
+    "zhCN": "浏览器中打开",
+    "ko": "브라우저에서 열기",
+    "ja": "ブラウザで開く",
+    "zhTW": "瀏覽器中打開",
+    "en": "Open in browser",
+    "key": "openInBrowser"
+  },
+  {
+    "zhCN": "链接已复制到剪切板!",
+    "ko": "링크가 클립보드에 복사되었습니다!",
+    "ja": "リンクをクリップボードにコピーしました。",
+    "zhTW": "連結已複製到剪切板！",
+    "en": "Link copied to clipboard!",
+    "key": "linkCopiedToClipboard"
+  },
+  {
+    "zhCN": "此网页由{}提供",
+    "ko": "이 웹 페이지는 {}에서 제공합니다.",
+    "ja": "このウェブページは{}から提供されます",
+    "zhTW": "此網頁由{}提供",
+    "en": "This page is provided by {}",
+    "key": "thisPageIsProvidedBy"
+  },
+  {
+    "zhCN": "责任声明",
+    "ko": "책임 선언",
+    "ja": "責任声明",
+    "zhTW": "責任聲明",
+    "en": "Statement of responsibility",
+    "key": "statementOfResponsibility"
+  },
+  {
+    "zhCN": "您所访问的页面将跳转第三方DAPP {}，您在第三方DAPP上所有行为将使用该第三方DAPP的《用户协议》和《隐私政策》，由{}直接并单独向您承担责任。",
+    "ko": "귀하가 방문한 페이지는 제3자 DAPP {}로 넘어가며 귀하가 제3자 DAPP에서 모든 행위는 이 제3자 DAPP의 와 을 사용하고 {}에서 귀하께 직접 및 단독으로 책임을 집니다.",
+    "ja": "あなたが訪問したページは第三者DAPP｛｝にジャンプします。第三者DAPPでのすべての行為はこの第三者DAPPの「ユーザプロトコル」と「プライバシーポリシー」を使用します。",
+    "zhTW": "您所訪問的頁面將跳轉協力廠商DAPP {}，您在協力廠商DAPP上所有行為將使用該協力廠商DAPP的《用戶協議》和《隱私政策》，由{}直接並單獨向您承擔責任。",
+    "en": "The page you visit will jump to the third-party DAPP {}. All your actions on the third-party DAPP will use the user agreement and privacy policy of the third-party DAPP, and {} will be directly and solely responsible to you.",
+    "key": "dappStatementOfResponsibilityInfo"
+  },
+  {
+    "zhCN": "我已知晓",
+    "ko": "나는 이미 안다",
+    "ja": "知っています",
+    "zhTW": "我已知曉",
+    "en": "I already know",
+    "key": "iAlreadyKnow"
+  }
+]

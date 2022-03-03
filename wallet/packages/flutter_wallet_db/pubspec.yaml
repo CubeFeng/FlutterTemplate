@@ -1,0 +1,32 @@
+name: flutter_wallet_db
+description: 钱包数据库模块
+version: 0.0.1
+homepage: http://gitlab.tqxd.com/flutter/project/wallet.git
+
+environment:
+  sdk: ">=2.12.0 <3.0.0"
+  flutter: ">=2.2.3"
+
+dependencies:
+  flutter:
+    sdk: flutter
+  # SQLite数据库ORM
+  # https://github.com/tuuzed/floor/tree/f_sqlcipher/floor
+  floor:
+    hosted:
+      name: floor
+      url: https://pub.youzi.dev
+    version: ^1.2.0-sqlcipher
+
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+  build_runner: ^2.1.2
+  # floor生成代码 flutter pub run build_runner build
+  # https://github.com/tuuzed/floor/tree/f_sqlcipher/floor_generator
+  floor_generator:
+    hosted:
+      name: floor_generator
+      url: https://pub.youzi.dev
+    version: ^1.2.0-sqlcipher

@@ -1,0 +1,156 @@
+# This file contains the fastlane.tools configuration
+# You can find the documentation at https://docs.fastlane.tools
+#
+# For a list of all available actions, check out
+#
+#     https://docs.fastlane.tools/actions
+#
+# For a list of all available plugins, check out
+#
+#     https://docs.fastlane.tools/plugins/available-plugins
+#
+
+# Uncomment the line if you want fastlane to automatically update itself
+# update_fastlane
+
+require 'yaml'
+
+import "FastfileHelper"
+import "PodspecHelper"
+require 'fileutils'
+
+default_platform(:ios)
+
+platform :ios do
+  desc "Description of what the lane does"
+
+  rootPath = File.expand_path("../../", Dir.pwd)
+
+  before_all do | lane, options |
+    _apiEnv = options[:apiEnv]
+    _platform = options[:platform]
+    _short_hash = last_git_commit[:abbreviated_commit_hash]
+
+    update_wallet_app_api_env(_apiEnv)
+    update_wallet_app_config_json(_platform, _short_hash)
+
+    # 根据工程切换 flutter 版本
+    sh("fvm", "flavor", "stable")
+
+    debugLog "清空缓存"
+    sh("fvm", "flutter", "clean", "--no-version-check")
+
+    debugLog "拉取第三方插件"
+    sh("fvm", "flutter", "pub", "get", "--no-version-check")
+  end
+
+  lane :test do | options |
+    debugLog "laksjdflkajsdflkjasdlfjasldffjkl"
+  end
+
+  lane :build_ios_framework do | options |
+    # update submodule
+    debugLog "更新submodule"
+    Dir.chdir "../../bridge/bridge_ios" do
+      if File.exist?("#{Dir.pwd}/.git")
+        sh("git", "reset", "--hard")
+      end
+      git_submodule_update(recursive: true, init: true)
+    end
+
+    bridge_podspec_version = get_bridge_podspec_version()
+
+    # 生成版本号
+    version = "#{get_embed_app_version}.#{get_wallet_app_version}"
+
+    bridge_podspec_version_a = bridge_podspec_version.to_s.split('-')
+    if bridge_podspec_version_a.length == 2
+      version = "#{version}-#{bridge_podspec_version_a[1].to_i + 1}"
+    else
+      version = "#{version}-1"
+    end
+
+    debugLog "生成的版本号为: #{version}"
+
+    # 更新版本号
+    debugLog "更新 Bridge Podspec 版本号"
+    update_bridge_podspec_version(version)
+
+    # 编译 framework
+    debugLog "开始编译 Framework"
+    sh("fvm", "flutter", "build", "ios-framework", "--no-debug", "--no-profile", "--cocoapods", "--no-version-check")
+
+    # 发布Flutter到私有仓库
+    debugLog "发布Flutter到私有仓库"
+    flutter_dependency = publish_flutter_to_repo()
+
+    # 获取所有native依赖
+    debugLog "获取所有native依赖"
+    native_deps = get_bridge_native_deps(flutter_dependency)
+
+    # 获取插件生成的framework名称（包含Flutter、App）
+    debugLog "获取插件生成的framework名称（包含Flutter、App）"
+    plugin_framework_names = get_flutter_plugin_framework()
+
+    # bridge framework 路径
+    target_path = "#{rootPath}/bridge/bridge_ios/FWBridge/Frameworks/"
+
+    # 拷贝所有生成的文件到 bridge podspec 下
+    debugLog "拷贝所有生成的文件到 bridge podspec 下"
+    Dir.chdir "../build/ios/framework/Release/" do
+      plugin_framework_names.each do | n |
+        framework_path = "#{n}.xcframework"
+        # 如果存在
+        if File.directory?(framework_path)
+          FileUtils.cp_r(framework_path, target_path)
+        end
+      end
+    end
+
+    debugLog "更新Bridge Podspec 依赖"
+    update_bridge_podspec_deps(native_deps)
+
+    # 提交更改并且打Tag
+    debugLog "提交更改并且打Tag"
+    Dir.chdir target_path do
+      git_add(path: ".")
+      git_commit(path: '-a', message: "update flutter wallet bridge repo")
+      add_git_tag(tag: version)
+      push_to_git_remote(remote: "origin", local_branch: "master", remote_branch: "master")
+    end
+
+    # 发布 bridge 到私有仓库
+    debugLog "发布 bridge 到私有仓库"
+    publish_bridge_to_repo
+  end
+
+  lane :build_android_aar do | options |
+    debugLog "build aar"
+    # WALLET_EMBED_APP_VERSION = embed_app_version + flutter_wallet_app_version
+    version = "#{get_embed_app_version}-#{get_wallet_app_version}"
+    sh("fvm", "flutter", "build", "aar", "--build-number=#{version}", "--no-debug", "--no-profile", "--no-version-check")
+
+    debugLog "upload aars to minio"
+    upload_files_to_minio("../build/host/outputs/repo/")
+
+    debugLog "build bridge aar"
+    Dir.chdir "../../bridge/bridge_android" do
+      if File.exist?("#{Dir.pwd}/.git")
+        sh("git", "reset", "--hard")
+      end
+      git_submodule_update(recursive: true, init: true)
+      gradle_properties_path = "./gradle.properties"
+      File.open(gradle_properties_path) do | lines |
+        buffer = lines.read.gsub(/FLUTTER_INTEGRATION_MODE=\w+/, "FLUTTER_INTEGRATION_MODE=PRODUCT").gsub(/WALLET_EMBED_APP_VERSION=\w.+/, "WALLET_EMBED_APP_VERSION=#{version}")
+        File.open(gradle_properties_path, "w") {|l|
+          l.write(buffer)
+        }
+      end
+
+      sh("chmod", "+x", "./gradlew")
+      sh("./gradlew", ":bridge:publish")
+      upload_files_to_minio(".repo/")
+    end
+  end
+
+end

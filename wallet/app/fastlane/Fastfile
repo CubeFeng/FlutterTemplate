@@ -1,0 +1,263 @@
+# coding: utf-8
+# encodng: utf-8
+# -*- coding: utf-8 -*-
+# vim:set fileencoding=utf-8:
+require "base64"
+require 'yaml'
+require 'fileutils'
+
+default_platform(:ios)
+
+import "FastfileHelper"
+import "CodeSign"
+
+platform :ios do
+  desc "Wallet App"
+
+  @@appName = "Wallet"
+  @@codeSign = nil
+  @@apiEnv = nil
+  @@platform = nil
+  @@buildIndex = 0
+  @@appRootPath = nil
+  @@buildPath = nil
+
+  # 所有动作前的准备工作
+  before_all do | lane, options |
+    # 项目根目录
+    @@appRootPath = File.expand_path("..", Dir.pwd)
+
+    # api 环境
+    @@apiEnv = options[:apiEnv]
+
+    # 平台类型
+    @@platform = options[:platform]
+
+    # 签名、证书
+    _type = @@apiEnv == 'prod' ? 'release' : 'development'
+    @@codeSign = CodeSign.new(_type, @@platform)
+
+    # 创建 app_builds 文件夹
+    @@buildPath = "#{@@appRootPath}/app_builds"
+    if !File.directory?(@@buildPath)
+      Dir.mkdir(@@buildPath)
+    end
+
+    # Dir.chdir "../ios/" do
+      # sh("export https_proxy=http://127.0.0.1:6152;export http_proxy=http://127.0.0.1:6152;export all_proxy=socks5://127.0.0.1:6153")
+      # sh("pod", "repo", "update")
+    # end
+  end
+
+  #
+  lane :test do | options |
+
+  end
+
+  # 构建app
+  # @params string apiEnv API环境 dev/test/pre/prod/custom
+  # @params string platform 构建平台 iOS/Android
+  lane :build_flutter_app do | options |
+    # 文件输出名称
+    _outFileName = get_app_out_name(@@appName, @@apiEnv)
+    UI.message "[BUILD APP] #{@@buildIndex += 1}. 生成文件导出名称, #{_outFileName}"
+
+    # 更新 app 版本号
+    _appversion = update_flutter_app_version(false)
+    UI.message "[BUILD APP] #{@@buildIndex += 1}. 更新app版本号: #{_appversion}"
+
+    UI.message "[BUILD APP] #{@@buildIndex += 1}. 更新App的Api环境, env: #{@@apiEnv}"
+    update_app_api_env(@@apiEnv)
+
+    _short_hash = last_git_commit[:abbreviated_commit_hash]
+    UI.message "[BUILD APP] #{@@buildIndex += 1}. 更新App配置文件"
+    update_app_config_json(@@platform, _short_hash)
+
+    options[:outFileName] = _outFileName
+
+    # 根据工程切换 flutter 版本
+    sh("fvm", "flavor", "stable")
+
+    UI.message "[Flutter Build] #{@@buildIndex += 1}. 清空缓存"
+    sh("fvm", "flutter", "clean", "--no-version-check")
+
+    UI.message "[Flutter Build] #{@@buildIndex += 1}. 拉取第三方插件"
+    sh("fvm", "flutter", "pub", "get", "--no-version-check")
+    
+    UI.message "[BUILD APP] #{@@buildIndex += 1}. 更改App的图标"
+    update_app_icon(@@apiEnv, @@platform)
+    
+    UI.message "[BUILD APP] #{@@buildIndex += 1}. 注入Umeng统计"
+    inject_umeng_plugin(@@apiEnv)
+
+    UI.message "[Flutter Build] #{@@buildIndex += 1}. 更新FlutterApp配置"
+    update_flutter_app_config(@@apiEnv, @@platform, @@codeSign.bundle_identifier)
+
+    case @@platform
+    when 'iOS'
+      app_path = build_ios(options)
+    when 'Android'
+      app_path = build_android(options)
+    end
+
+    UI.message "[Flutter Build] #{@@buildIndex += 1}. 写入app文件到环境变量 APP_FILE_PATH 中"
+
+    write_config_yaml_data(@@platform, 'app_path', app_path)
+  end
+
+  # 打包 iOS
+  lane :build_ios do | options |
+    _outFileName = options[:outFileName]
+
+    UI.message "[Flutter Build] #{@@buildIndex += 1}. 因存在多包名, 更新Info.plist !"
+    Dir.chdir "../ios/" do
+      update_info_plist(
+        xcodeproj: "#{Dir.pwd}/#{ENV["XCODEPROJ"]}",
+        plist_path: "Runner/Info.plist",
+        app_identifier: @@codeSign.bundle_identifier
+      )
+    end
+
+    UI.message "[Flutter Build] #{@@buildIndex += 1}. 为了保证描述文件可用, 先进行删除操作"
+    remove_provisioning_profile(app_identifier: @@codeSign.bundle_identifier, type: @@codeSign.type)
+    UI.message "[Flutter Build] #{@@buildIndex += 1}. 通过match获取最新的证书及描述文件"
+    match(
+      type: @@codeSign.type,
+      app_identifier: @@codeSign.bundle_identifier,
+      keychain_password: ENV["KEYCHAIN_PASSWORD"],
+      readonly: true
+    )
+
+    UI.message "[Flutter Build] #{@@buildIndex += 1}. 更新签名配置"
+    Dir.chdir "../ios/" do
+      update_code_signing_settings(
+        use_automatic_signing: false,
+        path: "#{Dir.pwd}/#{ENV["XCODEPROJ"]}",
+        team_id: CredentialsManager::AppfileConfig.try_fetch_value(:team_id),
+        code_sign_identity: @@codeSign.code_sign_identity,
+        profile_name: @@codeSign.profile_name
+      )
+    end
+
+    sh("fvm", "flutter", "precache", "--ios")
+
+    update_export_options(options)
+
+    UI.message "[Flutter Build] #{@@buildIndex += 1}. 根据环境选择 toolchain"
+    _toolchain = "com.apple.dt.toolchain.XcodeDefault"
+
+    UI.message "[Flutter Build] #{@@buildIndex += 1}. 编译并导出最终产物"
+
+    sh("fvm", "flutter", "build", "ipa",
+      "--bundle-sksl-path", "sksl/flutter_ios_01.sksl.json",
+      "--export-options-plist=fastlane/ExportOptions.plist",
+      "--no-version-check"
+    )
+
+    _xcarchive_path = "#{@@appRootPath}/build/ios/archive/Runner.xcarchive"
+    if @@apiEnv == 'prod'
+      UI.message "[Flutter Build] #{@@buildIndex += 1}. 上传archive文件到minio服务器"
+      sh('chmod', '755', "#{@@appRootPath}/fastlane/minio.sh")
+      zip(path: _xcarchive_path, verbose: false)
+      sh("#{@@appRootPath}/fastlane/minio.sh #{_outFileName}.xcarchive.zip #{_xcarchive_path}.zip")
+      FileUtils.rm_rf("#{_xcarchive_path}.zip")
+    end
+    FileUtils.rm_rf(_xcarchive_path)
+
+    ipaFilePath = Dir[ "#{@@appRootPath}/build/ios/ipa/*.ipa" ].select{ |f| File.absolute_path f }
+    sh("mv", ipaFilePath[0], "#{@@buildPath}/#{_outFileName}.ipa")
+
+    UI.message "✅构建完成🎉!"
+    # 返回文件名称
+    ipaFile = "app_builds/#{_outFileName}.ipa"
+  end
+
+  # 更新iOS导出配置
+  lane :update_export_options do | options |
+    update_plist(
+      plist_path: "fastlane/ExportOptions.plist",
+      block: proc do |plist|
+        plist["method"] = @@codeSign.export_method
+        plist["provisioningProfiles"] = {
+          @@codeSign.bundle_identifier => @@codeSign.profile_name,
+        }
+        plist["teamID"] = ENV["TEAM_ID"]
+      end
+    )
+  end
+
+  # 打包 Android
+  lane :build_android do | options |
+    _outFileName = options[:outFileName]
+
+    Dir.chdir "../" do
+      UI.message "[Flutter Build] #{@@buildIndex += 1}. 编译并导出最终产物"
+      sh("fvm", "flutter", "build", "apk",
+        "--target-platform", "android-arm",
+        "--split-per-abi",
+        "--no-version-check",
+        "--bundle-sksl-path", "sksl/flutter_android_01.sksl.json",
+      )
+
+      apkFile = "build/app/outputs/flutter-apk/app-armeabi-v7a-release.apk"
+
+      UI.message "[Flutter Build] #{@@buildIndex += 1}. 移动apk文件到指定目录"
+      sh("mv #{apkFile} app_builds/#{_outFileName}.apk")
+    end
+    UI.message "✅构建完成🎉!"
+    apkFile = "app_builds/#{_outFileName}.apk"
+  end
+
+  # 上传app
+  # @params string platform 平台
+  lane :upload_app do | options |
+
+    _platform = options[:platform]
+    _app_path = read_config_yaml_data(_platform, 'app_path')
+
+    Dir.chdir "../" do
+      _app_path = "#{Dir.pwd}/#{_app_path}"
+    end
+
+    uri = URI(ENV["APP_UPLOAD_API"])
+
+    info = upload_file(_app_path)
+
+    if info['code'] == 0
+      UI.user_error!("文件上传错误!!!")
+    end
+
+    puts "生成的短链接为: #{info['data']['url']}"
+
+    app_url = info['data']['url']
+    write_config_yaml_data(_platform, 'app_url', app_url)
+  end
+
+  # 发送消息到构建系统
+  # fastlane releaseApp id:12 url:xxx platform:ANDROID
+  lane :release_app do | options |
+    _platform = options[:platform]
+    _url = read_config_yaml_data(_platform, 'app_url')
+
+    con = Faraday.new ENV["APP_RELEASE_API"]
+    params = {
+      :id => options[:id],
+      :url => _url,
+      :platform => options[:platform],
+    }
+    puts params
+    res = con.post '', params
+    puts "服务器返回"
+    puts res.body
+  end
+
+  # 提交更改
+  lane :commit_change do | options |
+    UI.message "[COMMIT] 1. 提交更新后的版本号!"
+    sh("git fetch origin #{git_branch()}")
+    update_flutter_app_version(true)
+  end
+end
+
+
+

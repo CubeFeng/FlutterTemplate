@@ -1,0 +1,56 @@
+buildscript {
+    ext.kotlin_version = '1.5.21'
+    repositories {
+        maven { url 'https://maven.aliyun.com/repository/google' }
+        maven { url 'https://maven.aliyun.com/repository/central' }
+        maven { url 'https://maven.aliyun.com/repository/public' }
+        maven { url 'https://repo1.maven.org/maven2/' }
+        google()
+        mavenCentral()
+        jcenter()
+    }
+
+    dependencies {
+        classpath 'com.android.tools.build:gradle:4.1.0'
+        classpath "org.jetbrains.kotlin:kotlin-gradle-plugin:$kotlin_version"
+    }
+}
+
+allprojects {
+    repositories {
+        maven { url 'https://maven.aliyun.com/repository/google' }
+        maven { url 'https://maven.aliyun.com/repository/central' }
+        maven { url 'https://maven.aliyun.com/repository/public' }
+        maven { url 'https://repo1.maven.org/maven2/' }
+        google()
+        mavenCentral()
+        jcenter()
+        maven {
+            url 'http://nexus.tqxd.com/repository/maven-releases/'
+        }
+        maven {
+            credentials {
+                username '5ece7e56f3cfd0d0e75832cd'
+                password 'yAC5eOy6d(-y'
+            }
+            url 'https://packages.aliyun.com/maven/repository/2005076-release-WRVnG7/'
+        }
+        maven {
+            credentials {
+                username '5ece7e56f3cfd0d0e75832cd'
+                password 'yAC5eOy6d(-y'
+            }
+            url 'https://packages.aliyun.com/maven/repository/2005076-snapshot-v2TOo1/'
+        }
+    }
+}
+
+rootProject.buildDir = '../build'
+subprojects {
+    project.buildDir = "${rootProject.buildDir}/${project.name}"
+    project.evaluationDependsOn(':app')
+}
+
+task clean(type: Delete) {
+    delete rootProject.buildDir
+}

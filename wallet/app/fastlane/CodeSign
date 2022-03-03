@@ -1,0 +1,28 @@
+class CodeSign
+  attr_reader :bundle_identifier, :type, :export_method, :profile_name, :code_sign_identity
+  def initialize(type, platform)
+    _code_sign_identity = 'Apple Distribution: chan miu (4L4CCLCR34)'
+    case type
+    when 'development'
+      if platform == 'iOS'
+        @bundle_identifier = 'io.wallet.app.pre'
+        @type = 'adhoc'
+        @export_method = 'ad-hoc'
+        @profile_name = 'match AdHoc io.wallet.app.pre'
+        @code_sign_identity = _code_sign_identity
+      else
+        @bundle_identifier = 'com.tianqi.aitdwallet'
+      end
+    when 'release'
+      if platform == 'iOS'
+        @bundle_identifier = 'io.wallet.app'
+        @type = 'appstore'
+        @export_method = 'app-store'
+        @profile_name = 'match AppStore io.wallet.app'
+        @code_sign_identity=_code_sign_identity
+      else
+        @bundle_identifier = 'com.tianqi.aitdwalletmain'
+      end
+    end
+  end
+end

@@ -1,0 +1,151 @@
+# coding: utf-8
+# encodng: utf-8
+# -*- coding: utf-8 -*-
+# vim:set fileencoding=utf-8:
+fastlane_require 'sem_version'
+
+require 'cocoapods-core'
+require 'set'
+require 'tty-file'
+
+default_platform(:ios)
+
+# 获取插件生成的framework名称（包含Flutter、App）
+def get_flutter_plugin_framework()
+  pluginsDepsFile = File.read('../.flutter-plugins-dependencies')
+  obj = JSON.parse(pluginsDepsFile)
+  frameworkNames = Array['Flutter', 'App', 'FlutterPluginRegistrant']
+  # 遍历所有iOS端的插件
+  obj["plugins"]["ios"].each do | plugin |
+    frameworkNames.push(plugin["name"])
+  end
+  frameworkNames
+end
+
+# 获取所有的native依赖
+def get_bridge_native_deps(flutterDeps)
+  dependencies = Set.new
+
+  dependencies.add(flutterDeps)
+
+  pluginsDepsFile = File.read('../.flutter-plugins-dependencies')
+  obj = JSON.parse(pluginsDepsFile)
+
+  podspecFiles = Array.new
+  # 遍历所有iOS端的插件
+  obj["plugins"]["ios"].each do | plugin |
+    # puts plugin["name"]
+    _podspecPaths = sh("find \"#{plugin['path']}\" -name '*.podspec'")
+    _podspecPaths.split("\n").each do | path |
+      podspecFiles.push(path)
+    end
+  end
+
+  # 获取依赖信息
+  podspecFiles.each do | filePath |
+    spec = Pod::Specification.from_file(filePath)
+    begin
+      spec.dependencies('ios').each do | dep |
+        dep_names = dependencies.map {|d| d.name }
+        if !dep_names.include? dep.name
+          dependencies.add(dep)
+        end
+      end
+    rescue
+    end
+  end
+
+  dependencies
+end
+
+# 更新bridge podspec依赖
+def update_bridge_podspec_deps(dependencies)
+  podspecPath = '../../bridge/bridge_ios/FWBridge.podspec'
+  spec = Pod::Specification.from_file(podspecPath)
+
+  append_depens = dependencies
+  # puts append_depens
+
+  # 获取原依赖
+  dependencies = spec.dependencies
+
+  dep_names = dependencies.map {|d| d.name }
+
+  # 去重处理
+  append_depens = append_depens.select { | d | !dep_names.include? d.name }
+
+  # 更改podspec
+  ## spec.dependencies = append_depens
+
+  depStr = ""
+  append_depens.each_with_index do | dep, index |
+    deps = "s.dependency \'#{dep.name}\'"
+    if dep.requirement != nil
+      deps = "\t#{deps}, '#{dep.requirement}'\n"
+    end
+    depStr += deps
+  end
+
+  r = /(?<=# dynamic inject dependencys start\s)[\s\S]*?(?=\s.*# dynamic inject dependencys end)/
+  podspecStr = File.read(podspecPath)
+  File.open(podspecPath,"w") {|f|
+    f.write podspecStr.gsub(r, depStr)
+  }
+end
+
+# 获取 bridge podspec version
+def get_bridge_podspec_version
+  podspecPath = '../../bridge/bridge_ios/FWBridge.podspec'
+  spec = Pod::Specification.from_file(podspecPath)
+  spec.version
+end
+
+# 发布 bridge 到私有仓库
+def publish_bridge_to_repo()
+  podspecPath = '../../bridge/bridge_ios/'
+  specVersion = ''
+  Dir.chdir podspecPath do
+    spec = Pod::Specification.from_file('FWBridge.podspec')
+    specVersion = spec.version
+      ## pod repo push Podspec '/Users/simman/Desktop/flutter_wallet_app/bridge/bridge_ios/FWBridge.podspec' --sources='git@gitlab.tqxd.com:flutter/native/podspec.git,https://github.com/CocoaPods/Specs' --allow-warnings --skip-import-validation --skip-tests --verbose --use-modular-headers
+    pod_push(
+      path: "#{Dir.pwd}/FWBridge.podspec",
+      repo: "Podspec",
+      sources: [
+        "git@gitlab.tqxd.com:flutter/native/podspec.git",
+        "https://github.com/CocoaPods/Specs"
+      ],
+      allow_warnings: true,
+      use_modular_headers: true,
+      skip_import_validation: true,
+      skip_tests: true,
+      verbose: true
+    )
+    UI.message "当前Bridge版本为: #{specVersion}"
+  end
+  ## sh("pod repo push Podspec #{podspecPath} --allow-warnings --use-libraries --allow-warnings --skip-import-validation")
+  Pod::Dependency.new('FWBridge', "~> #{specVersion}")
+end
+
+# 发布Flutter到私有仓库, 并返回 Dependency
+def publish_flutter_to_repo()
+  flutterPodspecPath = '../build/ios/framework/Release/Flutter.podspec'
+  spec = Pod::Specification.from_file(flutterPodspecPath)
+  sh("pod repo push Podspec #{flutterPodspecPath} --allow-warnings --use-libraries --allow-warnings --skip-import-validation")
+  # UI.message "当前Flutter版本为: #{spec.version}"
+  Pod::Dependency.new('Flutter', "~> #{spec.version}")
+end
+
+# 更新bridge podspec版本号
+def update_bridge_podspec_version(version)
+  podspecPath = '../../bridge/bridge_ios/'
+  Dir.chdir podspecPath do
+    version = version_bump_podspec(path: "#{Dir.pwd}/FWBridge.podspec", version_number: version)
+  end
+end
+
+$logIndex = 1
+def debugLog(msg)
+  UI.header "[Flutter Bridge Build] #{$logIndex}: #{msg}"
+  $logIndex = $logIndex + 1
+end
